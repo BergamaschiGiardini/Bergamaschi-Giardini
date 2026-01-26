@@ -153,63 +153,7 @@
 
         <div class="split">
           <!-- Modulo prenotazione -->
-          <div class="panel">
-            <h3>Prenota un intervento</h3>
-
-            <!-- Statico: pronto per EmailJS/Forms, senza backend -->
-            <form id="bookingForm" class="form" action="#" method="post">
-              <div class="field-grid">
-                <label class="field">
-                  <span>Nome e cognome</span>
-                  <input type="text" name="name" autocomplete="name" required />
-                </label>
-
-                <label class="field">
-                  <span>Telefono</span>
-                  <input type="tel" name="phone" autocomplete="tel" required />
-                </label>
-
-                <label class="field">
-                  <span>Email (opzionale)</span>
-                  <input type="email" name="email" autocomplete="email" />
-                </label>
-
-                <label class="field">
-                  <span>Servizio</span>
-                  <select name="service" required>
-                    <option value="" selected disabled>Seleziona</option>
-                    <option>Creazione e manutenzione giardini</option>
-                    <option>Potatura in quota</option>
-                    <option>Installazione/manutenzione impianti irrigazione</option>
-                    <option>Installazione prati a rotoli</option>
-                  </select>
-                </label>
-
-                <label class="field">
-                  <span>Data preferita</span>
-                  <input type="date" name="date" required />
-                </label>
-
-                <label class="field">
-                  <span>Fascia oraria</span>
-                  <select name="time" required>
-                    <option value="" selected disabled>Seleziona</option>
-                    <option>Mattina (8:00–12:00)</option>
-                    <option>Pomeriggio (13:00–18:00)</option>
-                    <option>Sera (dopo le 18:00)</option>
-                  </select>
-                </label>
-              </div>
-
-              <label class="field">
-                <span>Messaggio</span>
-                <textarea name="message" rows="4" placeholder="Zona, metratura, urgenza, dettagli utili..."></textarea>
-              </label>
-
-              <button class="btn" type="submit">Invia richiesta</button>
-              
-            </form>
-          </div>
+          
 
           <!-- Contatti -->
           <aside class="panel" id="contatti" aria-label="Contatti">
