@@ -371,15 +371,3 @@ textarea{ resize: vertical; }
   .cards{ grid-template-columns: 1fr; }
   .field-grid{ grid-template-columns: 1fr; }
 }
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;              /* spazio tra logo e testo */
-}
-
-.brand-logo{
-  height:60px;           /* cambia qui la dimensione */
-  width:auto;
-  display:block;
-}
