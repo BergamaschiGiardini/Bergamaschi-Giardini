@@ -367,14 +367,29 @@ textarea{ resize: vertical; }
 
 @media (max-width: 560px){
   .header-inner{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
   }
 
+  .brand{ min-width: 0; }
+
+  .brand-text{
+    font-size: 16px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .nav{
-    display: flex;      /* non none */
-    width: 100%;
-    justify-content: flex-start;
+    display: flex;
+    width: auto;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .nav a{
+    font-size: 14px;
+    padding: 6px 8px;
   }
 
   .hero-copy h1{ font-size: 34px; }
