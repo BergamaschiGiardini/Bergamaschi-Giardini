@@ -366,7 +366,17 @@ textarea{ resize: vertical; }
 }
 
 @media (max-width: 560px){
-  .nav{ display:flex; } /* mostra la navbar anche su mobile */
+  .header-inner{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav{
+    display: flex;      /* non none */
+    width: 100%;
+    justify-content: flex-start;
+  }
+
   .hero-copy h1{ font-size: 34px; }
   .cards{ grid-template-columns: 1fr; }
   .field-grid{ grid-template-columns: 1fr; }
