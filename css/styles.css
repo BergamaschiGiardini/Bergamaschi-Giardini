@@ -366,29 +366,36 @@ textarea{ resize: vertical; }
 }
 
 @media (max-width: 560px){
+
   .header-inner{
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;          /* <-- IMPORTANTISSIMO: niente a capo */
     gap: 10px;
   }
 
-  .brand{ min-width: 0; }
+  .brand{
+    min-width: 0;
+    flex: 1 1 auto;             /* brand “stringibile” */
+  }
 
   .brand-text{
-    font-size: 16px;
+    font-size: 15px;            /* stringi le scritte */
     letter-spacing: 0;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;    /* taglia se serve */
+    max-width: 55vw;            /* lascia spazio alla nav */
   }
 
   .nav{
     display: flex;
-    width: auto;
-    justify-content: flex-end;
+    width: auto;                /* <-- NON 100% */
+    flex: 0 0 auto;
+    white-space: nowrap;
     gap: 8px;
   }
+
   .nav a{
-    font-size: 14px;
+    font-size: 13px;
     padding: 6px 8px;
   }
 
