@@ -356,7 +356,7 @@ textarea{ resize: vertical; }
 }
 
 @media (max-width: 560px){
-  .nav{ display:none; } /* semplice: poi possiamo fare menu mobile */
+  .nav{ display:flex; } /* mostra la navbar anche su mobile */
   .hero-copy h1{ font-size: 34px; }
   .cards{ grid-template-columns: 1fr; }
   .field-grid{ grid-template-columns: 1fr; }
