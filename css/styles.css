@@ -362,3 +362,14 @@ textarea{ resize: vertical; }
   .field-grid{ grid-template-columns: 1fr; }
 }
 
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;              /* spazio tra logo e testo */
+}
+
+.brand-logo{
+  height:36px;           /* cambia qui la dimensione */
+  width:auto;
+  display:block;
+}
