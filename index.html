@@ -214,43 +214,10 @@
   </footer>
 
   <!-- Local SEO: Schema base (compilare telefono/email/dominio) -->
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://bergamaschi-giardini.com/#website",
-      "url": "https://bergamaschi-giardini.com/",
-      "name": "Bergamaschi Giardini",
-      "inLanguage": "it-IT",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://bergamaschi-giardini.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://bergamaschi-giardini.com/#webpage",
-      "url": "https://bergamaschi-giardini.com/",
-      "name": "Bergamaschi Giardini | Giardiniere a Bergamo",
-      "isPartOf": { "@id": "https://bergamaschi-giardini.com/#website" },
-      "inLanguage": "it-IT",
-      "primaryImageOfPage": { "@id": "https://bergamaschi-giardini.com/#primaryimage" },
-      "about": { "@id": "https://bergamaschi-giardini.com/#localbusiness" },
-      "publisher": { "@id": "https://bergamaschi-giardini.com/#localbusiness" }
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://bergamaschi-giardini.com/#primaryimage",
-      "url": "https://bergamaschi-giardini.com/img/1.png"
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://bergamaschi-giardini.com/#logo",
-      "url": "https://bergamaschi-giardini.com/img/1.jpeg"
-    },
     {
       "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "LandscapingBusiness"],
       "@id": "https://bergamaschi-giardini.com/#localbusiness",
@@ -258,27 +225,35 @@
       "url": "https://bergamaschi-giardini.com/",
       "telephone": "+393482765313",
       "email": "gabriele.bergamaschi@alice.it",
+      "description": "Giardiniere a Bergamo e provincia: creazione e manutenzione giardini, potature in quota (tree climbing), impianti di irrigazione, installazione prati a rotoli.",
       "image": [
         "https://bergamaschi-giardini.com/img/1.png"
       ],
-      "logo": { "@id": "https://bergamaschi-giardini.com/#logo" },
-      "description": "Giardiniere a Bergamo e provincia: creazione e manutenzione giardini, potature in quota (tree climbing), impianti di irrigazione, installazione prati a rotoli.",
+      "logo": "https://bergamaschi-giardini.com/img/1.jpeg",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Contanti, Bonifico",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Bergamo",
+        "streetAddress": "Cascina Riccadonna",
+        "postalCode": "24050",
+        "addressLocality": "Cavernago",
         "addressRegion": "BG",
         "addressCountry": "IT"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.6949,
+        "longitude": 9.67
+      },
       "areaServed": [
         { "@type": "City", "name": "Bergamo" },
-        { "@type": "AdministrativeArea", "name": "Provincia di Bergamo" }
+        { "@type": "AdministrativeArea", "name": "Provincia di Bergamo" },
+        { "@type": "City", "name": "Cavernago" }
       ],
-      "hasMap": "https://www.google.com/maps/place/Bergamaschi+Giardini/@45.6141247,9.7766004,16z/data=!3m1!4b1!4m6!3m5!1s0x478144947ce69dd3:0xac6efb8bd94618ca!8m2!3d45.6141247!4d9.7766004!16s%2Fg%2F11b6jgwyy5?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+      "hasMap": "https://maps.app.goo.gl/KhBsKYSdZLfS4Ezq8",
       "sameAs": [
-        "https://www.google.com/maps/place/Bergamaschi+Giardini/@45.6141247,9.7766004,16z/data=!3m1!4b1!4m6!3m5!1s0x478144947ce69dd3:0xac6efb8bd94618ca!8m2!3d45.6141247!4d9.7766004!16s%2Fg%2F11b6jgwyy5?entry=ttu&g_ep=EgoyMDI2MDEyNi4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
+        "https://maps.app.goo.gl/KhBsKYSdZLfS4Ezq8",
         "https://www.facebook.com/bergamaschigabriele.creazionemanutenzionegiardini/?locale=it_IT"
       ],
       "contactPoint": [
@@ -293,7 +268,7 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
           "opens": "09:00",
           "closes": "18:00"
         },
@@ -355,6 +330,30 @@
         ]
       },
       "mainEntityOfPage": { "@id": "https://bergamaschi-giardini.com/#webpage" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bergamaschi-giardini.com/#website",
+      "url": "https://bergamaschi-giardini.com/",
+      "name": "Bergamaschi Giardini",
+      "inLanguage": "it-IT",
+      "publisher": { "@id": "https://bergamaschi-giardini.com/#localbusiness" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bergamaschi-giardini.com/#webpage",
+      "url": "https://bergamaschi-giardini.com/",
+      "name": "Bergamaschi Giardini | Giardiniere a Bergamo",
+      "isPartOf": { "@id": "https://bergamaschi-giardini.com/#website" },
+      "inLanguage": "it-IT",
+      "primaryImageOfPage": { "@id": "https://bergamaschi-giardini.com/#primaryimage" },
+      "about": { "@id": "https://bergamaschi-giardini.com/#localbusiness" },
+      "mainEntity": { "@id": "https://bergamaschi-giardini.com/#localbusiness" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://bergamaschi-giardini.com/#primaryimage",
+      "url": "https://bergamaschi-giardini.com/img/1.png"
     }
   ]
 }
