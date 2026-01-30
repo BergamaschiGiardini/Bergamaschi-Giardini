@@ -357,7 +357,24 @@ textarea{ resize: vertical; }
 .footer-meta{
   font-size: 13px;
 }
+.footer-meta{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:6px;
+  text-align:right;
+}
 
+.footer-maps{
+  color: inherit;
+  text-decoration: none;
+  opacity: .9;
+}
+
+.footer-maps:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
 /* Responsive */
 @media (max-width: 980px){
   .hero-grid{ grid-template-columns: 1fr; }
