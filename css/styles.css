@@ -366,7 +366,7 @@ textarea{ resize: vertical; }
 }
 
 .footer-maps{
-  color: inherit;
+  color: var(--accent, #34c759);
   text-decoration: none;
   opacity: .9;
 }
