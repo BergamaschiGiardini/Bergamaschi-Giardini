@@ -134,21 +134,25 @@ text-align:center;
 
 .geo-gallery-grid{
 
-margin-top:30px;
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:18px;
 
 }
-
 .geo-gallery-grid img{
 
 width:100%;
-border-radius:14px;
+height:260px;
 object-fit:cover;
+border-radius:14px;
+display:block;
+transition:transform .25s ease;
+}
+.geo-gallery-grid img:hover{
+
+transform:scale(1.03);
 
 }
-
 @media (max-width:700px){
 
 .geo-gallery-grid{
