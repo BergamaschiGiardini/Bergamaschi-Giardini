@@ -436,3 +436,10 @@ margin:auto;
 margin-bottom:18px;
 
 }
+.local-seo-links{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
