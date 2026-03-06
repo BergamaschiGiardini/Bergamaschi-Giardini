@@ -420,16 +420,19 @@ textarea{ resize: vertical; }
   .cards{ grid-template-columns: 1fr; }
   .field-grid{ grid-template-columns: 1fr; }
 }
+/* LOCAL SEO */
+
 .local-seo{
 
 text-align:center;
+padding-top:30px;
 
 }
 
 .local-seo p{
 
-max-width:700px;
+max-width:750px;
 margin:auto;
-margin-bottom:25px;
+margin-bottom:18px;
 
 }
