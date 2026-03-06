@@ -420,26 +420,51 @@ textarea{ resize: vertical; }
   .cards{ grid-template-columns: 1fr; }
   .field-grid{ grid-template-columns: 1fr; }
 }
-/* LOCAL SEO */
+/* =========================
+   LOCAL SEO SECTION
+========================= */
 
 .local-seo{
-
-text-align:center;
-padding-top:30px;
-
+  text-align:center;
+  padding-top:30px;
 }
 
 .local-seo p{
-
-max-width:750px;
-margin:auto;
-margin-bottom:18px;
-
+  max-width:720px;
+  margin:auto;
+  margin-bottom:18px;
+  line-height:1.6;
 }
+
+.local-seo strong{
+  font-weight:600;
+}
+
 .local-seo-links{
   display:flex;
   gap:12px;
   justify-content:center;
   flex-wrap:wrap;
   margin-top:22px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:700px){
+
+  .local-seo{
+    padding-top:20px;
+  }
+
+  .local-seo p{
+    padding:0 10px;
+  }
+
+  .local-seo-links{
+    flex-direction:column;
+    align-items:center;
+  }
+
 }
