@@ -162,4 +162,66 @@ grid-template-columns:1fr;
 }
 
 }
+/* =========================
+   BACKGROUND FIX PAGINA BERGAMO
+========================= */
 
+/* hero stesso colore del sito */
+
+.geo-hero{
+
+background:#2f3947;
+color:#fff;
+padding:120px 0 100px;
+text-align:center;
+
+}
+
+/* sezioni chiare eliminate */
+
+.geo-section{
+
+background:#2f3947;
+color:#fff;
+padding:70px 0;
+
+}
+
+/* mappa stessa palette */
+
+.geo-map{
+
+background:#2f3947;
+color:#fff;
+padding:80px 0;
+
+}
+
+/* testo leggibile */
+
+.geo-section p,
+.geo-section li,
+.geo-map p{
+
+color:rgba(255,255,255,.85);
+
+}
+
+/* titoli */
+
+.geo-section h2,
+.geo-map h2,
+.geo-hero h1{
+
+color:#fff;
+
+}
+
+/* eventuali liste */
+
+.geo-services li,
+.geo-cities li{
+
+color:rgba(255,255,255,.9);
+
+}
