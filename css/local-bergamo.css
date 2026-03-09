@@ -4,8 +4,8 @@
   position:relative;
   overflow:hidden;
   color:#fff;
-  padding:110px 0 90px;
-  min-height:520px;
+  padding:90px 0 70px;
+  min-height:360px;
   display:flex;
   align-items:center;
   text-align:center;
@@ -14,9 +14,9 @@
 .geo-hero-inner{
   position:relative;
   z-index:1;
-  max-width:920px;
+  max-width:760px;
   margin:auto;
-  padding-top:20px;
+  padding-top:10px;
 }
 .geo-kicker{
   display:inline-block;
@@ -327,8 +327,8 @@
   position:absolute;
   inset:0;
   background:
-    linear-gradient(180deg, rgba(8,15,28,.62), rgba(20,30,44,.72)),
-    rgba(0,0,0,.18);
+    linear-gradient(180deg, rgba(8,15,28,.82), rgba(20,30,44,.84)),
+    rgba(0,0,0,.22);
 }
 
 .geo-hero-bg img{
@@ -336,8 +336,8 @@
   height:100%;
   display:block;
   object-fit:cover;
+  object-position:center 30%;
 }
-
 .geo-hero-inner{
   position:relative;
   z-index:1;
