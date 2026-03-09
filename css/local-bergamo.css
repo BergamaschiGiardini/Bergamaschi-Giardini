@@ -4,15 +4,20 @@
   position:relative;
   overflow:hidden;
   color:#fff;
-  padding:120px 0 100px;
+  padding:110px 0 90px;
+  min-height:520px;
+  display:flex;
+  align-items:center;
   text-align:center;
   background:#2f3947;
 }
 .geo-hero-inner{
+  position:relative;
+  z-index:1;
   max-width:920px;
   margin:auto;
+  padding-top:20px;
 }
-
 .geo-kicker{
   display:inline-block;
   margin:0 0 14px;
@@ -339,4 +344,14 @@
   z-index:1;
   max-width:920px;
   margin:auto;
+}
+@media (max-width:700px){
+  .geo-hero{
+    min-height:420px;
+    padding:90px 0 70px;
+  }
+
+  .geo-hero-inner{
+    padding-top:10px;
+  }
 }
