@@ -13,6 +13,47 @@
 <link rel="stylesheet" href="/css/styles.css">
 <link rel="stylesheet" href="/css/local-bergamo.css">
 
+<style>
+  .geo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 28px;
+    align-items: start;
+  }
+
+  .geo-gallery-item {
+    display: block;
+  }
+
+  .geo-gallery-card {
+    margin: 0 0 14px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .geo-gallery-card img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .geo-gallery-item h3 {
+    margin: 0;
+  }
+
+  @media (max-width: 900px) {
+    .geo-gallery-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .geo-gallery-card img {
+      height: auto;
+    }
+  }
+</style>
+
 </head>
 
 <body>
@@ -199,65 +240,77 @@
           <h2>Servizi di giardinaggio a Bergamo</h2>
 
           <p>
-            Bergamaschi Giardini realizza interventi di vario genere dalla progettazione alla <strong>cura e manutenzione del verde. </strong>
+            Bergamaschi Giardini realizza interventi di vario genere dalla progettazione alla <strong>cura e manutenzione del verde.</strong>
           </p>
-         <div class="geo-gallery-grid">
-        <figure class="geo-gallery-card">
-          <img src="/img/manutenzione-giardino-bergamo.jpg" alt="Manutenzione giardino a Bergamo">
-        </figure>  <h3>Manutenzione giardini a Bergamo e provincia</h3>
 
-        <figure class="geo-gallery-card">
-          <img src="/img/potatura-alberi-bergamo.jpg" alt="Potatura alberi a Bergamo">
-        </figure>  <h3>Potature alberi e interventi in quota a Bergamo e provincia</h3>
+          <div class="geo-gallery-grid">
+            <div class="geo-gallery-item">
+              <figure class="geo-gallery-card">
+                <img src="/img/manutenzione-giardino-bergamo.jpg" alt="Manutenzione giardino a Bergamo">
+              </figure>
+              <h3>Manutenzione giardini a Bergamo e provincia</h3>
+            </div>
 
-        <figure class="geo-gallery-card">
-          <img src="/img/irrigazione-bergamo.jpg" alt="Installazione impianti d'irrigazione a Bergamo">
-        </figure>  <h3>Installazione impianti di irrigazione a Bergamo e provincia</h3>
+            <div class="geo-gallery-item">
+              <figure class="geo-gallery-card">
+                <img src="/img/potatura-alberi-bergamo.jpg" alt="Potatura alberi a Bergamo">
+              </figure>
+              <h3>Potature alberi e interventi in quota a Bergamo e provincia</h3>
+            </div>
 
-        <figure class="geo-gallery-card">
-          <img src="/img/prato-rotoli-bergamo.jpg" alt="Installazione prato a rotoli a Bergamo">
-        </figure>  <h3>Posa prato a rotoli a Bergamo e provincia</h3>
-      </div>
+            <div class="geo-gallery-item">
+              <figure class="geo-gallery-card">
+                <img src="/img/irrigazione-bergamo.jpg" alt="Installazione impianti d'irrigazione a Bergamo">
+              </figure>
+              <h3>Installazione impianti di irrigazione a Bergamo e provincia</h3>
+            </div>
+
+            <div class="geo-gallery-item">
+              <figure class="geo-gallery-card">
+                <img src="/img/prato-rotoli-bergamo.jpg" alt="Installazione prato a rotoli a Bergamo">
+              </figure>
+              <h3>Posa prato a rotoli a Bergamo e provincia</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
   <section class="geo-section-alt">
-  <div class="container">
-    <div class="geo-panel geo-panel-dark">
-      <div class="geo-text-block">
-        <h2>Zona operativa</h2>
+    <div class="container">
+      <div class="geo-panel geo-panel-dark">
+        <div class="geo-text-block">
+          <h2>Zona operativa</h2>
 
-        <p>
-          La base operativa è a <strong>Cavernago</strong>, posizione che permette flessibilità e disponibilità in una vasta area della provincia di <strong>Bergamo</strong>.
-        </p>
+          <p>
+            La base operativa è a <strong>Cavernago</strong>, posizione che permette flessibilità e disponibilità in una vasta area della provincia di <strong>Bergamo</strong>.
+          </p>
 
-        <div class="geo-map-frame">
-          <iframe
-            src="https://www.google.com/maps?q=Cascina%20Riccadonna%201%2C%2024050%20Cavernago%20BG&z=14&output=embed"
-            width="100%"
-            height="380"
-            style="border:0;"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen=""
-            title="Mappa Bergamaschi Giardini - Cavernago">
-          </iframe>
+          <div class="geo-map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=Cascina%20Riccadonna%201%2C%2024050%20Cavernago%20BG&z=14&output=embed"
+              width="100%"
+              height="380"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""
+              title="Mappa Bergamaschi Giardini - Cavernago">
+            </iframe>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="geo-back-home">
-  <div class="container">
-    <div class="geo-back-home-wrap">
-      <a class="geo-back-home-bar" href="/">Torna alla pagina iniziale</a>
+  <section class="geo-back-home">
+    <div class="container">
+      <div class="geo-back-home-wrap">
+        <a class="geo-back-home-bar" href="/">Torna alla pagina iniziale</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 </main>
 
