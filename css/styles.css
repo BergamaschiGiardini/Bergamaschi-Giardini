@@ -309,33 +309,107 @@ textarea{ resize: vertical; }
   font-size: 13px;
 }
 
-/* Contatti */
-.contact-list{
-  display:grid;
-  gap: 10px;
-  margin-top: 10px;
-}
-.contact-item{
-  display:flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,.03);
-}
-.contact-item .label{
-  color: var(--muted);
-  font-size: 13px;
-}
-.contact-item .value{
-  font-weight: 700;
-  font-size: 13px;
-}
-.contact-cta{
-  margin-top: 14px;
+/* Panel contatti upgrade */
+.split .panel:last-child{
+  position: relative;
+  border: 1px solid rgba(46,204,113,.42);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)),
+    rgba(255,255,255,.015);
+  box-shadow:
+    0 22px 50px rgba(0,0,0,.32),
+    0 0 0 1px rgba(46,204,113,.08) inset;
+  padding: 22px 22px 24px;
 }
 
+.split .panel:last-child h3{
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f3f6fb;
+  position: relative;
+}
+
+.split .panel:last-child h3::after{
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: 1px;
+  margin: 18px auto 0;
+  background: rgba(46,204,113,.55);
+}
+
+/* Contatti */
+.contact-list{
+  display: grid;
+  gap: 0;
+  margin-top: 4px;
+}
+
+.contact-item{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 26px 18px;
+  border: 0;
+  border-bottom: 1px solid rgba(46,204,113,.38);
+  background: transparent;
+  border-radius: 0;
+}
+
+.contact-item:first-child{
+  border-top: 0;
+}
+
+.contact-item .label{
+  color: #2ecc71;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.contact-item .value{
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #f3f6fb;
+}
+
+.contact-item .value a{
+  color: #f3f6fb;
+  text-decoration: none;
+}
+
+.contact-item .value a:hover{
+  color: #2ecc71;
+  text-decoration: none;
+}
+
+.contact-cta{
+  margin-top: 16px;
+}
+
+.contact-cta .btn{
+  min-width: 128px;
+  border-radius: 14px;
+  border: 1px solid rgba(46,204,113,.32);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+}
+
+.contact-cta .btn:hover{
+  background: rgba(46,204,113,.10);
+  border-color: rgba(46,204,113,.5);
+}
 /* Footer */
 .site-footer{
   border-top: 1px solid var(--line);
