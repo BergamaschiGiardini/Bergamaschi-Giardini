@@ -17,19 +17,25 @@
   .geo-gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    margin-top: 28px;
+    gap: 46px 42px;
+    margin-top: 36px;
     align-items: start;
   }
 
   .geo-gallery-item {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .geo-gallery-card {
-    margin: 0 0 14px;
-    border-radius: 18px;
+    margin: 0;
+    border-radius: 22px;
     overflow: hidden;
+    padding: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.16);
   }
 
   .geo-gallery-card img {
@@ -37,40 +43,49 @@
     width: 100%;
     height: 320px;
     object-fit: cover;
+    border-radius: 16px;
   }
 
   .geo-gallery-item h3 {
     margin: 0;
+    font-size: 1.65rem;
+    line-height: 1.35;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #f3f6fb;
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .geo-gallery-item h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.32em;
+    width: 6px;
+    height: 1.2em;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #8fd3ff 0%, #57b7ff 100%);
+    box-shadow: 0 0 18px rgba(87,183,255,0.35);
   }
 
   @media (max-width: 900px) {
     .geo-gallery-grid {
       grid-template-columns: 1fr;
+      gap: 28px;
     }
 
     .geo-gallery-card img {
       height: auto;
     }
+
+    .geo-gallery-item h3 {
+      font-size: 1.35rem;
+    }
   }
 </style>
 
-</head>
-
-<body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="/">
-      <img class="brand-logo" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
-      <span class="brand-text">Bergamaschi Giardini</span>
-    </a>
-
-    <nav class="nav">
-      <a href="/#servizi">Servizi</a>
-      <a href="/#contatti">Contatti</a>
-    </nav>
-  </div>
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -210,20 +225,37 @@
   ]
 }
 </script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
+      <span class="brand-text">Bergamaschi Giardini</span>
+    </a>
+
+    <nav class="nav">
+      <a href="/#servizi">Servizi</a>
+      <a href="/#contatti">Contatti</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
   <section class="geo-hero">
-   <div class="geo-hero-bg">
-  <img class="geo-hero-img geo-hero-img-unica" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
-</div>
-    <div class="container geo-hero-inner">
+    <div class="geo-hero-bg">
+      <img class="geo-hero-img geo-hero-img-unica" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
+    </div>
 
+    <div class="container geo-hero-inner">
       <h1>Giardiniere a Bergamo e provincia</h1>
 
       <p class="geo-lead">
-        Siamo specializzati in interventi nella zona di <strong> Bergamo </strong>.
+        Siamo specializzati in interventi nella zona di <strong>Bergamo</strong>.
       </p>
 
       <div class="geo-cta">
