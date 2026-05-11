@@ -828,7 +828,16 @@ p + p {
 .aree-lista a:hover::before {
   width: 46px;
 }
-
+.areas__list a h3,
+.aree-lista a h3 {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
 
 /* =========================================================
    9. CONTATTI
