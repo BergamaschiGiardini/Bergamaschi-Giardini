@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style-irrigazione.css">
+  <title>Impianti di irrigazione in provincia di Bergamo | Bergamaschi Giardini</title>
+  <meta name="description" content="Installazione impianti di irrigazione per giardini, aree verdi e orti in tutta la provincia di Bergamo. Progettazione, posa, manutenzione e regolazione.">
+</head>
+
+<body>
+  <main>
+    <section class="hero hero--irrigation" id="hero">
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Irrigazione giardini in provincia di Bergamo</p>
+
+        <h1>Impianti di irrigazione per giardini e aree verdi in provincia di Bergamo</h1>
+
+        <p class="hero__text">
+          Installiamo impianti di irrigazione per giardini, prati, aiuole, orti e aree verdi private o condominiali. Valutiamo dimensioni dello spazio, esposizione al sole, tipo di terreno e necessità delle piante per distribuire l’acqua in modo ordinato, evitando sprechi e zone secche. Interveniamo in tutta la provincia di Bergamo con sopralluogo, progettazione, posa e regolazione dell’impianto.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contatti">Richiedi un sopralluogo</a>
+          <a class="btn btn--phone" href="tel:3482765313">3482765313</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="irrigation-intro" id="servizio">
+      <div class="irrigation-intro__content">
+        <p class="section-eyebrow">Servizio</p>
+        <h2>Installazione impianti di irrigazione su misura per il verde esterno</h2>
+        <p>
+          Un impianto di irrigazione ben realizzato non serve solo a bagnare il giardino. Serve a mantenere costante l’umidità del terreno, proteggere il prato nei periodi caldi, sostenere siepi e aiuole nelle fasi più delicate e semplificare la gestione quotidiana dello spazio verde. Per questo ogni intervento viene valutato in base alla forma dell’area, alla presenza di prato, piante ornamentali, orti, bordure, alberature e zone esposte in modo diverso durante la giornata.
+        </p>
+        <p>
+          Lavoriamo su giardini esistenti, nuove realizzazioni e aree verdi da sistemare. Prima della posa analizziamo il punto di presa dell’acqua, la pressione disponibile, la portata, le distanze da coprire e le esigenze delle diverse zone del giardino. In questo modo l’impianto non viene montato in modo generico, ma progettato per distribuire l’acqua dove serve, con tempi e settori separati quando lo spazio lo richiede.
+        </p>
+      </div>
+
+      <figure class="irrigation-intro__image">
+        <img src="/img/impianto-irrigazione-giardino.jpg" alt="Installazione impianto di irrigazione per giardino in provincia di Bergamo">
+      </figure>
+    </section>
+
+    <section class="irrigation-method" id="progettazione">
+      <div class="section-heading">
+        <p class="section-eyebrow">Metodo tecnico</p>
+        <h2>Progettazione dell’impianto prima della posa</h2>
+        <p>
+          La parte più importante di un impianto di irrigazione è la progettazione. Una posa veloce, senza calcolo delle zone e senza valutazione della pressione, può creare getti irregolari, ristagni, consumi inutili o parti di prato che restano asciutte. Per questo partiamo da un controllo pratico dell’area e definiamo una distribuzione coerente con il giardino.
+        </p>
+      </div>
+
+      <div class="irrigation-method__grid">
+        <article class="irrigation-step">
+          <span>01</span>
+          <h3>Sopralluogo e lettura dell’area verde</h3>
+          <p>
+            Verifichiamo dimensioni, pendenze, esposizione, presenza di ombra, composizione delle aiuole e zone di passaggio. Un prato in pieno sole non ha le stesse esigenze di una bordura ombreggiata o di un orto domestico.
+          </p>
+        </article>
+
+        <article class="irrigation-step">
+          <span>02</span>
+          <h3>Controllo di pressione e portata</h3>
+          <p>
+            Misuriamo le condizioni dell’acqua disponibile per capire quanti irrigatori possono lavorare insieme e se è necessario dividere l’impianto in più settori, evitando cali di pressione e copertura disomogenea.
+          </p>
+        </article>
+
+        <article class="irrigation-step">
+          <span>03</span>
+          <h3>Scelta di irrigatori, ala gocciolante e centralina</h3>
+          <p>
+            Selezioniamo soluzioni diverse in base all’area: irrigatori statici o dinamici per il prato, goccia a goccia per aiuole e siepi, programmatore per gestire orari e durata dell’irrigazione.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="irrigation-types" id="tipologie">
+      <div class="irrigation-types__header">
+        <p class="section-eyebrow">Tipologie</p>
+        <h2>Impianti di irrigazione per prato, aiuole, siepi e orti</h2>
+      </div>
+
+      <div class="irrigation-types__layout">
+        <article class="irrigation-type-card">
+          <h3>Irrigazione interrata per prato</h3>
+          <p>
+            L’irrigazione interrata è indicata per prati naturali, giardini residenziali e aree verdi dove si desidera un risultato ordinato e poco visibile. Gli irrigatori vengono posizionati nel terreno e si sollevano durante il funzionamento. La corretta disposizione dei punti acqua permette di coprire la superficie in modo uniforme, riducendo le sovrapposizioni e limitando le zone non raggiunte.
+          </p>
+        </article>
+
+        <article class="irrigation-type-card">
+          <h3>Ala gocciolante per aiuole, siepi e bordure</h3>
+          <p>
+            Per aiuole, siepi, bordure e zone piantumate spesso è preferibile un’irrigazione localizzata. L’ala gocciolante porta l’acqua vicino alle radici e consente una gestione più precisa delle piante, soprattutto nei periodi caldi o quando sono presenti essenze con esigenze diverse rispetto al prato.
+          </p>
+        </article>
+
+        <article class="irrigation-type-card">
+          <h3>Irrigazione per orti e piccoli spazi verdi</h3>
+          <p>
+            Anche orti domestici, piccoli giardini e spazi verdi di dimensioni contenute possono beneficiare di un impianto organizzato. In questi casi la priorità è distribuire l’acqua in modo pratico, semplice da gestire e adatto alle coltivazioni, senza creare ristagni o getti troppo aggressivi.
+          </p>
+        </article>
+
+        <article class="irrigation-type-card">
+          <h3>Programmazione automatica dell’irrigazione</h3>
+          <p>
+            La centralina permette di programmare orari, durata e settori dell’impianto. Una regolazione corretta evita irrigazioni nelle ore meno adatte, limita gli sprechi e aiuta a mantenere il giardino più stabile anche quando non si è presenti in casa per alcuni giorni.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="irrigation-tech" id="componenti">
+      <figure class="irrigation-tech__image">
+        <img src="/img/dettaglio-prato-giardino.jpg" alt="Prato verde curato con irrigazione corretta">
+      </figure>
+
+      <div class="irrigation-tech__content">
+        <p class="section-eyebrow">Componenti tecnici</p>
+        <h2>Cosa valutiamo per installare un impianto affidabile</h2>
+
+        <h3>Settori separati per zone con esigenze diverse</h3>
+        <p>
+          Un giardino non consuma acqua nello stesso modo in ogni punto. Le aree in pieno sole, le zone d’ombra, le aiuole, il prato e le siepi possono richiedere tempi differenti. La divisione in settori consente di controllare meglio la distribuzione e di evitare che alcune parti ricevano troppa acqua mentre altre restano asciutte.
+        </p>
+
+        <h3>Posizionamento degli irrigatori e copertura</h3>
+        <p>
+          Gli irrigatori devono essere collocati considerando raggio, angolo di lavoro, ostacoli, muri, camminamenti e bordi del giardino. Una copertura corretta non significa semplicemente aggiungere più punti acqua, ma posizionarli in modo che lavorino insieme senza bagnare inutilmente pavimentazioni, ingressi o zone non verdi.
+        </p>
+
+        <h3>Gestione della pressione e della portata</h3>
+        <p>
+          Pressione e portata determinano la stabilità dell’impianto. Se non vengono considerate, l’impianto può funzionare male già dal primo utilizzo. Per questo verifichiamo le condizioni disponibili e impostiamo il numero di linee in modo coerente, scegliendo componenti adatti al contesto.
+        </p>
+      </div>
+    </section>
+
+    <section class="irrigation-installation" id="posa">
+      <div class="section-heading">
+        <p class="section-eyebrow">Posa</p>
+        <h2>Installazione ordinata con attenzione al giardino esistente</h2>
+        <p>
+          La posa di un impianto di irrigazione richiede precisione perché avviene spesso in giardini già utilizzati, con prato, aiuole, percorsi e piante da proteggere. Organizziamo l’intervento cercando di limitare il disagio, mantenere l’area pulita e ripristinare il terreno al termine del lavoro.
+        </p>
+      </div>
+
+      <div class="irrigation-installation__content">
+        <div>
+          <h3>Scavo, tubazioni e collegamenti</h3>
+          <p>
+            Realizziamo i tracciati necessari per tubazioni e collegamenti, rispettando la forma del giardino e la posizione dei punti di irrigazione. Dove possibile, manteniamo una posa ordinata e poco invasiva, con attenzione alle radici, ai bordi delle aiuole e alle aree già finite.
+          </p>
+        </div>
+
+        <div>
+          <h3>Test dell’impianto e regolazione finale</h3>
+          <p>
+            Dopo l’installazione testiamo ogni settore, controlliamo i getti, regoliamo gli irrigatori e verifichiamo che l’acqua raggiunga le zone previste. La regolazione finale è essenziale perché anche un buon impianto può rendere poco se non viene tarato sul giardino reale.
+          </p>
+        </div>
+
+        <div>
+          <h3>Indicazioni per l’uso quotidiano</h3>
+          <p>
+            Al termine del lavoro forniamo indicazioni pratiche su programmazione, durata dei cicli, controlli periodici e gestione stagionale. L’obiettivo è consegnare un impianto semplice da usare, chiaro nella gestione e adatto al tipo di verde presente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="irrigation-maintenance" id="manutenzione">
+      <div class="irrigation-maintenance__content">
+        <p class="section-eyebrow">Manutenzione</p>
+        <h2>Controllo, regolazione e manutenzione degli impianti di irrigazione</h2>
+        <p>
+          Un impianto di irrigazione deve essere controllato nel tempo. Ugelli ostruiti, irrigatori disallineati, perdite, cali di pressione o programmazioni non aggiornate possono compromettere il prato e aumentare i consumi. La manutenzione permette di intervenire prima che il problema diventi evidente, soprattutto all’inizio della stagione calda.
+        </p>
+        <p>
+          Possiamo occuparci di verifica dell’impianto, regolazione degli irrigatori, controllo delle linee, sostituzione di componenti usurati e aggiornamento dei tempi di irrigazione. Questo è utile sia per impianti installati da noi sia per giardini dove l’impianto esiste già ma non funziona in modo uniforme.
+        </p>
+      </div>
+
+      <figure class="irrigation-maintenance__image">
+        <img src="/img/realizzazione-manutenzione-giardino.jpg" alt="Manutenzione del giardino e controllo dell'irrigazione">
+      </figure>
+    </section>
+
+    <section class="linked-services" id="servizi-collegati">
+      <div class="section-heading">
+        <p class="section-eyebrow">Servizi collegati</p>
+        <h2>Interventi utili insieme all’irrigazione</h2>
+        <p>
+          L’impianto di irrigazione lavora meglio quando è inserito in una gestione completa del verde. Per questo può essere utile abbinarlo alla realizzazione del giardino, alla cura del prato o alla sistemazione di aiuole e siepi.
+        </p>
+      </div>
+
+      <div class="linked-services__grid">
+        <a class="linked-service-card" href="/servizi/realizzazione-manutenzione-giardino.html">
+          <img src="/img/realizzazione-manutenzione-giardino.jpg" alt="Realizzazione e manutenzione del giardino">
+          <span>Realizzazione e manutenzione del giardino</span>
+          <p>Per progettare o sistemare l’area verde insieme alla gestione dell’acqua.</p>
+        </a>
+
+        <a class="linked-service-card" href="/servizi/realizzazione-prato-naturale-sintetico.html">
+          <img src="/img/realizzazione-prato-naturale-sintetico.jpg" alt="Realizzazione prato naturale e sintetico">
+          <span>Realizzazione prato naturale e sintetico</span>
+          <p>Per preparare il prato e valutare l’irrigazione più adatta alla superficie.</p>
+        </a>
+
+        <a class="linked-service-card" href="/servizi/realizzazione-manutenzione-aiuole-siepi.html">
+          <img src="/img/aiuole-siepi-giardino.jpg" alt="Realizzazione e manutenzione aiuole e siepi">
+          <span>Realizzazione e manutenzione di aiuole e siepi</span>
+          <p>Per curare le zone piantumate con irrigazione localizzata e manutenzione ordinata.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="areas areas--irrigation" id="aree">
+      <div class="areas__background">
+        <div class="areas__card">
+          <p class="section-eyebrow">Aree servite</p>
+          <h2>Installazione impianti di irrigazione in tutta la provincia di Bergamo</h2>
+
+          <p>
+            Operiamo in tutta la provincia di Bergamo per installazione, controllo e manutenzione di impianti di irrigazione per giardini, aree verdi, prati, aiuole, siepi e orti. Interveniamo su abitazioni private, condomini e spazi esterni che richiedono una gestione dell’acqua più ordinata e costante.
+          </p>
+
+          <div class="areas__list">
+            <a href="/aree/bergamo.html"><h3>Bergamo</h3></a>
+            <a href="/aree/seriate.html"><h3>Seriate</h3></a>
+            <a href="/aree/dalmine.html"><h3>Dalmine</h3></a>
+            <a href="/aree/treviglio.html"><h3>Treviglio</h3></a>
+            <a href="/aree/romano-di-lombardia.html"><h3>Romano di Lombardia</h3></a>
+            <a href="/aree/cavernago.html"><h3>Cavernago</h3></a>
+            <a href="/aree/albino.html"><h3>Albino</h3></a>
+            <a href="/aree/caravaggio.html"><h3>Caravaggio</h3></a>
+            <a href="/aree/stezzano.html"><h3>Stezzano</h3></a>
+            <a href="/aree/alzano-lombardo.html"><h3>Alzano Lombardo</h3></a>
+            <a href="/aree/osio-sotto.html"><h3>Osio Sotto</h3></a>
+            <a href="/aree/nembro.html"><h3>Nembro</h3></a>
+          </div>
+
+          <a class="btn btn--secondary" href="/aree.html">Visualizza aree servite</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="irrigation-faq" id="faq">
+      <div class="section-heading">
+        <p class="section-eyebrow">FAQ</p>
+        <h2>Domande frequenti sugli impianti di irrigazione</h2>
+      </div>
+
+      <div class="irrigation-faq__list">
+        <details>
+          <summary>Quanto costa installare un impianto di irrigazione per giardino?</summary>
+          <p>
+            Il costo dipende da dimensioni del giardino, numero di settori, tipo di irrigazione, pressione disponibile, centralina e complessità della posa. Per dare un’indicazione corretta è necessario valutare l’area con un sopralluogo.
+          </p>
+        </details>
+
+        <details>
+          <summary>È meglio un impianto interrato o a goccia?</summary>
+          <p>
+            Dipende dalla zona da irrigare. Il prato richiede spesso irrigatori interrati, mentre aiuole, siepi e bordure possono essere gestite meglio con ala gocciolante. In molti giardini le due soluzioni convivono in settori separati.
+          </p>
+        </details>
+
+        <details>
+          <summary>Si può installare l’impianto in un giardino già esistente?</summary>
+          <p>
+            Sì. La posa può essere eseguita anche su giardini già realizzati, valutando tracciati, passaggi e zone delicate. L’obiettivo è installare l’impianto limitando il più possibile l’impatto sul prato e sulle aree piantumate.
+          </p>
+        </details>
+
+        <details>
+          <summary>Quando conviene controllare l’impianto di irrigazione?</summary>
+          <p>
+            Il controllo è consigliato prima della stagione calda e ogni volta che si notano zone secche, getti irregolari, perdite o consumi anomali. Una regolazione tempestiva evita danni al prato e alle piante.
+          </p>
+        </details>
+
+        <details>
+          <summary>Installate impianti di irrigazione in tutta la provincia di Bergamo?</summary>
+          <p>
+            Sì. Il servizio è disponibile in tutta la provincia di Bergamo, con interventi su giardini privati, aree verdi condominiali, orti e spazi esterni che richiedono installazione o manutenzione dell’impianto.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact contact--irrigation" id="contatti">
+      <div class="contact__content">
+        <p class="section-eyebrow">Contatti</p>
+        <h2>Richiedi un sopralluogo per il tuo impianto di irrigazione</h2>
+
+        <p>
+          Contattaci per valutare il tuo giardino, controllare la disponibilità dell’acqua e capire quale impianto di irrigazione è più adatto al tuo spazio verde. Possiamo occuparci di nuova installazione, regolazione, manutenzione o verifica di un impianto già presente.
+        </p>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="/contatti.html">Richiedi un sopralluogo</a>
+          <a class="btn btn--phone" href="tel:3482765313">3482765313</a>
+        </div>
+
+        <p class="contact__area">
+          Zona operativa: tutta la provincia di Bergamo
+        </p>
+      </div>
+
+      <figure class="contact__image">
+        <img src="/img/sopralluogo-giardino-bergamo.jpg" alt="Sopralluogo per impianto di irrigazione in provincia di Bergamo">
+      </figure>
+
+      <div class="contact__internal-links">
+        <div class="contact__links-box">
+          <h3>Aree servite</h3>
+          <ul>
+            <li><a href="/aree/bergamo.html">Bergamo</a></li>
+            <li><a href="/aree/seriate.html">Seriate</a></li>
+            <li><a href="/aree/dalmine.html">Dalmine</a></li>
+            <li><a href="/aree/treviglio.html">Treviglio</a></li>
+            <li><a href="/aree/romano-di-lombardia.html">Romano di Lombardia</a></li>
+            <li><a href="/aree/cavernago.html">Cavernago</a></li>
+          </ul>
+        </div>
+
+        <div class="contact__links-box">
+          <h3>Servizi principali</h3>
+          <ul>
+            <li><a href="/servizi/realizzazione-manutenzione-giardino.html">Realizzazione e manutenzione del giardino</a></li>
+            <li><a href="/servizi/realizzazione-prato-naturale-sintetico.html">Realizzazione prato naturale e sintetico</a></li>
+            <li><a href="/servizi/realizzazione-manutenzione-aiuole-siepi.html">Realizzazione e manutenzione di aiuole e siepi</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__column">
+      <h2>Bergamaschi Giardini</h2>
+      <p>
+        Giardiniere in provincia di Bergamo per realizzazione, manutenzione e cura di giardini, prati, aiuole,
+        siepi e impianti di irrigazione.
+      </p>
+    </div>
+
+    <div class="footer__column">
+      <h3>Contatti</h3>
+      <p>
+        <a 
+          class="footer__address-link"
+          href="https://www.google.com/maps/dir/?api=1&destination=Cascina%20Riccadonna%2C%201%2C%2024050%20Cavernago%20BG"
+          target="_blank"
+          rel="noopener"
+        >
+          Cascina Riccadonna, 1, 24050 Cavernago BG
+        </a>
+      </p>
+      <p><a href="tel:3482765313">3482765313</a></p>
+    </div>
+
+    <div class="footer__column">
+      <h3>Link utili</h3>
+      <ul>
+        <li><a href="/index.html#chi-siamo">Chi siamo</a></li>
+        <li><a href="/index.html#servizi">Servizi</a></li>
+        <li><a href="/aree.html">Aree servite</a></li>
+        <li><a href="/contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__column footer__column--maps">
+      <h3>Google Maps</h3>
+
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps?q=Cascina%20Riccadonna%2C%201%2C%2024050%20Cavernago%20BG&output=embed"
+          width="100%"
+          height="220"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mappa Cascina Riccadonna, 1, 24050 Cavernago BG">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa installare un impianto di irrigazione per giardino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il costo dipende da dimensioni del giardino, numero di settori, tipo di irrigazione, pressione disponibile, centralina e complessità della posa. Per dare un'indicazione corretta è necessario valutare l'area con un sopralluogo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "È meglio un impianto interrato o a goccia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dipende dalla zona da irrigare. Il prato richiede spesso irrigatori interrati, mentre aiuole, siepi e bordure possono essere gestite meglio con ala gocciolante. In molti giardini le due soluzioni convivono in settori separati."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Installate impianti di irrigazione in tutta la provincia di Bergamo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Il servizio è disponibile in tutta la provincia di Bergamo, con interventi su giardini privati, aree verdi condominiali, orti e spazi esterni che richiedono installazione o manutenzione dell'impianto."
+          }
+        }
+      ]
+    }
+  </script>
+</body>
+</html>
