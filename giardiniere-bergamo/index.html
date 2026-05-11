@@ -1,375 +1,330 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>MIGLIOR Giardiniere a Bergamo, se stai cercando giardinieri vicino a me o Taglio e manutenzione del prato ed Inerbimento vicino a me - bergamaschi giardini è il professionista da contattare</title>
-
-<meta name="description" content="Giardiniere a Bergamo e provincia. Manutenzione giardini, potature in quota, impianti di irrigazione e prato a rotoli tra Bergamo, Seriate, Cavernago, Calcinate e Ghisalba.">
-
-<link rel="canonical" href="https://bergamaschi-giardini.com/giardiniere-bergamo/">
-
-<link rel="stylesheet" href="/css/styles.css">
-<link rel="stylesheet" href="/css/local-bergamo.css">
-
-<style>
-  .geo-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 46px 42px;
-    margin-top: 36px;
-    align-items: start;
-  }
-
-  .geo-gallery-item {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .geo-gallery-card {
-    margin: 0;
-    border-radius: 22px;
-    overflow: hidden;
-    padding: 12px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.16);
-  }
-
-  .geo-gallery-card img {
-    display: block;
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 16px;
-  }
-
- .geo-gallery-item h3 {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    font-size: 1.42rem;
-    line-height: 1.42;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    color: #f3f6fb;
-    position: relative;
-    padding-left: 22px;
-}
-
-  .geo-gallery-item h3::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.32em;
-    width: 6px;
-    height: 1.2em;
-    border-radius: 999px;
-    background: #00C853;
-    box-shadow: 0 0 18px rgba(87,183,255,0.35);
-  }
-
-  @media (max-width: 900px) {
-    .geo-gallery-grid {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
-    .geo-gallery-card img {
-      height: auto;
-    }
-
-    .geo-gallery-item h3 {
-      font-size: 1.35rem;
-    }
-  }
-</style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "GardenStore",
-      "@id": "https://bergamaschi-giardini.com/#business",
-      "name": "Bergamaschi Giardini",
-      "url": "https://bergamaschi-giardini.com/",
-      "image": "https://bergamaschi-giardini.com/img/logo-bergamaschi.png",
-      "telephone": "+39 3482765313",
-      "email": "gabriele.bergamaschi@alice.it",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Cascina Riccadonna, 1",
-        "postalCode": "24050",
-        "addressLocality": "Cavernago",
-        "addressRegion": "BG",
-        "addressCountry": "IT"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Bergamo"
-        },
-        {
-          "@type": "City",
-          "name": "Seriate"
-        },
-        {
-          "@type": "City",
-          "name": "Cavernago"
-        },
-        {
-          "@type": "City",
-          "name": "Calcinate"
-        },
-        {
-          "@type": "City",
-          "name": "Ghisalba"
-        }
-      ],
-      "sameAs": [
-        "https://maps.app.goo.gl/KhBsKYSdZLfS4Ezq8"
-      ]
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#webpage",
-      "url": "https://bergamaschi-giardini.com/giardiniere-bergamo/",
-      "name": "Giardiniere a Bergamo e provincia",
-      "description": "Giardiniere a Bergamo e provincia. Manutenzione giardini, potature in quota, impianti di irrigazione e prato a rotoli tra Bergamo, Seriate, Cavernago, Calcinate e Ghisalba.",
-      "inLanguage": "it-IT",
-      "isPartOf": {
-        "@id": "https://bergamaschi-giardini.com/#website"
-      },
-      "about": {
-        "@id": "https://bergamaschi-giardini.com/#business"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://bergamaschi-giardini.com/img/logo-bergamaschi.png"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://bergamaschi-giardini.com/#website",
-      "url": "https://bergamaschi-giardini.com/",
-      "name": "Bergamaschi Giardini",
-      "inLanguage": "it-IT"
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#service-manutenzione",
-      "serviceType": "Manutenzione giardini",
-      "provider": {
-        "@id": "https://bergamaschi-giardini.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Bergamo"
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#service-potature",
-      "serviceType": "Potature alberi e interventi in quota",
-      "provider": {
-        "@id": "https://bergamaschi-giardini.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Bergamo"
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#service-irrigazione",
-      "serviceType": "Installazione impianti di irrigazione",
-      "provider": {
-        "@id": "https://bergamaschi-giardini.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Bergamo"
-      }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#service-prato",
-      "serviceType": "Posa prato a rotoli",
-      "provider": {
-        "@id": "https://bergamaschi-giardini.com/#business"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Bergamo"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://bergamaschi-giardini.com/giardiniere-bergamo/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://bergamaschi-giardini.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Giardiniere a Bergamo",
-          "item": "https://bergamaschi-giardini.com/giardiniere-bergamo/"
-        }
-      ]
-    }
-  ]
-}
-</script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+  <title>Giardiniere in provincia di Bergamo | Realizzazione e manutenzione giardini</title>
+  <meta name="description" content="Giardiniere in provincia di Bergamo per realizzazione e manutenzione giardini, impianti di irrigazione, prato naturale e sintetico, potature, tree climbing, aiuole e siepi.">
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="/">
-      <img class="brand-logo" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
-      <span class="brand-text">Bergamaschi Giardini</span>
-    </a>
+  <!-- 1. HERO -->
+  <section class="hero hero--garden">
+    <div class="hero__overlay"></div>
 
-    <nav class="nav">
-      <a href="/giardiniere-bergamo/#servizi1">Servizi</a>
-      <a href="/#contatti">Contatti</a>
-    </nav>
-  </div>
-</header>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Giardiniere in provincia di Bergamo</p>
 
-<main>
+      <h1>Giardiniere per realizzazione e manutenzione giardini in provincia di Bergamo</h1>
 
-  <section class="geo-hero">
-    <div class="geo-hero-bg">
-      <img class="geo-hero-img geo-hero-img-unica" src="/img/logo-bergamaschi.png" alt="Bergamaschi Giardini">
-    </div>
-
-    <div class="container geo-hero-inner">
-      <h1>Giardiniere a Bergamo e provincia</h1>
-
-      <p class="geo-lead">
-        Siamo specializzati in interventi nella zona di <strong>Bergamo</strong>.
+      <p class="hero__text">
+        Ci occupiamo di giardini, irrigazione, prato, aiuole, siepi e potature con interventi organizzati
+        per adattarsi alle esigenze di abitazioni private, condomini e attività locali.
       </p>
 
-      <div class="geo-cta">
-        <a class="btn" href="mailto:gabriele.bergamaschi@alice.it">Prenota un intervento</a>
-        <a class="btn btn-outline" href="tel:3482765313">Chiama</a>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contatti">Richiedi un sopralluogo</a>
+        <a class="btn btn--phone" href="tel:3482765313">3482765313</a>
       </div>
+    </div>
+
+    <div class="hero__images">
+      <figure class="hero__image hero__image--main">
+        <img src="/img/giardiniere-bergamo-hero.jpg" alt="Giardiniere al lavoro in un giardino in provincia di Bergamo">
+      </figure>
+
+      <figure class="hero__image hero__image--small">
+        <img src="/img/dettaglio-prato-giardino.jpg" alt="Dettaglio di prato curato e verde">
+      </figure>
     </div>
   </section>
 
-  <section class="geo-section" id="servizi1">
-    <div class="container">
-      <div class="geo-panel">
-        <div class="geo-text-block">
-          <h2>Servizi di giardinaggio a Bergamo</h2>
 
+  <!-- 2. CHI SIAMO -->
+  <section class="about" id="chi-siamo">
+
+    <div class="about__block about__block--intro">
+      <div class="about__text">
+        <p class="section-eyebrow">Chi siamo</p>
+        <h2>Il riferimento locale per la cura del giardino</h2>
+
+        <p>
+          Siamo un’attività specializzata nella realizzazione e manutenzione del giardino in provincia di Bergamo.
+          Seguiamo clienti privati e attività che cercano un giardiniere affidabile per interventi precisi,
+          puntuali e programmati con attenzione.
+        </p>
+
+        <p>
+          Ogni lavoro viene valutato in base allo stato del giardino, alla stagione, agli spazi disponibili e al risultato
+          che il cliente desidera ottenere.
+        </p>
+      </div>
+
+      <figure class="about__image about__image--rounded">
+        <img src="/img/chi-siamo-giardiniere.jpg" alt="Giardiniere durante la manutenzione di un giardino">
+      </figure>
+    </div>
+
+
+    <div class="about__block about__block--method">
+      <figure class="about__image about__image--framed">
+        <img src="/img/metodo-lavoro-giardino.jpg" alt="Lavoro curato su prato, aiuola e siepi">
+      </figure>
+
+      <div class="about__card">
+        <p class="section-eyebrow">Metodo di lavoro</p>
+        <h2>Sopralluogo, intervento ordinato e cura dei dettagli</h2>
+
+        <p>
+          Prima di iniziare analizziamo le condizioni del giardino e definiamo l’intervento più adatto. Organizziamo le fasi
+          di lavoro in modo chiaro, dalla preparazione dell’area alla consegna finale.
+        </p>
+
+        <p>
+          Prestiamo la massima attenzione alla qualità del risultato, senza trascurare la pulizia dell’area e la gestione del cliente durante tutto
+          il lavoro, così da evitare interventi improvvisati o poco coordinati.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- 3. SERVIZI -->
+  <section class="services" id="servizi">
+    <div class="section-heading">
+      <p class="section-eyebrow">Servizi</p>
+      <h2>I principali interventi per la cura del tuo giardino</h2>
+      <p>
+        Dalla realizzazione del giardino alla manutenzione periodica, ogni servizio ha una pagina dedicata per aiutarti
+        a capire quale intervento è più adatto al tuo spazio verde.
+      </p>
+    </div>
+
+
+    <article class="service-card service-card--wide">
+      <div class="service-card__content">
+        <h2>Realizzazione e manutenzione del giardino</h2>
+        <p>
+          Progettiamo, realizziamo e poi manteniamo giardini. Servizi per privati, aree verdi condominiali e spazi esterni aziendali.
+          Interveniamo su taglio, pulizia, sistemazione delle aree verdi e cura generale del giardino.
+        </p>
+        <a class="service-card__link" href="/servizi/realizzazione-manutenzione-giardino.html">
+          Scopri il servizio
+        </a>
+      </div>
+
+      <figure class="service-card__image">
+        <img src="/img/realizzazione-manutenzione-giardino.jpg" alt="Realizzazione e manutenzione del giardino">
+      </figure>
+    </article>
+
+
+    <article class="service-card service-card--reverse">
+      <div class="service-card__content">
+        <h2>Installazione e manutenzione di impianti di irrigazione per giardino</h2>
+        <p>
+          Installiamo e gestiamo impianti di irrigazione per giardini, aiuole e prati. Valutiamo esposizione, dimensioni
+          dell’area e necessità delle piante per migliorare la distribuzione dell’acqua.
+        </p>
+        <a class="service-card__link" href="/servizi/impianti-irrigazione-giardino.html">
+          Scopri il servizio
+        </a>
+      </div>
+
+      <figure class="service-card__image">
+        <img src="/img/impianto-irrigazione-giardino.jpg" alt="Installazione impianto di irrigazione per giardino">
+      </figure>
+    </article>
+
+
+    <div class="services__grid">
+      <article class="service-card service-card--vertical">
+        <figure class="service-card__image">
+          <img src="/img/realizzazione-prato-naturale-sintetico.jpg" alt="Realizzazione prato naturale e sintetico">
+        </figure>
+
+        <div class="service-card__content">
+          <h2>Realizzazione prato naturale e sintetico</h2>
           <p>
-            Bergamaschi Giardini realizza interventi di vario genere dalla progettazione alla <strong>cura e manutenzione del verde.</strong>
+            Prepariamo il terreno e realizziamo prati naturali o sintetici in base all’uso dello spazio, alla manutenzione
+            desiderata e al risultato estetico richiesto.
           </p>
-
-          <div class="geo-gallery-grid" >
-            <div class="geo-gallery-item">
-              <figure class="geo-gallery-card">
-                <img src="/img/manutenzione-giardino-bergamo.jpg" alt="Manutenzione giardino a Bergamo">
-              </figure>
-              <h3>Manutenzione giardini a Bergamo e provincia</h3>
-            </div>
-
-            <div class="geo-gallery-item">
-              <figure class="geo-gallery-card">
-                <img src="/img/potatura-alberi-bergamo.jpg" alt="Potatura alberi a Bergamo">
-              </figure>
-              <h3>Potature alberi e interventi in quota a Bergamo e provincia</h3>
-            </div>
-
-            <div class="geo-gallery-item">
-              <figure class="geo-gallery-card">
-                <img src="/img/irrigazione-bergamo.jpg" alt="Installazione impianti d'irrigazione a Bergamo">
-              </figure>
-              <h3>Installazione impianti di irrigazione a Bergamo e provincia</h3>
-            </div>
-
-            <div class="geo-gallery-item">
-              <figure class="geo-gallery-card">
-                <img src="/img/prato-rotoli-bergamo.jpg" alt="Installazione prato a rotoli a Bergamo">
-              </figure>
-              <h3>Posa prato a rotoli a Bergamo e provincia</h3>
-            </div>
-          </div>
+          <a class="service-card__link" href="/servizi/realizzazione-prato-naturale-sintetico.html">
+            Scopri il servizio
+          </a>
         </div>
-      </div>
-    </div>
-  </section>
+      </article>
 
-  <section class="geo-section-alt">
-    <div class="container">
-      <div class="geo-panel geo-panel-dark">
-        <div class="geo-text-block">
-          <h2>Zona operativa</h2>
 
+      <article class="service-card service-card--vertical service-card--overlay">
+        <figure class="service-card__image">
+          <img src="/img/potature-tree-climbing.jpg" alt="Potature e tree climbing">
+        </figure>
+
+        <div class="service-card__content">
+          <h2>Potature e tree climbing</h2>
           <p>
-            La base operativa è a <strong>Cavernago</strong>, posizione che permette flessibilità e disponibilità in una vasta area della provincia di <strong>Bergamo</strong>.
+            Eseguiamo potature e interventi in tree climbing per alberi, siepi e piante che richiedono attenzione,
+            prudenza e una corretta gestione della crescita.
           </p>
-
-          <div class="geo-map-frame">
-            <iframe
-              src="https://www.google.com/maps?q=Cascina%20Riccadonna%201%2C%2024050%20Cavernago%20BG&z=14&output=embed"
-              width="100%"
-              height="380"
-              style="border:0;"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen=""
-              title="Mappa Bergamaschi Giardini - Cavernago">
-            </iframe>
-          </div>
+          <a class="service-card__link" href="/servizi/potature-tree-climbing.html">
+            Scopri il servizio
+          </a>
         </div>
+      </article>
+
+
+      <article class="service-card service-card--vertical">
+        <figure class="service-card__image">
+          <img src="/img/aiuole-siepi-giardino.jpg" alt="Realizzazione e manutenzione di aiuole e siepi">
+        </figure>
+
+        <div class="service-card__content">
+          <h2>Realizzazione e manutenzione di aiuole e siepi</h2>
+          <p>
+            Creiamo e manteniamo aiuole e siepi con interventi di pulizia, sistemazione, potatura e cura di ogni pianta presente nel giardino.
+          </p>
+          <a class="service-card__link" href="/servizi/realizzazione-manutenzione-aiuole-siepi.html">
+            Scopri il servizio
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- 4. AREE -->
+  <section class="areas" id="aree">
+    <div class="areas__background">
+      <div class="areas__card">
+        <p class="section-eyebrow">Aree servite</p>
+        <h2>Giardiniere in provincia di Bergamo</h2>
+
+        <p>
+          Operiamo in provincia di Bergamo per interventi di realizzazione e manutenzione giardini, irrigazione,
+          prato, aiuole, siepi e potature. Visita la pagina dedicata all tua città.
+        </p>
+
+        <div class="areas__list">
+          <a href="/aree/bergamo.html">Bergamo</a>
+          <a href="/aree/seriate.html">Seriate</a>
+          <a href="/aree/dalmine.html">Dalmine</a>
+          <a href="/aree/treviglio.html">Treviglio</a>
+          <a href="/aree/romano-di-lombardia.html">Romano di Lombardia</a>
+          <a href="/aree/cavernago.html">Cavernago</a>
+	<a href="/aree/albino.html">Albino</a>
+<a href="/aree/caravaggio.html">Caravaggio</a>
+<a href="/aree/stezzano.html">Stezzano</a>
+<a href="/aree/alzano-lombardo.html">Alzano lombardo</a>
+<a href="/aree/osio-sotto.html">Osio-sotto</a>
+<a href="/aree/Nembro.html">Nembro</a>
+        </div>
+
+        <a class="btn btn--secondary" href="/aree.html">Visualizza aree servite</a>
       </div>
     </div>
   </section>
 
-  <section class="geo-back-home">
-    <div class="container">
-      <div class="geo-back-home-wrap">
-        <a class="geo-back-home-bar" href="/">Torna alla pagina iniziale</a>
+
+  <!-- 5. CONTATTI -->
+  <section class="contact" id="contatti">
+    <div class="contact__content">
+      <p class="section-eyebrow">Contatti</p>
+      <h2>Richiedi un sopralluogo per il tuo giardino</h2>
+
+      <p>
+        Contattaci per valutare il tuo giardino, capire quali interventi sono necessari e ricevere indicazioni chiare
+        su ogni tipo di intervento necessario al tuo giardino.
+      </p>
+
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="/contatti.html">Richiedi un sopralluogo</a>
+        <a class="btn btn--phone" href="tel:3482765313">3482765313</a>
+      </div>
+
+      <p class="contact__area">
+        Zona operativa: provincia di Bergamo
+      </p>
+    </div>
+
+    <figure class="contact__image">
+      <img src="/img/sopralluogo-giardino-bergamo.jpg" alt="Sopralluogo per giardino in provincia di Bergamo">
+    </figure>
+
+    <!-- Da inserire anche nella pagina /contatti.html -->
+    <div class="contact__internal-links">
+      <div class="contact__links-box">
+        <h3>Aree servite</h3>
+        <ul>
+          <li><a href="/aree/bergamo.html">Bergamo</a></li>
+          <li><a href="/aree/seriate.html">Seriate</a></li>
+          <li><a href="/aree/dalmine.html">Dalmine</a></li>
+          <li><a href="/aree/treviglio.html">Treviglio</a></li>
+          <li><a href="/aree/romano-di-lombardia.html">Romano di Lombardia</a></li>
+          <li><a href="/aree/cavernago.html">Cavernago</a></li>
+        </ul>
+      </div>
+
+      <div class="contact__links-box">
+        <h3>I nostri servizi principali</h3>
+        <ul>
+          <li><a href="/servizi/realizzazione-manutenzione-giardino.html">Realizzazione e manutenzione del giardino</a></li>
+          <li><a href="/servizi/impianti-irrigazione-giardino.html">Impianti di irrigazione per giardino</a></li>
+          <li><a href="/servizi/realizzazione-prato-naturale-sintetico.html">Realizzazione prato naturale e sintetico</a></li>
+          <li><a href="/servizi/potature-tree-climbing.html">Potature e tree climbing</a></li>
+          <li><a href="/servizi/realizzazione-manutenzione-aiuole-siepi.html">Realizzazione e manutenzione di aiuole e siepi</a></li>
+        </ul>
       </div>
     </div>
   </section>
 
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-nap">
-      <strong>Bergamaschi Giardini</strong><br/>
-      Tel: <a href="tel:3482765313">3482765313</a> •
-      Email: <a href="mailto:gabriele.bergamaschi@alice.it">gabriele.bergamaschi@alice.it</a>
+  <!-- 6. FOOTER -->
+  <footer class="footer">
+    <div class="footer__column">
+      <h2>Bergamaschi Giardini</h2>
+      <p>
+        Giardiniere in provincia di Bergamo per realizzazione, manutenzione e cura di giardini, prati, aiuole,
+        siepi e impianti di irrigazione.
+      </p>
     </div>
 
-    <div class="footer-meta muted">
-      <div>
-        © <span id="year">2026</span> Bergamaschi Giardini. Tutti i diritti riservati.
-      </div>
-
-      <a class="footer-maps" href="https://maps.app.goo.gl/KhBsKYSdZLfS4Ezq8" target="_blank" rel="noopener">
-        Cascina Riccadonna, 1, 24050 Cavernago (BG)
-      </a>
+    <div class="footer__column">
+      <h3>Contatti</h3>
+      <p>Cascina Riccadonna, 1, 24050 Cavernago BG</p>
+      <p><a href="tel:3482765313">3482765313</a></p>
     </div>
+
+    <div class="footer__column">
+      <h3>Link utili</h3>
+      <ul>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="/aree.html">Aree servite</a></li>
+        <li><a href="/contatti.html">Contatti</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__column footer__column--maps">
+  <h3>Google Maps</h3>
+
+  <div class="footer__map">
+    <iframe
+      src="https://www.google.com/maps?q=Cascina%20Riccadonna%2C%201%2C%2024050%20Cavernago%20BG&output=embed"
+      width="100%"
+      height="220"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Mappa Cascina Riccadonna, 1, 24050 Cavernago BG">
+    </iframe>
   </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+</div>
+  </footer>
 
 </body>
 </html>
