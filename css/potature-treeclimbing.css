@@ -1,0 +1,674 @@
+.hero--potature {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.52), rgba(8, 14, 10, 0.76)),
+    url("/img/potature-tree-climbing.jpg");
+  background-position: center;
+}
+
+.service-intro,
+.linked-services,
+.detail-section,
+.feature-band__content,
+.method-section,
+.comparison-section,
+.local-section__inner,
+.faq-section {
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
+}
+
+.service-intro,
+.linked-services,
+.detail-section,
+.method-section,
+.comparison-section,
+.local-section,
+.faq-section {
+  padding-block: var(--section-padding);
+}
+
+.service-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: clamp(2rem, 5vw, 5.5rem);
+  align-items: center;
+}
+
+.service-intro__content {
+  position: relative;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.service-intro__content::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 84px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.service-intro__content h2,
+.detail-section__text h2,
+.feature-band h2,
+.comparison-section__text h2,
+.local-section h2 {
+  margin-bottom: 1.25rem;
+}
+
+.service-intro__content p,
+.detail-section__text p,
+.feature-band p,
+.comparison-section__text p,
+.local-section p {
+  max-width: 690px;
+}
+
+.service-intro__image,
+.detail-section__image {
+  overflow: hidden;
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-image);
+  background: var(--color-bg-alt);
+}
+
+.service-intro__image {
+  min-height: clamp(420px, 48vw, 640px);
+}
+
+.service-intro__image img,
+.detail-section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 750ms ease,
+    filter 750ms ease;
+}
+
+.service-intro:hover .service-intro__image img,
+.detail-section:hover .detail-section__image img {
+  transform: scale(1.04);
+  filter: saturate(1.04) contrast(1.03);
+}
+
+.linked-services {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.linked-services .section-heading {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.linked-services .section-eyebrow {
+  justify-content: center;
+}
+
+.linked-services .section-eyebrow::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.linked-services__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.2rem);
+}
+
+.linked-service-card {
+  position: relative;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-image);
+  background:
+    linear-gradient(135deg, rgba(196, 154, 90, 0.12), transparent 42%),
+    rgba(240, 239, 230, 0.58);
+  box-shadow: 0 18px 44px rgba(20, 35, 26, 0.08);
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background-color var(--transition);
+}
+
+.linked-service-card::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.linked-service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(196, 154, 90, 0.55);
+  box-shadow: 0 24px 58px rgba(20, 35, 26, 0.14);
+  background-color: rgba(240, 239, 230, 0.78);
+}
+
+.linked-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.linked-service-card__number {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 1;
+  color: rgba(32, 63, 47, 0.08);
+}
+
+.linked-service-card h3 {
+  margin-bottom: 0.85rem;
+}
+
+.linked-service-card p {
+  max-width: 540px;
+}
+
+.linked-service-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.linked-service-card__link::after {
+  content: "→";
+  color: var(--color-accent);
+  transition: transform var(--transition);
+}
+
+.linked-service-card:hover .linked-service-card__link::after {
+  transform: translateX(4px);
+}
+
+.detail-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(320px, 1.04fr);
+  gap: clamp(2rem, 5vw, 5.5rem);
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-section--image-left {
+  grid-template-columns: minmax(320px, 1.04fr) minmax(0, 0.96fr);
+}
+
+.detail-section__text {
+  position: relative;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.detail-section__text::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 84px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.detail-section__image {
+  min-height: clamp(390px, 44vw, 590px);
+}
+
+.detail-section__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  transition:
+    color var(--transition),
+    gap var(--transition);
+}
+
+.detail-section__link::after {
+  content: "→";
+  color: var(--color-accent);
+  transition: transform var(--transition);
+}
+
+.detail-section__link:hover {
+  gap: 0.75rem;
+  color: var(--color-accent);
+}
+
+.detail-section__link:hover::after {
+  transform: translateX(3px);
+}
+
+.feature-band {
+  padding-block: var(--section-padding);
+  color: var(--color-text-light);
+  background:
+    linear-gradient(90deg, rgba(40, 79, 59, 0.96), rgba(40, 79, 59, 0.88)),
+    url("/img/potature-tree-climbing.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.feature-band::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 36%;
+  background: linear-gradient(0deg, rgba(40, 79, 59, 0.88), transparent);
+  pointer-events: none;
+}
+
+.feature-band__content {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-band h2 {
+  color: var(--color-text-light);
+}
+
+.feature-band p {
+  color: rgba(248, 246, 239, 0.78);
+}
+
+.method-section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.method-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
+}
+
+.method-card {
+  position: relative;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.35rem, 2.5vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-image);
+  background: rgba(240, 239, 230, 0.55);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.method-card::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.method-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(196, 154, 90, 0.52);
+  box-shadow: 0 18px 42px rgba(20, 35, 26, 0.11);
+}
+
+.method-card:hover::before {
+  transform: scaleX(1);
+}
+
+.method-card span {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.3rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  line-height: 1;
+  color: rgba(32, 63, 47, 0.08);
+}
+
+.method-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.comparison-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.comparison-section__text {
+  position: sticky;
+  top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.comparison-section__text::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 84px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.comparison-section__cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.comparison-section__cards article {
+  padding: clamp(1.35rem, 3vw, 2.2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-image);
+  background: rgba(251, 250, 245, 0.82);
+  box-shadow: 0 12px 34px rgba(20, 35, 26, 0.07);
+  transition:
+    transform var(--transition),
+    border-color var(--transition);
+}
+
+.comparison-section__cards article:hover {
+  transform: translateX(6px);
+  border-color: rgba(196, 154, 90, 0.55);
+}
+
+.comparison-section__cards h3 {
+  margin-bottom: 0.75rem;
+}
+
+.local-section {
+  color: var(--color-text-light);
+  background:
+    linear-gradient(90deg, rgba(40, 79, 59, 0.94), rgba(40, 79, 59, 0.86)),
+    url("/img/aree-servite-bergamo-giardiniere.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.local-section h2 {
+  color: var(--color-text-light);
+}
+
+.local-section p {
+  color: rgba(248, 246, 239, 0.78);
+}
+
+.local-section__areas {
+  display: grid;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.local-section__areas a {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1fr) auto;
+  gap: 1.2rem;
+  align-items: center;
+  min-height: 64px;
+  padding-block: 1rem;
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-border-light);
+  transition:
+    padding-left var(--transition),
+    color var(--transition);
+}
+
+.local-section__areas a::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--transition);
+}
+
+.local-section__areas a::after {
+  content: "Scopri gli interventi nella zona →";
+  justify-self: end;
+  color: rgba(248, 246, 239, 0.64);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.local-section__areas a:hover {
+  padding-left: 0.4rem;
+  color: var(--color-accent-soft);
+}
+
+.local-section__areas a:hover::before {
+  width: 46px;
+}
+
+.faq-section {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-section__list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faq-section details {
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: rgba(251, 250, 245, 0.8);
+  overflow: hidden;
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.faq-section details[open] {
+  border-color: rgba(196, 154, 90, 0.55);
+  box-shadow: 0 16px 40px rgba(20, 35, 26, 0.08);
+}
+
+.faq-section summary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.15rem 1.35rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-section summary::after {
+  content: "+";
+  flex: 0 0 auto;
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.faq-section details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-section details p {
+  max-width: 960px;
+  padding: 0 1.35rem 1.25rem;
+}
+
+.service-intro,
+.linked-services,
+.detail-section,
+.method-section,
+.comparison-section,
+.local-section,
+.faq-section {
+  animation: fadeUp 780ms ease both;
+}
+
+.linked-service-card,
+.method-card,
+.comparison-section__cards article,
+.faq-section details {
+  animation: fadeUp 720ms ease both;
+}
+
+@media (max-width: 1100px) {
+  .method-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .comparison-section {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-section__text {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .service-intro,
+  .detail-section,
+  .detail-section--image-left,
+  .comparison-section {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-section--image-left .detail-section__image {
+    order: 0;
+  }
+
+  .linked-services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .linked-service-card {
+    min-height: 280px;
+  }
+
+  .service-intro__image,
+  .detail-section__image {
+    min-height: 360px;
+  }
+
+  .local-section__areas a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.4rem;
+  }
+
+  .local-section__areas a::before {
+    display: none;
+  }
+
+  .local-section__areas a::after {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 720px) {
+  .service-intro,
+  .linked-services,
+  .detail-section,
+  .feature-band__content,
+  .method-section,
+  .comparison-section,
+  .local-section__inner,
+  .faq-section {
+    width: min(calc(100% - 1.25rem), var(--container));
+  }
+
+  .service-intro,
+  .linked-services,
+  .detail-section,
+  .method-section,
+  .comparison-section,
+  .local-section,
+  .faq-section {
+    padding-block: clamp(3.5rem, 14vw, 5rem);
+  }
+
+  .method-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .method-card {
+    min-height: 260px;
+  }
+
+  .service-intro__image,
+  .detail-section__image {
+    min-height: 310px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .comparison-section__cards article:hover {
+    transform: translateY(-4px);
+  }
+
+  .faq-section summary {
+    padding: 1rem;
+  }
+
+  .faq-section details p {
+    padding: 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .service-intro,
+  .linked-services,
+  .detail-section,
+  .feature-band__content,
+  .method-section,
+  .comparison-section,
+  .local-section__inner,
+  .faq-section {
+    width: min(calc(100% - 1rem), var(--container));
+  }
+
+  .linked-service-card,
+  .method-card,
+  .comparison-section__cards article {
+    border-radius: 18px;
+  }
+
+  .linked-service-card {
+    min-height: 250px;
+  }
+
+  .local-section__areas a::after {
+    font-size: 0.84rem;
+  }
+}
