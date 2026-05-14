@@ -658,7 +658,126 @@ p + p {
 .service-card__link:hover::after {
   transform: translateX(2px);
 }
+/* =========================================================
+   FIX HOME: immagini servizi e chi siamo senza deformazione
+   Scope limitato alla home per non rompere altre pagine
+========================================================= */
 
+/* Chi siamo: box stabile, immagine tagliata e non deformata */
+.about--home .about__image,
+.about--home .chi-siamo-immagine {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-image);
+  background: var(--color-bg-alt);
+}
+
+.about--home .about__image img,
+.about--home .chi-siamo-immagine img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Servizi: layout stabile e più spazio tra testo e foto */
+.services--home .service-card {
+  display: grid;
+  column-gap: clamp(2.75rem, 6vw, 6rem);
+  row-gap: clamp(1.75rem, 4vw, 2.75rem);
+  align-items: center;
+}
+
+.services--home .service-card--wide {
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  grid-template-areas: "content image";
+}
+
+.services--home .service-card--reverse {
+  grid-template-columns: minmax(320px, 1.12fr) minmax(0, 0.88fr);
+  grid-template-areas: "image content";
+}
+
+.services--home .service-card__content {
+  grid-area: content;
+  min-width: 0;
+  align-self: center;
+}
+
+.services--home .service-card__image {
+  grid-area: image;
+  position: relative;
+  order: 0;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-image);
+  background: var(--color-bg-alt);
+}
+
+.services--home .service-card__image img,
+.services--home .service-card__img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Correzione specifica delle card reverse: annulla l'order precedente */
+.services--home .service-card--reverse .service-card__image {
+  order: 0;
+}
+
+/* Mobile e tablet: testo sopra, foto sotto, sempre con spazio */
+@media (max-width: 900px) {
+  .services--home .service-card--wide,
+  .services--home .service-card--reverse {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "image";
+    row-gap: clamp(1.5rem, 5vw, 2.25rem);
+    align-items: start;
+  }
+
+  .services--home .service-card__image {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .about--home .about__image,
+  .about--home .chi-siamo-immagine {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+  }
+
+  .services--home .service-card__image,
+  .services--home .service-card--vertical .service-card__image {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+  }
+}
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
