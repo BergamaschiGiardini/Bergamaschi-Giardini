@@ -84,6 +84,10 @@ img {
   height: auto;
 }
 
+figure {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -113,6 +117,38 @@ select {
   outline-offset: 4px;
 }
 
+
+/* =========================================================
+   1B. IMMAGINI RITAGLIATE NEI BOX
+========================================================= */
+
+.hero__image,
+.hero-image,
+.about__image,
+.chi-siamo-immagine,
+.service-card__image,
+.contact__image,
+.contatti-immagine {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.hero__image img,
+.hero-image img,
+.about__image img,
+.chi-siamo-immagine img,
+.service-card__image img,
+.contact__image img,
+.contatti-immagine img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 /* =========================================================
    2. BASE LAYOUT
@@ -452,9 +488,8 @@ p + p {
 
 .about__image,
 .chi-siamo-immagine {
-  position: relative;
-  min-height: clamp(360px, 46vw, 590px);
-  overflow: hidden;
+  height: clamp(360px, 46vw, 590px);
+  min-height: 0;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
 }
@@ -470,9 +505,6 @@ p + p {
 
 .about__image img,
 .chi-siamo-immagine img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: transform 700ms ease;
 }
 
@@ -597,16 +629,12 @@ p + p {
 
 .service-card__image {
   aspect-ratio: 16 / 10;
-  overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
   background: var(--color-bg-alt);
 }
 
 .service-card__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition:
     transform 750ms ease,
     filter 750ms ease;
@@ -906,16 +934,12 @@ p + p {
 .contatti-immagine {
   grid-area: image;
   aspect-ratio: 16 / 8.8;
-  overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
 }
 
 .contact__image img,
 .contatti-immagine img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: transform 750ms ease;
 }
 
@@ -1240,7 +1264,7 @@ p + p {
 
   .about__image,
   .chi-siamo-immagine {
-    min-height: 320px;
+    height: 320px;
   }
 
   .services .section-heading {
