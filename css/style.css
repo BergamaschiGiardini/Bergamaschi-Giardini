@@ -84,10 +84,6 @@ img {
   height: auto;
 }
 
-figure {
-  margin: 0;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -117,38 +113,6 @@ select {
   outline-offset: 4px;
 }
 
-
-/* =========================================================
-   1B. IMMAGINI RITAGLIATE NEI BOX
-========================================================= */
-
-.hero__image,
-.hero-image,
-.about__image,
-.chi-siamo-immagine,
-.service-card__image,
-.contact__image,
-.contatti-immagine {
-  position: relative;
-  display: block;
-  width: 100%;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.hero__image img,
-.hero-image img,
-.about__image img,
-.chi-siamo-immagine img,
-.service-card__image img,
-.contact__image img,
-.contatti-immagine img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 
 /* =========================================================
    2. BASE LAYOUT
@@ -488,8 +452,9 @@ p + p {
 
 .about__image,
 .chi-siamo-immagine {
-  height: clamp(360px, 46vw, 590px);
-  min-height: 0;
+  position: relative;
+  min-height: clamp(360px, 46vw, 590px);
+  overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
 }
@@ -505,6 +470,9 @@ p + p {
 
 .about__image img,
 .chi-siamo-immagine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 700ms ease;
 }
 
@@ -514,7 +482,8 @@ p + p {
 }
 
 .about__image--framed {
-  border-radius: 0 var(--radius-image) var(--radius-image) 0;
+  border-radius: var(--radius-image);
+  overflow: hidden;
 }
 
 .about__block--method .about__card {
@@ -629,12 +598,16 @@ p + p {
 
 .service-card__image {
   aspect-ratio: 16 / 10;
+  overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
   background: var(--color-bg-alt);
 }
 
 .service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition:
     transform 750ms ease,
     filter 750ms ease;
@@ -773,7 +746,7 @@ p + p {
   margin-block: clamp(2rem, 4vw, 3.5rem);
   border-top: 1px solid var(--color-border-light);
 }
-/* Lista aree scrollabile: 6 città visibili alla volta */
+
 .areas__list,
 .aree-lista {
   max-height: calc(64px * 6);
@@ -789,7 +762,6 @@ p + p {
   min-height: 64px;
 }
 
-/* Scrollbar Chrome / Edge / Safari */
 .areas__list::-webkit-scrollbar,
 .aree-lista::-webkit-scrollbar {
   width: 4px;
@@ -805,6 +777,7 @@ p + p {
   background: var(--color-accent);
   border-radius: 999px;
 }
+
 .areas__list a,
 .area-card,
 .aree-lista a {
@@ -856,6 +829,7 @@ p + p {
 .aree-lista a:hover::before {
   width: 46px;
 }
+
 .areas__list a h3,
 .aree-lista a h3 {
   margin: 0;
@@ -866,6 +840,7 @@ p + p {
   letter-spacing: inherit;
   color: inherit;
 }
+
 
 /* =========================================================
    9. CONTATTI
@@ -934,12 +909,16 @@ p + p {
 .contatti-immagine {
   grid-area: image;
   aspect-ratio: 16 / 8.8;
+  overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
 }
 
 .contact__image img,
 .contatti-immagine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 750ms ease;
 }
 
@@ -1064,6 +1043,7 @@ p + p {
 .footer li + li {
   margin-top: 0.55rem;
 }
+
 .footer__map {
   width: 100%;
   overflow: hidden;
@@ -1077,6 +1057,7 @@ p + p {
   height: 220px;
   filter: grayscale(12%) contrast(0.95);
 }
+
 .footer__maps-link {
   display: inline-flex;
   align-items: center;
@@ -1085,7 +1066,6 @@ p + p {
   color: var(--color-accent-soft);
   font-weight: 700;
 }
-
 
 
 /* =========================================================
@@ -1264,7 +1244,7 @@ p + p {
 
   .about__image,
   .chi-siamo-immagine {
-    height: 320px;
+    min-height: 320px;
   }
 
   .services .section-heading {
