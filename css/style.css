@@ -302,7 +302,7 @@ p + p {
   overflow: hidden;
   background-image:
     linear-gradient(180deg, rgba(8, 14, 10, 0.48), rgba(8, 14, 10, 0.73)),
-    url("/img/giardiniere-bergamo-hero.jpg");
+    url("/img/giardiniere-bergamo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
