@@ -38,7 +38,7 @@
 
   --color-button: #203f2f;
   --color-button-hover: #284f3b;
-  --color-overlay: rgba(10, 18, 13, 0.58);
+ --color-overlay: rgba(10, 18, 13, 0.30);
 
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", Arial, sans-serif;
@@ -301,7 +301,7 @@ p + p {
   isolation: isolate;
   overflow: hidden;
   background-image:
-    linear-gradient(180deg, rgba(8, 14, 10, 0.48), rgba(8, 14, 10, 0.73)),
+    linear-gradient(180deg, rgba(8, 14, 10, 0.24), rgba(8, 14, 10, 0.38)),
     url("/img/giardiniere-bergamo.jpg");
   background-size: cover;
   background-position: center;
@@ -314,8 +314,8 @@ p + p {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at center, transparent 0 35%, rgba(0, 0, 0, 0.38) 100%),
-    linear-gradient(90deg, rgba(20, 35, 26, 0.52), transparent 26%, transparent 74%, rgba(20, 35, 26, 0.52));
+    radial-gradient(circle at center, transparent 0 35%, rgba(0, 0, 0, 0.18) 100%),
+    linear-gradient(90deg, rgba(20, 35, 26, 0.24), transparent 26%, transparent 74%, rgba(20, 35, 26, 0.24));
 }
 
 .hero::after {
