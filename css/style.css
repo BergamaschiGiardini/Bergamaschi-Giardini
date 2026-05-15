@@ -1137,7 +1137,19 @@ p + p {
     linear-gradient(135deg, rgba(196, 154, 90, 0.08), transparent 34%),
     #284f3b;
 }
+.footer__logo-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
 
+.footer__logo {
+  display: block;
+  width: clamp(110px, 10vw, 160px);
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
 .footer h2,
 .footer h3 {
   color: var(--color-text-light);
