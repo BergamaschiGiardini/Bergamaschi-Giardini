@@ -298,7 +298,7 @@ p + p {
   left: 0;
   z-index: 999;
   width: 100%;
-  background: rgba(20, 45, 33, 0.30);
+  background: rgba(20, 45, 33, 0.10);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(248, 246, 239, 0.12);
