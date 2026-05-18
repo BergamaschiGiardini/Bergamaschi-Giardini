@@ -123,7 +123,9 @@
   padding-top: var(--section-padding);
   border-top: 1px solid var(--color-border);
 }
-
+.rank2-process-heading {
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
+}
 .rank2-process-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
