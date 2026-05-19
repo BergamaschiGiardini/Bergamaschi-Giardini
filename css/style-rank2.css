@@ -319,3 +319,19 @@
     column-gap: clamp(3.5rem, 6vw, 6rem);
   }
 }
+#prato-naturale-sintetico .service-card__image {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+#piantumazione .service-card__image {
+  aspect-ratio: 5 / 4;
+  height: auto;
+}
+
+#prato-naturale-sintetico .service-card__image img,
+#piantumazione .service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
