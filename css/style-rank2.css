@@ -314,3 +314,8 @@
     align-items: flex-start;
   }
 }
+@media (min-width: 901px) {
+  .rank2-service-detail {
+    column-gap: clamp(3.5rem, 6vw, 6rem);
+  }
+}
