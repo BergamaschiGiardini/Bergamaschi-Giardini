@@ -1,47 +1,78 @@
-.hero--irrigation {
-  background-image:
-    linear-gradient(180deg, rgba(8, 14, 10, 0.46), rgba(8, 14, 10, 0.74)),
-    url("/img/impianto-irrigazione-giardino.jpg");
-  background-position: center;
+.service-page {
+  width: 100%;
+  overflow: hidden;
 }
 
-.irrigation-intro,
-.irrigation-method,
-.irrigation-types,
-.irrigation-tech,
-.irrigation-installation,
-.irrigation-maintenance,
-.linked-services,
-.irrigation-faq {
+.irrigation-hero {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.28), rgba(8, 14, 10, 0.48)),
+    url("/img/installazione-irrigazione.jpg");
+}
+
+.service-section {
   width: min(calc(100% - 2rem), var(--container));
   margin-inline: auto;
   padding-block: var(--section-padding);
 }
 
-.irrigation-intro,
-.irrigation-tech,
-.irrigation-maintenance {
+.service-section + .service-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.service-intro {
+  padding-top: var(--section-padding);
+}
+
+.intro-layout,
+.technical-layout,
+.maintenance-layout,
+.secondary-layout,
+.tips-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
-  gap: clamp(2rem, 5.5vw, 5.5rem);
   align-items: center;
+  gap: clamp(2rem, 5vw, 5.5rem);
 }
 
-.irrigation-intro {
-  border-bottom: 1px solid var(--color-border);
+.intro-layout {
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
 }
 
-.irrigation-intro__content,
-.irrigation-tech__content,
-.irrigation-maintenance__content {
+.technical-layout {
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+}
+
+.maintenance-layout {
+  grid-template-columns: minmax(320px, 1.06fr) minmax(0, 0.94fr);
+}
+
+.secondary-layout {
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+}
+
+.secondary-service--reverse .secondary-layout {
+  grid-template-columns: minmax(320px, 1.05fr) minmax(0, 0.95fr);
+}
+
+.tips-layout {
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
+  align-items: start;
+}
+
+.intro-layout__text,
+.technical-layout__content,
+.maintenance-layout__content,
+.secondary-layout__content,
+.tips-layout__content {
   position: relative;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
 }
 
-.irrigation-intro__content::before,
-.irrigation-tech__content::before,
-.irrigation-maintenance__content::before {
+.intro-layout__text::before,
+.technical-layout__content::before,
+.maintenance-layout__content::before,
+.secondary-layout__content::before,
+.tips-layout__content::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -51,30 +82,42 @@
   background: var(--color-accent);
 }
 
-.irrigation-intro__content h2,
-.irrigation-tech__content h2,
-.irrigation-maintenance__content h2 {
-  margin-bottom: 1.3rem;
+.technical-layout__content h2,
+.secondary-layout__content h2,
+.tips-layout__content h2 {
+  margin-bottom: 1.2rem;
 }
 
-.irrigation-tech__content h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+.maintenance-layout__content h3 {
+  margin-bottom: 1rem;
 }
 
-.irrigation-intro__image,
-.irrigation-tech__image,
-.irrigation-maintenance__image {
-  min-height: clamp(360px, 44vw, 590px);
+.intro-layout__image,
+.technical-layout__image,
+.maintenance-layout__image,
+.secondary-layout__image {
+  position: relative;
+  width: 100%;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
   background: var(--color-bg-alt);
 }
 
-.irrigation-intro__image img,
-.irrigation-tech__image img,
-.irrigation-maintenance__image img {
+.intro-layout__image,
+.technical-layout__image {
+  aspect-ratio: 16 / 11;
+}
+
+.maintenance-layout__image,
+.secondary-layout__image {
+  aspect-ratio: 4 / 3;
+}
+
+.intro-layout__image img,
+.technical-layout__image img,
+.maintenance-layout__image img,
+.secondary-layout__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -83,44 +126,33 @@
     filter 750ms ease;
 }
 
-.irrigation-intro:hover img,
-.irrigation-tech:hover img,
-.irrigation-maintenance:hover img {
+.intro-layout:hover img,
+.technical-layout:hover img,
+.maintenance-layout:hover img,
+.secondary-layout:hover img {
   transform: scale(1.04);
   filter: saturate(1.04) contrast(1.03);
 }
 
-.irrigation-method {
-  border-bottom: 1px solid var(--color-border);
+.process-section {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(1rem, calc((100vw - var(--container)) / 2));
+  background:
+    linear-gradient(135deg, rgba(196, 154, 90, 0.08), transparent 38%),
+    var(--color-bg-alt);
 }
 
-.irrigation-method .section-heading,
-.irrigation-installation .section-heading,
-.linked-services .section-heading,
-.irrigation-faq .section-heading {
-  margin-left: auto;
-  margin-right: auto;
+.process-section .section-heading {
+  margin-inline: auto;
   text-align: center;
 }
 
-.irrigation-method .section-heading p,
-.irrigation-installation .section-heading p,
-.linked-services .section-heading p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.irrigation-method .section-eyebrow,
-.irrigation-installation .section-eyebrow,
-.linked-services .section-eyebrow,
-.irrigation-faq .section-eyebrow {
+.process-section .section-eyebrow {
   justify-content: center;
 }
 
-.irrigation-method .section-eyebrow::after,
-.irrigation-installation .section-eyebrow::after,
-.linked-services .section-eyebrow::after,
-.irrigation-faq .section-eyebrow::after {
+.process-section .section-eyebrow::after {
   content: "";
   width: 34px;
   height: 1px;
@@ -128,403 +160,409 @@
   opacity: 0.85;
 }
 
-.irrigation-method__grid {
+.process-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.3rem, 2.8vw, 2.2rem);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
 }
 
-.irrigation-step {
+.process-card {
   position: relative;
-  padding: clamp(1.5rem, 3vw, 2.4rem);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-image);
-  background:
-    linear-gradient(135deg, rgba(196, 154, 90, 0.12), transparent 42%),
-    rgba(255, 255, 255, 0.42);
-  box-shadow: 0 18px 46px rgba(20, 35, 26, 0.07);
+  min-height: 100%;
+  padding: clamp(1.4rem, 2.2vw, 2rem);
+  border-top: 1px solid var(--color-border);
+  background: rgba(251, 250, 245, 0.58);
   transition:
     transform var(--transition),
-    border-color var(--transition),
-    box-shadow var(--transition);
+    background-color var(--transition),
+    border-color var(--transition);
 }
 
-.irrigation-step:hover {
+.process-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 64px;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0.45);
+  transform-origin: left;
+  transition: transform var(--transition);
+}
+
+.process-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(196, 154, 90, 0.52);
-  box-shadow: 0 24px 62px rgba(20, 35, 26, 0.13);
+  background: rgba(251, 250, 245, 0.9);
+  border-color: rgba(196, 154, 90, 0.38);
 }
 
-.irrigation-step span {
+.process-card:hover::before {
+  transform: scaleX(1);
+}
+
+.process-card span {
   display: inline-flex;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 1;
-  color: rgba(196, 154, 90, 0.62);
+  color: rgba(196, 154, 90, 0.72);
 }
 
-.irrigation-step h3,
-.irrigation-type-card h3,
-.irrigation-installation__content h3 {
-  margin-bottom: 0.85rem;
+.process-card h3 {
+  margin-bottom: 0.8rem;
 }
 
-.irrigation-types {
+.local-section {
   width: 100%;
   max-width: none;
   padding-inline: max(1rem, calc((100vw - var(--container)) / 2));
   color: var(--color-text-light);
   background:
-    linear-gradient(135deg, rgba(196, 154, 90, 0.1), transparent 38%),
-    var(--color-bg-dark);
+    linear-gradient(90deg, rgba(40, 79, 59, 0.96), rgba(40, 79, 59, 0.88)),
+    url("/img/aree-servite-bergamo-giardiniere.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.irrigation-types h2,
-.irrigation-types h3 {
+.local-section h2 {
   color: var(--color-text-light);
 }
 
-.irrigation-types p {
-  color: rgba(248, 246, 239, 0.76);
+.local-section p {
+  color: rgba(248, 246, 239, 0.78);
 }
 
-.irrigation-types__header {
-  max-width: 860px;
-  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
-}
-
-.irrigation-types__layout {
+.local-links {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--color-border-light);
-  border-left: 1px solid var(--color-border-light);
 }
 
-.irrigation-type-card {
+.local-links a {
   position: relative;
-  min-height: 100%;
-  padding: clamp(1.5rem, 3vw, 2.6rem);
-  border-right: 1px solid var(--color-border-light);
-  border-bottom: 1px solid var(--color-border-light);
-  transition:
-    background-color var(--transition),
-    transform var(--transition);
-}
-
-.irrigation-type-card::before {
-  content: "";
-  display: block;
-  width: 54px;
-  height: 1px;
-  margin-bottom: 1.2rem;
-  background: var(--color-accent);
-  transition: width var(--transition);
-}
-
-.irrigation-type-card:hover {
-  background: rgba(248, 246, 239, 0.06);
-  transform: translateY(-4px);
-}
-
-.irrigation-type-card:hover::before {
-  width: 92px;
-}
-
-.irrigation-tech {
-  grid-template-columns: minmax(320px, 1fr) minmax(0, 1fr);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.irrigation-tech__image {
-  border-radius: 0 var(--radius-image) var(--radius-image) 0;
-}
-
-.irrigation-installation {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.irrigation-installation__content {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.2rem, 3vw, 2.4rem);
+  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+  color: var(--color-text-light);
+  transition:
+    color var(--transition),
+    padding-left var(--transition);
 }
 
-.irrigation-installation__content > div {
-  position: relative;
-  padding-top: 1.35rem;
+.local-links a::after {
+  content: "→";
+  color: var(--color-accent-soft);
+  transition: transform var(--transition);
+}
+
+.local-links a:hover {
+  color: var(--color-accent-soft);
+  padding-left: 0.4rem;
+}
+
+.local-links a:hover::after {
+  transform: translateX(4px);
+}
+
+.local-links span {
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  line-height: 1.1;
+}
+
+.local-links p {
+  max-width: 760px;
+}
+
+.tips-box {
+  padding: clamp(1.5rem, 3vw, 2.4rem);
   border-top: 1px solid var(--color-border);
+  background:
+    linear-gradient(135deg, rgba(196, 154, 90, 0.12), transparent 42%),
+    rgba(240, 239, 230, 0.72);
 }
 
-.irrigation-installation__content > div::before {
+.tips-box h3 {
+  margin-bottom: 1rem;
+}
+
+.tips-box ul {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tips-box li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.tips-box li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.connected-services {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.connected-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.connected-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(160px, 0.72fr) minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: center;
+  padding-block: clamp(1.5rem, 3vw, 2.4rem);
+  border-top: 1px solid var(--color-border);
+  transition:
+    transform var(--transition),
+    color var(--transition);
+}
+
+.connected-card::before {
   content: "";
   position: absolute;
   top: -1px;
   left: 0;
-  width: 68px;
+  width: 76px;
   height: 1px;
   background: var(--color-accent);
-  transform: scaleX(0.5);
+  transform: scaleX(0.45);
   transform-origin: left;
   transition: transform var(--transition);
 }
 
-.irrigation-installation__content > div:hover::before {
+.connected-card:hover {
+  transform: translateY(-5px);
+}
+
+.connected-card:hover::before {
   transform: scaleX(1);
 }
 
-.irrigation-maintenance {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.irrigation-maintenance__image {
-  aspect-ratio: 16 / 11;
-  min-height: auto;
-}
-
-.linked-services {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.linked-services__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.4rem, 3vw, 2.3rem);
-}
-
-.linked-service-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-image);
-  background: rgba(255, 255, 255, 0.42);
-  box-shadow: 0 18px 46px rgba(20, 35, 26, 0.07);
-  transition:
-    transform var(--transition),
-    border-color var(--transition),
-    box-shadow var(--transition);
-}
-
-.linked-service-card:hover {
-  transform: translateY(-7px);
-  border-color: rgba(196, 154, 90, 0.56);
-  box-shadow: 0 26px 64px rgba(20, 35, 26, 0.13);
-}
-
-.linked-service-card img {
+.connected-card figure {
   aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-image);
+  background: var(--color-bg-alt);
+}
+
+.connected-card img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: transform 750ms ease;
-}
-
-.linked-service-card:hover img {
-  transform: scale(1.045);
-}
-
-.linked-service-card span {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.3rem 1.35rem 0;
-  font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 1.8vw, 1.7rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  font-weight: 600;
-  color: var(--color-primary);
-}
-
-.linked-service-card span::after {
-  content: "→";
-  flex: 0 0 auto;
-  color: var(--color-accent);
-  transition: transform var(--transition);
-}
-
-.linked-service-card:hover span::after {
-  transform: translateX(4px);
-}
-
-.linked-service-card p {
-  padding: 0.85rem 1.35rem 1.35rem;
-}
-
-.areas--irrigation .areas__background {
-  background-image:
-    linear-gradient(90deg, rgba(40, 79, 59, 0.94), rgba(40, 79, 59, 0.86)),
-    url("/img/impianto-irrigazione-giardino.jpg");
-}
-
-.areas--irrigation .areas__list a::after {
-  content: "Installazione e controllo impianti di irrigazione nella zona →";
-}
-
-.irrigation-faq__list {
-  display: grid;
-  gap: 0.9rem;
-  max-width: 980px;
-  margin-inline: auto;
-}
-
-.irrigation-faq details {
-  border: 1px solid var(--color-border);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.42);
-  box-shadow: 0 14px 34px rgba(20, 35, 26, 0.06);
   transition:
-    border-color var(--transition),
-    box-shadow var(--transition);
+    transform 750ms ease,
+    filter 750ms ease;
 }
 
-.irrigation-faq details[open],
-.irrigation-faq details:hover {
-  border-color: rgba(196, 154, 90, 0.54);
-  box-shadow: 0 20px 48px rgba(20, 35, 26, 0.1);
+.connected-card:hover img {
+  transform: scale(1.05);
+  filter: saturate(1.04) contrast(1.03);
 }
 
-.irrigation-faq summary {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.2rem;
-  padding: 1.25rem 1.35rem;
-  font-weight: 800;
+.connected-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.connected-card span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  font-weight: 700;
   color: var(--color-primary);
-  cursor: pointer;
+  transition:
+    gap var(--transition),
+    color var(--transition);
 }
 
-.irrigation-faq summary::after {
-  content: "+";
+.connected-card span::after {
+  content: "→";
   color: var(--color-accent);
-  transition: transform var(--transition);
 }
 
-.irrigation-faq details[open] summary::after {
-  transform: rotate(45deg);
+.connected-card:hover span {
+  gap: 0.75rem;
+  color: var(--color-accent);
 }
 
-.irrigation-faq summary::-webkit-details-marker {
-  display: none;
+.faq-section {
+  max-width: 1120px;
 }
 
-.irrigation-faq details p {
-  padding: 0 1.35rem 1.35rem;
-}
-
-.contact--irrigation {
+.faq-list {
+  display: grid;
   border-top: 1px solid var(--color-border);
 }
 
+.faq-list details {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-list summary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  color: var(--color-primary);
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+  transition:
+    color var(--transition),
+    padding-left var(--transition);
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+
+.faq-list details[open] summary {
+  color: var(--color-accent);
+  padding-left: 0.35rem;
+}
+
+.faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-list details p {
+  max-width: 850px;
+  padding: 0 0 1.25rem;
+}
+
+.irrigation-page .contact {
+  padding-block: var(--section-padding);
+}
+
 @media (max-width: 1100px) {
-  .irrigation-method__grid,
-  .irrigation-installation__content,
-  .linked-services__grid {
+  .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .irrigation-types__layout {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .connected-card {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 900px) {
-  .irrigation-intro,
-  .irrigation-tech,
-  .irrigation-maintenance {
+  .intro-layout,
+  .technical-layout,
+  .maintenance-layout,
+  .secondary-layout,
+  .secondary-service--reverse .secondary-layout,
+  .tips-layout {
     grid-template-columns: 1fr;
   }
 
-  .irrigation-tech__image {
-    order: 0;
-    border-radius: var(--radius-image);
+  .secondary-service--reverse .secondary-layout__image {
+    order: 2;
   }
 
-  .irrigation-intro__image,
-  .irrigation-tech__image,
-  .irrigation-maintenance__image {
-    min-height: 340px;
+  .secondary-service--reverse .secondary-layout__content {
+    order: 1;
+  }
+
+  .local-links a {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .local-links a::after {
+    justify-self: start;
+  }
+
+  .connected-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 720px) {
-  .irrigation-intro,
-  .irrigation-method,
-  .irrigation-tech,
-  .irrigation-installation,
-  .irrigation-maintenance,
-  .linked-services,
-  .irrigation-faq {
+  .service-section {
     width: min(calc(100% - 1.25rem), var(--container));
     padding-block: clamp(3.5rem, 14vw, 5rem);
   }
 
-  .irrigation-method .section-heading,
-  .irrigation-installation .section-heading,
-  .linked-services .section-heading,
-  .irrigation-faq .section-heading {
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .irrigation-method .section-eyebrow,
-  .irrigation-installation .section-eyebrow,
-  .linked-services .section-eyebrow,
-  .irrigation-faq .section-eyebrow {
-    justify-content: flex-start;
-  }
-
-  .irrigation-method .section-eyebrow::after,
-  .irrigation-installation .section-eyebrow::after,
-  .linked-services .section-eyebrow::after,
-  .irrigation-faq .section-eyebrow::after {
-    display: none;
-  }
-
-  .irrigation-method__grid,
-  .irrigation-types__layout,
-  .irrigation-installation__content,
-  .linked-services__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .irrigation-types {
+  .process-section,
+  .local-section {
+    width: 100%;
     padding-inline: 1rem;
   }
 
-  .irrigation-intro__image,
-  .irrigation-tech__image,
-  .irrigation-maintenance__image {
-    min-height: 300px;
+  .process-section .section-heading {
+    text-align: left;
+    margin-inline: 0;
   }
 
-  .linked-service-card img {
+  .process-section .section-eyebrow {
+    justify-content: flex-start;
+  }
+
+  .process-section .section-eyebrow::after {
+    display: none;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-layout__image,
+  .technical-layout__image,
+  .maintenance-layout__image,
+  .secondary-layout__image,
+  .connected-card figure {
     aspect-ratio: 4 / 3;
+  }
+
+  .tips-box {
+    padding: 1.35rem;
+  }
+
+  .faq-list summary {
+    font-size: 0.98rem;
+    line-height: 1.35;
   }
 }
 
 @media (max-width: 460px) {
-  .irrigation-intro,
-  .irrigation-method,
-  .irrigation-tech,
-  .irrigation-installation,
-  .irrigation-maintenance,
-  .linked-services,
-  .irrigation-faq {
+  .service-section {
     width: min(calc(100% - 1rem), var(--container));
   }
 
-  .irrigation-step,
-  .irrigation-type-card {
-    padding: 1.25rem;
+  .process-section,
+  .local-section {
+    padding-inline: 1rem;
   }
 
-  .irrigation-faq summary {
-    padding: 1.1rem;
-  }
-
-  .irrigation-faq details p {
-    padding: 0 1.1rem 1.1rem;
+  .connected-card {
+    padding-block: 1.8rem;
   }
 }
