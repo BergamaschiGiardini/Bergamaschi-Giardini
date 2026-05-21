@@ -567,13 +567,13 @@
   }
 }
 .maintenance-section .maintenance-heading {
-  max-width: 980px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 .maintenance-section .maintenance-heading h2 {
-  max-width: 980px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
