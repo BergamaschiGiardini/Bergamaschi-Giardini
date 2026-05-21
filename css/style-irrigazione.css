@@ -57,7 +57,9 @@
   grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
   align-items: start;
 }
-
+.tips-section .tips-box {
+  align-self: center;
+}
 .intro-layout__text,
 .technical-layout__content,
 .maintenance-layout__content,
