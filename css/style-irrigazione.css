@@ -566,3 +566,32 @@
     padding-block: 1.8rem;
   }
 }
+.maintenance-section .maintenance-heading {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.maintenance-section .maintenance-heading .section-eyebrow {
+  justify-content: center;
+}
+
+.maintenance-section .maintenance-heading .section-eyebrow::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.maintenance-section .maintenance-heading p:not(.section-eyebrow) {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maintenance-section .maintenance-layout__image {
+  width: 90%;
+  justify-self: center;
+}
