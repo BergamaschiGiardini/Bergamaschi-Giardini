@@ -306,50 +306,42 @@
 
 .process-section > .section-heading {
   grid-column: 1 / span 2;
+  grid-row: 1;
   margin-bottom: 0;
 }
 
-.process-section__image {
-  position: relative;
+.process-section::after {
+  content: "";
   grid-column: 3 / -1;
+  grid-row: 1;
   align-self: end;
   width: 100%;
-  height: clamp(230px, 16vw, 320px);
-  margin: 0;
-  overflow: hidden;
+  height: clamp(210px, 14vw, 280px);
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
-  background: var(--color-bg-alt);
-}
-
-.process-section__image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 56%, rgba(20, 35, 26, 0.18));
-  pointer-events: none;
-}
-
-.process-section__image img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;
-  object-position: center;
+  background:
+    linear-gradient(180deg, transparent 56%, rgba(20, 35, 26, 0.18)),
+    url("/img/tree-climbing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition:
     transform 760ms ease,
     filter 760ms ease;
 }
 
-.process-section:hover .process-section__image img {
-  transform: scale(1.035);
+.process-section:hover::after {
+  transform: scale(1.015);
   filter: saturate(1.04) contrast(1.03);
+}
+
+.process-section__image {
+  display: none;
 }
 
 .process-grid {
   grid-column: 1 / -1;
+  grid-row: 2;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 1.6rem);
@@ -583,18 +575,25 @@
   .service-detail__image {
     aspect-ratio: 4 / 3;
   }
-    .process-section {
+
+  .process-section {
     grid-template-columns: 1fr;
   }
 
-  .process-section > .section-heading,
-  .process-section__image,
-  .process-grid {
+  .process-section > .section-heading {
     grid-column: 1 / -1;
+    grid-row: 1;
   }
 
-  .process-section__image {
-    height: clamp(240px, 45vw, 360px);
+  .process-section::after {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    height: clamp(220px, 42vw, 340px);
+  }
+
+  .process-grid {
+    grid-column: 1 / -1;
+    grid-row: 3;
   }
 }
 
