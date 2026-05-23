@@ -562,3 +562,6 @@
     font-size: 1.12rem;
   }
 }
+.prato-linked .prato-section-heading h2 {
+  max-width: 860px;
+}
