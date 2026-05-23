@@ -284,9 +284,10 @@
 
 .prato-choice__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 2.4vw, 2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.6rem);
   margin-top: clamp(2rem, 4vw, 3rem);
+  width: 100%;
 }
 
 .prato-choice__item {
