@@ -380,7 +380,7 @@
 }
 
 .rank2-wide-image__caption {
-  width: min(calc(100% - 2rem), 980px);
+  width: min(calc(100% - 2rem), var(--container));
   margin: clamp(2rem, 4vw, 3rem) auto 0;
   text-align: center;
 }
@@ -398,11 +398,17 @@
 }
 
 .rank2-wide-image__caption h2 {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
   margin-bottom: 1rem;
   color: var(--color-text-light);
+  text-wrap: balance;
 }
 
 .rank2-wide-image__caption p:not(.section-eyebrow) {
+  width: min(100%, 980px);
+  margin-inline: auto;
   color: rgba(248, 246, 239, 0.78);
 }
 
@@ -765,6 +771,10 @@
 
   .rank2-wide-image figure {
     height: clamp(260px, 80vw, 380px);
+  }
+
+  .rank2-wide-image__caption h2 {
+    max-width: 100%;
   }
 }
 
