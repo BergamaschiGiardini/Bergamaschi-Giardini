@@ -1,6 +1,6 @@
 /* =========================================================
    PAGINA CONTATTI
-   File dedicato: non duplica reset, font, nav, footer o bottoni
+   CSS dedicato - non duplica reset, font, nav, footer o bottoni
 ========================================================= */
 
 .contact-page {
@@ -20,6 +20,10 @@
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
+
+/* =========================================================
+   COLONNA SINISTRA - CARD CONTATTI
+========================================================= */
 
 .contact-page__card {
   position: relative;
@@ -147,7 +151,9 @@
 
 .contact-page__data-item a {
   width: fit-content;
-  transition: color var(--transition), transform var(--transition);
+  transition:
+    color var(--transition),
+    transform var(--transition);
 }
 
 .contact-page__data-item a:hover {
@@ -164,14 +170,24 @@
   font-size: 0.95rem;
 }
 
+/* =========================================================
+   COLONNA DESTRA - TESTO E LINK
+========================================================= */
+
 .contact-page__content {
   min-width: 0;
 }
 
-.contact-page__content h1 {
-  max-width: 920px;
-  font-size: clamp(2.7rem, 6.3vw, 6rem);
+.contact-page__title {
+  max-width: 760px;
+  font-size: clamp(3rem, 4.15vw, 4.55rem);
+  line-height: 0.98;
   text-wrap: balance;
+}
+
+.contact-page__title span {
+  display: block;
+  white-space: nowrap;
 }
 
 .contact-page__text {
@@ -202,6 +218,10 @@
   background: var(--color-primary);
   border-color: var(--color-primary);
 }
+
+/* =========================================================
+   LINK INTERNI
+========================================================= */
 
 .contact-page__links {
   display: grid;
@@ -254,14 +274,18 @@
   padding-left: 0.35rem;
 }
 
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
 @media (max-width: 1100px) {
   .contact-page__shell {
     grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
     gap: clamp(2rem, 4vw, 4rem);
   }
 
-  .contact-page__content h1 {
-    font-size: clamp(2.5rem, 5.5vw, 4.8rem);
+  .contact-page__title {
+    font-size: clamp(2.8rem, 5vw, 4.25rem);
   }
 }
 
@@ -300,6 +324,10 @@
     gap: 2.5rem;
     padding-block: 0;
     border-top: 0;
+  }
+
+  .contact-page__title {
+    font-size: clamp(2.35rem, 10vw, 3.3rem);
   }
 
   .contact-page__brand {
@@ -345,27 +373,11 @@
     border-radius: 14px;
   }
 
-  .contact-page__content h1 {
-    font-size: clamp(2.35rem, 13vw, 3.25rem);
+  .contact-page__title {
+    font-size: clamp(2.05rem, 10vw, 2.75rem);
   }
 
   .contact-page__links-block a {
     font-size: 0.94rem;
-  }
-}
-.contact-page__title {
-  max-width: 760px;
-  font-size: clamp(3rem, 4.15vw, 4.55rem);
-  line-height: 0.98;
-}
-
-.contact-page__title span {
-  display: block;
-  white-space: nowrap;
-}
-
-@media (max-width: 720px) {
-  .contact-page__title {
-    font-size: clamp(2.35rem, 10vw, 3.3rem);
   }
 }
