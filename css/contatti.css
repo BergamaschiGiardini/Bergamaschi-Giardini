@@ -355,7 +355,7 @@
 }
 .contact-page__title {
   max-width: 760px;
-  font-size: clamp(3.4rem, 5.2vw, 5.7rem);
+  font-size: clamp(3rem, 4.15vw, 4.55rem);
   line-height: 0.98;
 }
 
@@ -366,6 +366,6 @@
 
 @media (max-width: 720px) {
   .contact-page__title {
-    font-size: clamp(2.5rem, 11vw, 3.6rem);
+    font-size: clamp(2.35rem, 10vw, 3.3rem);
   }
 }
