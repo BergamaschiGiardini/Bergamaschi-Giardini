@@ -79,10 +79,23 @@
 }
 
 .service-intro__image,
-.service-detail__image {
+.service-detail:not(#treeclimbing) .service-detail__image {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-image);
+  background: var(--color-bg-alt);
+}
+
+#treeclimbing .service-detail__image {
+  position: relative;
+  width: min(100%, 420px);
+  height: clamp(580px, 43vw, 670px);
+  aspect-ratio: auto;
+  justify-self: center;
+  align-self: center;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
@@ -572,8 +585,12 @@
   }
 
   .service-intro__image,
-  .service-detail__image {
+  .service-detail__image,
+  #treeclimbing .service-detail__image {
+    width: 100%;
+    height: auto;
     aspect-ratio: 4 / 3;
+    justify-self: stretch;
   }
 
   .process-section {
