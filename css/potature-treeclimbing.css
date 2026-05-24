@@ -316,7 +316,7 @@
   grid-row: 1;
   align-self: end;
   width: 100%;
-  height: clamp(210px, 14vw, 280px);
+  height: clamp(340px, 23vw, 430px);
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
   background:
