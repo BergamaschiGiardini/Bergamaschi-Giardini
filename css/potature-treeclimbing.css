@@ -496,6 +496,7 @@
 
 .faq-section .section-heading h2 {
   max-width: 920px;
+  color: var(--color-text-light);
 }
 
 .faq-section .section-heading p:not(.section-eyebrow) {
