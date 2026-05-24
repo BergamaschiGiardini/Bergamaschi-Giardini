@@ -468,6 +468,26 @@
   border-top: 1px solid var(--color-border);
 }
 
+/* MODIFICA 2: allarga titolo e testo introduttivo della sezione servizi */
+.rank2-services .rank2-section-heading {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
+}
+
+.rank2-services .rank2-section-heading h2 {
+  width: 100%;
+  max-width: none;
+  margin-inline: auto;
+  text-wrap: balance;
+}
+
+.rank2-services .rank2-section-heading p:not(.section-eyebrow) {
+  width: min(100%, 980px);
+  max-width: none;
+  margin-inline: auto;
+}
+
 .rank2-services__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -524,6 +544,19 @@
   transition:
     transform 750ms ease,
     filter 750ms ease;
+}
+
+/* MODIFICA 1: più spazio tra foto e testo nei box 1 e 2 */
+.rank2-service-item--image-left .rank2-service-item__image {
+  background: var(--color-bg);
+}
+
+.rank2-service-item--image-left .rank2-service-item__image img {
+  inset: 0 clamp(0.9rem, 1.8vw, 1.4rem) 0 0;
+}
+
+.rank2-service-item--image-left .rank2-service-item__content {
+  padding-left: clamp(1.8rem, 3vw, 2.8rem);
 }
 
 .rank2-service-item:hover .rank2-service-item__image img {
@@ -834,8 +867,17 @@
     height: 240px;
   }
 
+  .rank2-service-item__image img,
+  .rank2-service-item--image-left .rank2-service-item__image img {
+    inset: 0;
+  }
+
   .rank2-service-item--image-right .rank2-service-item__image {
     order: -1;
+  }
+
+  .rank2-service-item--image-left .rank2-service-item__content {
+    padding-left: clamp(1.45rem, 7vw, 2rem);
   }
 
   .rank2-service-item__content {
@@ -848,6 +890,10 @@
 
   .rank2-wide-image__caption h2 {
     max-width: 100%;
+  }
+
+  .rank2-services .rank2-section-heading p:not(.section-eyebrow) {
+    width: 100%;
   }
 }
 
