@@ -468,11 +468,11 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* MODIFICA 2: allarga titolo e testo introduttivo della sezione servizi */
 .rank2-services .rank2-section-heading {
   width: 100%;
   max-width: none;
   margin-inline: auto;
+  text-align: center;
 }
 
 .rank2-services .rank2-section-heading h2 {
@@ -483,7 +483,7 @@
 }
 
 .rank2-services .rank2-section-heading p:not(.section-eyebrow) {
-  width: min(100%, 980px);
+  width: 100%;
   max-width: none;
   margin-inline: auto;
 }
@@ -546,19 +546,6 @@
     filter 750ms ease;
 }
 
-/* MODIFICA 1: più spazio tra foto e testo nei box 1 e 2 */
-.rank2-service-item--image-left .rank2-service-item__image {
-  background: var(--color-bg);
-}
-
-.rank2-service-item--image-left .rank2-service-item__image img {
-  inset: 0 clamp(0.9rem, 1.8vw, 1.4rem) 0 0;
-}
-
-.rank2-service-item--image-left .rank2-service-item__content {
-  padding-left: clamp(1.8rem, 3vw, 2.8rem);
-}
-
 .rank2-service-item:hover .rank2-service-item__image img {
   transform: scale(1.045);
   filter: saturate(1.04) contrast(1.03);
@@ -572,6 +559,11 @@
   justify-content: center;
   min-width: 0;
   padding: clamp(1.45rem, 2.7vw, 2.35rem);
+}
+
+/* Micro-spostamento richiesto: solo un pelo verso destra nei box 1 e 2 */
+.rank2-service-item--image-left .rank2-service-item__content {
+  padding-left: clamp(1.6rem, 2.1vw, 1.95rem);
 }
 
 .rank2-service-item span {
@@ -867,20 +859,12 @@
     height: 240px;
   }
 
-  .rank2-service-item__image img,
-  .rank2-service-item--image-left .rank2-service-item__image img {
-    inset: 0;
-  }
-
   .rank2-service-item--image-right .rank2-service-item__image {
     order: -1;
   }
 
+  .rank2-service-item__content,
   .rank2-service-item--image-left .rank2-service-item__content {
-    padding-left: clamp(1.45rem, 7vw, 2rem);
-  }
-
-  .rank2-service-item__content {
     padding: clamp(1.45rem, 7vw, 2rem);
   }
 
@@ -890,10 +874,6 @@
 
   .rank2-wide-image__caption h2 {
     max-width: 100%;
-  }
-
-  .rank2-services .rank2-section-heading p:not(.section-eyebrow) {
-    width: 100%;
   }
 }
 
