@@ -354,16 +354,28 @@
 
 .rank2-wide-image {
   position: relative;
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  z-index: 0;
+  width: min(calc(100% - 2rem), var(--container));
+  margin-inline: auto;
   padding-block: var(--section-padding);
+  overflow: visible;
+  background: transparent;
+}
+
+.rank2-wide-image::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   background: var(--color-bg-dark);
 }
 
 .rank2-wide-image figure {
-  width: min(calc(100% - 2rem), var(--container));
+  width: 100%;
   height: clamp(320px, 48vw, 620px);
   margin: 0 auto;
   overflow: hidden;
@@ -380,7 +392,7 @@
 }
 
 .rank2-wide-image__caption {
-  width: min(calc(100% - 2rem), var(--container));
+  width: min(100%, var(--container));
   margin: clamp(2rem, 4vw, 3rem) auto 0;
   text-align: center;
 }
