@@ -120,8 +120,8 @@
 
 .rank2-presence {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
-  gap: clamp(2.5rem, 6vw, 5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.78fr);
+  gap: clamp(3rem, 7vw, 6rem);
   align-items: start;
   padding-block: var(--section-padding);
   border-top: 1px solid var(--color-border);
@@ -157,20 +157,34 @@
 
 .rank2-presence__item {
   display: grid;
-  grid-template-columns: 54px minmax(0, 1fr);
-  gap: 1.2rem;
-  padding: 1.3rem 0;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: clamp(1.1rem, 2.4vw, 1.7rem);
+  align-items: start;
+  padding: clamp(1.45rem, 2.9vw, 2.15rem) 0;
   border-bottom: 1px solid var(--color-border);
 }
 
 .rank2-presence__item span {
+  margin-top: 0.12rem;
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: clamp(1.65rem, 2.4vw, 2.25rem);
   line-height: 1;
   color: var(--color-accent);
 }
 
+.rank2-presence__item h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-heading);
+  font-size: clamp(1.45rem, 2.35vw, 2.15rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--color-primary);
+}
+
 .rank2-presence__item p {
+  max-width: 590px;
+  font-size: clamp(1rem, 1.16vw, 1.1rem);
+  line-height: 1.65;
   color: var(--color-text);
 }
 
@@ -689,6 +703,11 @@
 
   .rank2-presence__item {
     grid-template-columns: 42px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .rank2-presence__item h3 {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
   }
 
   .rank2-featured-city {
