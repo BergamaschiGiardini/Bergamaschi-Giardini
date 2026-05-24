@@ -577,3 +577,13 @@
   object-fit: cover;
   object-position: center;
 }
+.prato-maintenance .prato-maintenance__image {
+  aspect-ratio: 1 / 1;
+}
+
+.prato-maintenance .prato-maintenance__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
