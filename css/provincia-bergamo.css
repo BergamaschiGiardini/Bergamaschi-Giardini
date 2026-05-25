@@ -500,7 +500,8 @@
 .rank2-service-item {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: 50% 50%;
+  gap: 0;
   min-height: clamp(340px, 26vw, 430px);
   padding: 0;
   border-right: 1px solid var(--color-border);
@@ -523,6 +524,8 @@
   width: 100%;
   height: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   background: var(--color-bg-alt);
 }
@@ -536,9 +539,12 @@
   position: absolute;
   inset: 0;
   z-index: 1;
+  display: block;
   width: 100%;
   height: 100%;
   max-width: none;
+  margin: 0;
+  padding: 0;
   object-fit: cover;
   object-position: center;
   transition:
@@ -558,12 +564,19 @@
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  padding: clamp(1.45rem, 2.7vw, 2.35rem);
+  padding-block: clamp(1.45rem, 2.7vw, 2.35rem);
+  padding-left: clamp(1.45rem, 2.7vw, 2.35rem);
+  padding-right: clamp(1.45rem, 2.7vw, 2.35rem);
 }
 
-/* Micro-spostamento richiesto: solo un pelo verso destra nei box 1 e 2 */
+/* Box 1 e 2: foto a sinistra piena; piccolo distacco solo verso destra, dentro il testo */
 .rank2-service-item--image-left .rank2-service-item__content {
-  padding-left: clamp(1.6rem, 2.1vw, 1.95rem);
+  padding-left: clamp(1.65rem, 2vw, 2rem);
+}
+
+/* Box 3 e 4: foto a destra piena; piccolo distacco solo verso sinistra, dentro il testo */
+.rank2-service-item--image-right .rank2-service-item__content {
+  padding-right: clamp(1.65rem, 2vw, 2rem);
 }
 
 .rank2-service-item span {
@@ -864,7 +877,8 @@
   }
 
   .rank2-service-item__content,
-  .rank2-service-item--image-left .rank2-service-item__content {
+  .rank2-service-item--image-left .rank2-service-item__content,
+  .rank2-service-item--image-right .rank2-service-item__content {
     padding: clamp(1.45rem, 7vw, 2rem);
   }
 
