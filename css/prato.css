@@ -1,4 +1,7 @@
 .prato-page {
+  --prato-left-balance: clamp(1.1rem, 3vw, 3.2rem);
+  --prato-right-balance: clamp(2.4rem, 4.8vw, 5.6rem);
+
   background:
     radial-gradient(circle at 90% 8%, rgba(196, 154, 90, 0.10), transparent 30rem),
     var(--color-bg);
@@ -51,11 +54,14 @@
 .prato-linked,
 .prato-intro,
 .prato-service,
-.prato-irrigazione,
 .prato-choice,
 .prato-maintenance {
-  width: min(calc(100% - 2rem), var(--container));
-  margin-inline: auto;
+  width: min(
+    calc(100% - var(--prato-left-balance) - var(--prato-right-balance)),
+    var(--container)
+  );
+  margin-left: var(--prato-left-balance);
+  margin-right: var(--prato-right-balance);
   padding-block: var(--section-padding);
 }
 
@@ -267,7 +273,9 @@
 .prato-irrigazione {
   width: 100%;
   max-width: none;
-  padding-inline: max(1rem, calc((100vw - var(--container)) / 2));
+  padding-block: var(--section-padding);
+  padding-left: var(--prato-left-balance);
+  padding-right: var(--prato-right-balance);
   color: var(--color-text-light);
   background:
     linear-gradient(135deg, rgba(196, 154, 90, 0.12), transparent 36%),
@@ -275,6 +283,12 @@
 }
 
 .prato-irrigazione__inner {
+  width: min(
+    calc(100% - var(--prato-left-balance)),
+    var(--container)
+  );
+  margin-left: 0;
+  margin-right: auto;
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
   gap: clamp(2rem, 5vw, 5.5rem);
@@ -356,7 +370,8 @@
   max-width: none;
   margin-inline: 0;
   padding-block: var(--section-padding);
-  padding-inline: max(1rem, calc((100vw - var(--container)) / 2));
+  padding-left: var(--prato-left-balance);
+  padding-right: var(--prato-right-balance);
   color: var(--color-text-light);
   background:
     linear-gradient(90deg, rgba(40, 79, 59, 0.94), rgba(40, 79, 59, 0.86)),
@@ -364,6 +379,15 @@
   background-size: cover;
   background-position: center;
   border-bottom: 0;
+}
+
+.prato-faq--green__inner {
+  width: min(
+    calc(100% - var(--prato-left-balance)),
+    var(--container)
+  );
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .prato-faq .prato-section-heading {
@@ -448,6 +472,12 @@
 
 .prato-contact {
   border-top: 0;
+  width: min(
+    calc(100% - var(--prato-left-balance) - var(--prato-right-balance)),
+    var(--container)
+  );
+  margin-left: var(--prato-left-balance);
+  margin-right: var(--prato-right-balance);
 }
 
 .prato-contact .contact__image {
@@ -459,6 +489,11 @@
 }
 
 @media (max-width: 1100px) {
+  .prato-page {
+    --prato-left-balance: clamp(0.9rem, 3vw, 1.8rem);
+    --prato-right-balance: clamp(1.7rem, 5vw, 3.2rem);
+  }
+
   .prato-linked__grid,
   .prato-choice__grid {
     grid-template-columns: 1fr;
@@ -492,25 +527,43 @@
 }
 
 @media (max-width: 720px) {
+  .prato-page {
+    --prato-left-balance: 0.85rem;
+    --prato-right-balance: 1.15rem;
+  }
+
   .prato-linked,
   .prato-intro,
   .prato-service,
-  .prato-irrigazione,
   .prato-choice,
-  .prato-maintenance {
-    width: min(calc(100% - 1.25rem), var(--container));
+  .prato-maintenance,
+  .prato-contact {
+    width: min(
+      calc(100% - var(--prato-left-balance) - var(--prato-right-balance)),
+      var(--container)
+    );
+    margin-left: var(--prato-left-balance);
+    margin-right: var(--prato-right-balance);
     padding-block: clamp(3.5rem, 14vw, 5rem);
   }
 
   .prato-faq {
     width: 100%;
     padding-block: clamp(3.5rem, 14vw, 5rem);
-    padding-inline: 1rem;
+    padding-left: var(--prato-left-balance);
+    padding-right: var(--prato-right-balance);
+  }
+
+  .prato-faq--green__inner,
+  .prato-irrigazione__inner {
+    width: 100%;
   }
 
   .prato-irrigazione {
     width: 100%;
-    padding-inline: 1rem;
+    padding-block: clamp(3.5rem, 14vw, 5rem);
+    padding-left: var(--prato-left-balance);
+    padding-right: var(--prato-right-balance);
   }
 
   .prato-linked__card,
@@ -551,12 +604,21 @@
 }
 
 @media (max-width: 460px) {
+  .prato-page {
+    --prato-left-balance: 0.75rem;
+    --prato-right-balance: 1rem;
+  }
+
   .prato-linked,
   .prato-intro,
   .prato-service,
   .prato-choice,
-  .prato-maintenance {
-    width: min(calc(100% - 1rem), var(--container));
+  .prato-maintenance,
+  .prato-contact {
+    width: min(
+      calc(100% - var(--prato-left-balance) - var(--prato-right-balance)),
+      var(--container)
+    );
   }
 
   .prato-faq summary {
@@ -567,6 +629,7 @@
 .prato-linked .prato-section-heading h2 {
   max-width: 860px;
 }
+
 #inerbimento .prato-service__image {
   aspect-ratio: 1 / 1;
 }
@@ -577,6 +640,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 .prato-maintenance .prato-maintenance__image {
   aspect-ratio: 1 / 1;
 }
@@ -587,6 +651,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 /* FIX FOTO TREECLIMBING VERTICALE */
 #treeclimbing .service-detail__image {
   width: min(100%, 420px);
