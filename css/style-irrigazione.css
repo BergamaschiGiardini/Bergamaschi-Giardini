@@ -57,9 +57,11 @@
   grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
   align-items: start;
 }
+
 .tips-section .tips-box {
   align-self: center;
 }
+
 .intro-layout__text,
 .technical-layout__content,
 .maintenance-layout__content,
@@ -328,8 +330,8 @@
 .connected-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(160px, 0.72fr) minmax(0, 1fr);
-  gap: clamp(1.2rem, 3vw, 2rem);
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1fr);
+  gap: clamp(1.6rem, 3vw, 2.4rem);
   align-items: center;
   padding-block: clamp(1.5rem, 3vw, 2.4rem);
   border-top: 1px solid var(--color-border);
@@ -360,9 +362,11 @@
 }
 
 .connected-card figure {
-  aspect-ratio: 4 / 3;
+  width: 100%;
+  min-width: 280px;
+  aspect-ratio: 16 / 11;
   overflow: hidden;
-  border-radius: var(--radius-image);
+  border-radius: 22px;
   box-shadow: var(--shadow-image);
   background: var(--color-bg-alt);
 }
@@ -471,7 +475,11 @@
   }
 
   .connected-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1fr);
+  }
+
+  .connected-card figure {
+    min-width: 240px;
   }
 }
 
@@ -504,6 +512,16 @@
 
   .connected-grid {
     grid-template-columns: 1fr;
+  }
+
+  .connected-card {
+    grid-template-columns: 1fr;
+  }
+
+  .connected-card figure {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -568,17 +586,20 @@
     padding-block: 1.8rem;
   }
 }
+
 .maintenance-section .maintenance-heading {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+
 .maintenance-section .maintenance-heading h2 {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .maintenance-section .maintenance-heading .section-eyebrow {
   justify-content: center;
 }
