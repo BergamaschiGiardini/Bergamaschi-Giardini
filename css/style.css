@@ -2075,3 +2075,122 @@ p {
     padding-inline: 1rem;
   }
 }
+/* =========================================================
+   FIX MARGINE DESTRO IMMAGINI - SPOSTAMENTO GLOBALE SITO
+   Incolla questo blocco in fondo a /css/style.css
+========================================================= */
+
+:root {
+  --site-left-balance: clamp(1.1rem, 3vw, 3.2rem);
+  --site-right-balance: clamp(2.4rem, 4.8vw, 5.6rem);
+}
+
+/* Ridistribuzione margini principali del sito */
+.about,
+.services,
+.contact,
+.areas__card,
+.aree-contenuto {
+  width: min(
+    calc(100% - var(--site-left-balance) - var(--site-right-balance)),
+    var(--container)
+  );
+  margin-left: var(--site-left-balance);
+  margin-right: var(--site-right-balance);
+}
+
+/* Correzione anche per sezioni/pagine secondarie con layout testuale + immagine */
+main,
+.service-page,
+.area-page,
+.city-page,
+.rank-page,
+.page-content,
+.location-page,
+.area-detail,
+.city-detail {
+  box-sizing: border-box;
+}
+
+/* Se le pagine secondarie hanno sezioni full-width, lascia più aria a destra */
+.service-page section,
+.area-page section,
+.city-page section,
+.rank-page section,
+.page-content section,
+.location-page section,
+.area-detail section,
+.city-detail section {
+  padding-left: var(--site-left-balance);
+  padding-right: var(--site-right-balance);
+}
+
+/* Evita che immagini grandi arrivino troppo vicine al bordo destro */
+.service-page img,
+.area-page img,
+.city-page img,
+.rank-page img,
+.page-content img,
+.location-page img,
+.area-detail img,
+.city-detail img {
+  max-width: 100%;
+}
+
+/* Navbar coerente con il nuovo margine destro */
+.site-navbar__inner {
+  width: min(
+    calc(100% - var(--site-left-balance) - var(--site-right-balance)),
+    var(--container)
+  );
+  margin-left: var(--site-left-balance);
+  margin-right: var(--site-right-balance);
+}
+
+/* Footer coerente con il nuovo margine destro */
+.footer {
+  padding-left: var(--site-left-balance);
+  padding-right: var(--site-right-balance);
+}
+
+/* Tablet: mantieni più margine a destra ma senza stringere troppo */
+@media (max-width: 1080px) {
+  :root {
+    --site-left-balance: clamp(0.9rem, 3vw, 1.8rem);
+    --site-right-balance: clamp(1.7rem, 5vw, 3.2rem);
+  }
+}
+
+/* Mobile: margini più bilanciati per non schiacciare il contenuto */
+@media (max-width: 720px) {
+  :root {
+    --site-left-balance: 0.85rem;
+    --site-right-balance: 1.15rem;
+  }
+
+  .about,
+  .services,
+  .contact,
+  .areas__card,
+  .aree-contenuto,
+  .site-navbar__inner {
+    width: min(
+      calc(100% - var(--site-left-balance) - var(--site-right-balance)),
+      var(--container)
+    );
+    margin-left: var(--site-left-balance);
+    margin-right: var(--site-right-balance);
+  }
+
+  .service-page section,
+  .area-page section,
+  .city-page section,
+  .rank-page section,
+  .page-content section,
+  .location-page section,
+  .area-detail section,
+  .city-detail section {
+    padding-left: var(--site-left-balance);
+    padding-right: var(--site-right-balance);
+  }
+}
