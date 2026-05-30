@@ -729,9 +729,9 @@ p + p {
 .service-card__content h2 {
   margin-bottom: 0.9rem;
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 2.1vw, 2rem);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.7rem, 2.55vw, 2.55rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   font-weight: 600;
   color: var(--color-primary);
 }
@@ -1846,8 +1846,8 @@ p {
 }
 
 .service-card__content h2 {
-  font-size: clamp(1.25rem, 1.65vw, 1.65rem);
-  line-height: 1.15;
+  font-size: clamp(1.7rem, 2.55vw, 2.55rem);
+  line-height: 1.08;
   margin-bottom: 0.75rem;
 }
 
