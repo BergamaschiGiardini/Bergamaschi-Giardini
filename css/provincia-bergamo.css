@@ -436,7 +436,7 @@
 .rank2-side-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1.33 / 1;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
@@ -446,6 +446,7 @@
 .rank2-side-image img {
   position: absolute;
   inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
   max-width: none;
@@ -569,12 +570,10 @@
   padding-right: clamp(1.45rem, 2.7vw, 2.35rem);
 }
 
-/* Box 1 e 2: foto a sinistra piena; piccolo distacco solo verso destra, dentro il testo */
 .rank2-service-item--image-left .rank2-service-item__content {
   padding-left: clamp(1.65rem, 2vw, 2rem);
 }
 
-/* Box 3 e 4: foto a destra piena; piccolo distacco solo verso sinistra, dentro il testo */
 .rank2-service-item--image-right .rank2-service-item__content {
   padding-right: clamp(1.65rem, 2vw, 2rem);
 }
@@ -838,7 +837,7 @@
   .rank2-featured-city__image,
   .rank2-side-image,
   .rank2-contact__image {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1.33 / 1;
   }
 
   .rank2-city-row {
