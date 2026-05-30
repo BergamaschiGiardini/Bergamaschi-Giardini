@@ -337,20 +337,21 @@
 }
 
 
-/* Link testuali evidenziati come nelle pagine prato/potature */
-.rank2-intro .about__text a,
-.rank2-service-section .service-card__content p a {
-  color: var(--color-primary) !important;
+/* LINK TESTUALI INTERNI - STESSO METODO DI PRATO/POTATURE */
+.about__text a,
+.about__card a,
+.rank2-service-detail .service-card__content a:not(.service-card__link) {
+  color: var(--color-primary);
   font-weight: 700;
-  text-decoration: none;
   border-bottom: 1px solid rgba(196, 154, 90, 0.55);
   transition:
     color var(--transition),
     border-color var(--transition);
 }
 
-.rank2-intro .about__text a:hover,
-.rank2-service-section .service-card__content p a:hover {
-  color: var(--color-accent) !important;
+.about__text a:hover,
+.about__card a:hover,
+.rank2-service-detail .service-card__content a:not(.service-card__link):hover {
+  color: var(--color-accent);
   border-color: var(--color-accent);
 }
