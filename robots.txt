@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bergamashi-giardini.com/sitemap.xml
