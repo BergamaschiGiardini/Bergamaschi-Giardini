@@ -436,7 +436,7 @@
 .rank2-side-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.33 / 1;
+  aspect-ratio: 1 / 1.33;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
@@ -835,9 +835,12 @@
   }
 
   .rank2-featured-city__image,
-  .rank2-side-image,
   .rank2-contact__image {
-    aspect-ratio: 1.33 / 1;
+    aspect-ratio: 4 / 3;
+  }
+
+  .rank2-side-image {
+    aspect-ratio: 1 / 1.33;
   }
 
   .rank2-city-row {
