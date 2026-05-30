@@ -335,23 +335,22 @@
   height: 100%;
   object-fit: cover;
 }
-```css
-/* Link testuali evidenziati come nella pagina prato */
-.about__text a:not(.service-card__link),
-.about__card a:not(.service-card__link),
-.rank2-service-detail .service-card__content p a:not(.service-card__link) {
-  color: var(--color-primary);
+
+
+/* Link testuali evidenziati come nelle pagine prato/potature */
+.rank2-intro .about__text a,
+.rank2-service-section .service-card__content p a {
+  color: var(--color-primary) !important;
   font-weight: 700;
+  text-decoration: none;
   border-bottom: 1px solid rgba(196, 154, 90, 0.55);
   transition:
     color var(--transition),
     border-color var(--transition);
 }
 
-.about__text a:not(.service-card__link):hover,
-.about__card a:not(.service-card__link):hover,
-.rank2-service-detail .service-card__content p a:not(.service-card__link):hover {
-  color: var(--color-accent);
+.rank2-intro .about__text a:hover,
+.rank2-service-section .service-card__content p a:hover {
+  color: var(--color-accent) !important;
   border-color: var(--color-accent);
 }
-```
