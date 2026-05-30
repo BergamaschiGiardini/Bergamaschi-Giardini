@@ -630,21 +630,3 @@
   width: 90%;
   justify-self: center;
 }
-/* Link testuali evidenziati come nella pagina prato */
-.intro-layout__content a:not(.service-card__link),
-.maintenance-layout__content a:not(.service-card__link),
-.tips-layout__content a:not(.service-card__link) {
-  color: var(--color-primary);
-  font-weight: 700;
-  border-bottom: 1px solid rgba(196, 154, 90, 0.55);
-  transition:
-    color var(--transition),
-    border-color var(--transition);
-}
-
-.intro-layout__content a:not(.service-card__link):hover,
-.maintenance-layout__content a:not(.service-card__link):hover,
-.tips-layout__content a:not(.service-card__link):hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-}
