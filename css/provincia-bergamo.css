@@ -751,6 +751,19 @@
   margin-top: 1.8rem;
 }
 
+.rank2-contact .btn--phone {
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(196, 154, 90, 0.16);
+  box-shadow: 0 14px 34px rgba(8, 18, 13, 0.06);
+}
+
+.rank2-contact .btn--phone:hover {
+  color: var(--color-primary);
+  background: rgba(196, 154, 90, 0.10);
+  border-color: rgba(196, 154, 90, 0.38);
+}
+
 
 /* =========================================================
    11. ANIMAZIONI LEGGERE
