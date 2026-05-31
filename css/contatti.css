@@ -301,12 +301,12 @@
   }
 
   .contact-page__card {
-    order: 2;
+    order: 1;
     min-height: 0;
   }
 
   .contact-page__content {
-    order: 1;
+    order: 2;
   }
 
   .contact-page__links {
