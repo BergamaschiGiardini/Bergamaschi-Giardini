@@ -101,9 +101,13 @@
 }
 
 .contact-page__brand h2 {
-  max-width: 320px;
+  max-width: none;
   color: var(--color-text-light);
-  font-size: clamp(1.75rem, 3vw, 2.7rem);
+  font-size: clamp(1.45rem, 2.45vw, 2.25rem);
+  line-height: 1.05;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .contact-page__data-grid {
