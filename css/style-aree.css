@@ -231,15 +231,34 @@
   .svz--colonne .svz__grid,
   .svz--stampe .svz__grid,
   .svz--verticali .svz__grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .svz--verticali .svz__tall { aspect-ratio: 3 / 2.4; }
+  .svz--verticali .svz__tall { aspect-ratio: auto; }
   .svz--duplice .svz__card { grid-template-columns: 116px 1fr; gap: 1rem; }
   .svz--reveal .svz__row h3 { font-size: 1.2rem; }
-  .svz--mosaico .svz__grid { grid-template-columns: 1fr; grid-template-rows: repeat(4, 240px); }
+  .svz--mosaico .svz__grid { grid-template-columns: 1fr; grid-template-rows: auto; }
   .svz--mosaico .svz__tile--lead,
   .svz--mosaico .svz__tile--wide,
   .svz--mosaico .svz__tile--flat,
   .svz--mosaico .svz__tile--last { grid-column: 1; grid-row: auto; }
   .svz--mosaico .svz__tile--wide .svz__caption { max-width: 100%; }
+
+  /* La tessera va in colonna: foto sopra, didascalia sotto su fondo pieno.
+     Prima la didascalia era in absolute dentro overflow:hidden su un'altezza
+     fissa, e a 360px la tessera 01 di bergamo ne perdeva 239px. E' lo stesso
+     trattamento che --flat ha gia' da desktop. La velatura si spegne su tutte
+     le varianti, --wide compresa: il suo gradiente a 100deg era disegnato per
+     una tessera larga, e su una colonna sola scurisce il lato sbagliato. */
+  .svz--mosaico .svz__tile:not(.svz__tile--flat),
+  .svz--verticali .svz__tall { display: flex; flex-direction: column; }
+  .svz--mosaico .svz__tile img,
+  .svz--verticali .svz__tall img { position: static; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .svz--mosaico .svz__tile::after,
+  .svz--verticali .svz__tall::after { content: none; }
+  .svz--mosaico .svz__tile:not(.svz__tile--flat) .svz__caption,
+  .svz--verticali .svz__caption { position: static; padding: 1.5rem; background: var(--svz-primary); color: var(--svz-light); }
+
+  /* js/aree.js cambia la foto su mouseenter e focus: al tocco resterebbe ferma
+     sul primo servizio mentre si leggono gli altri tre. Le righe restano link. */
+  .svz--reveal .svz__stage { display: none; }
 }
 
 /* =========================================================
@@ -793,5 +812,17 @@
     grid-template-columns: 1fr;
     gap: 0.4rem;
     padding: 1rem 0;
+  }
+}
+
+/* Sta dopo il blocco 720 di proposito: quello rimette max-height a
+   calc(52px * 5) e a parita' di specificita' vincerebbe lui. Sui telefoni le
+   barre di scorrimento sono a scomparsa, quindi a riposo niente diceva che la
+   lista continuava: 5 comuni visibili su 10-11. */
+@media (max-width: 620px) {
+  .aree-vicine__list {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
   }
 }

@@ -2022,12 +2022,29 @@ p + p {
     --section-padding: clamp(3rem, 12vw, 4.4rem);
   }
 
+  /* Il nastro si ferma solo con :hover e :focus-within, che al tocco non
+     esistono: sul telefono girava all'infinito. Fermo e scorrevole col dito,
+     lo stesso trattamento del blocco prefers-reduced-motion piu' sopra.
+     Le ultime 10 card sono la copia che serve al loop e sono gia' marcate
+     aria-hidden: senza display:none si leggono due volte. */
   .reviews__track {
     animation-duration: 45s;
+    animation-name: none;
+  }
+
+  .reviews__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
   }
 
   .reviews__card {
     flex-basis: 85vw;
+    scroll-snap-align: center;
+  }
+
+  .reviews__card[aria-hidden="true"] {
+    display: none;
   }
 
   body {
@@ -2138,7 +2155,6 @@ p + p {
   .hero__eyebrow,
   .hero-eyebrow {
     gap: 0.45rem;
-    font-size: 0.66rem;
     letter-spacing: 0.12em;
   }
 
@@ -2272,6 +2288,15 @@ p + p {
     grid-template-columns: 1fr;
     padding-inline: var(--page-gutter);
   }
+
+  /* Telefono, email, indirizzo e i sei "Link utili" avevano un'area toccabile
+     alta 17px. Cambia solo l'altezza dell'area: corpo, colore e ordine restano. */
+  .footer a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 44px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -2319,7 +2344,6 @@ p + p {
   .section-eyebrow,
   .hero__eyebrow,
   .hero-eyebrow {
-    font-size: 0.62rem;
     letter-spacing: 0.1em;
   }
 
