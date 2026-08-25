@@ -355,3 +355,31 @@
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
+
+/* =========================================================
+   REGOLA 2 — la foto riempie la colonna del testo
+   BRIEF-TRASVERSALE §6 intervento 7, 25/08/2026.
+   Vale nei due versi: sotto i 720px la foto si stira all'altezza del testo,
+   sopra si ferma e diventa sticky, cosi' lo segue invece di lasciare il vuoto.
+   Ristretto alle sezioni misurate: .contact__image e .service-card__image
+   nudi stanno in style.css e valgono su 28 pagine.
+========================================================= */
+
+.rank2-contact .contact__image,
+.rank2-service-section .service-card__image {
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
+  aspect-ratio: auto;
+  min-height: 320px;
+  max-height: 720px;
+}
+
+.rank2-contact .contact__image img,
+.rank2-service-section .service-card__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

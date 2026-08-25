@@ -108,12 +108,20 @@
   background: var(--color-bg-alt);
 }
 
+/* Regola 2 (BRIEF-TRASVERSALE §6, 25/08/2026): i tre split misurati perdono
+   l'aspect-ratio e prendono l'altezza della colonna del testo.
+   .secondary-layout__image non era fra i casi e tiene il suo rapporto. */
 .intro-layout__image,
-.technical-layout__image {
-  aspect-ratio: 16 / 11;
+.technical-layout__image,
+.maintenance-layout__image {
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
+  aspect-ratio: auto;
+  min-height: 320px;
+  max-height: 720px;
 }
 
-.maintenance-layout__image,
 .secondary-layout__image {
   aspect-ratio: 4 / 3;
 }
@@ -122,6 +130,8 @@
 .technical-layout__image img,
 .maintenance-layout__image img,
 .secondary-layout__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

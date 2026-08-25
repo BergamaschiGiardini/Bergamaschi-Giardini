@@ -10,7 +10,9 @@
     var(--color-bg);
 }
 
-.rank2-area-page section {
+/* La hero e' a piena larghezza come su tutte le altre 27 pagine: questa regola
+   vale per le sezioni di contenuto, non per lei. */
+.rank2-area-page section:not(.hero) {
   width: min(calc(100% - 2rem), var(--container));
   margin-inline: auto;
 }
@@ -253,10 +255,15 @@
   max-width: 620px;
 }
 
+/* Regola 2 (BRIEF-TRASVERSALE §6, 25/08/2026). */
 .rank2-featured-city__image {
-  position: relative;
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: auto;
+  min-height: 320px;
+  max-height: 720px;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
@@ -336,6 +343,10 @@
   max-width: 920px;
 }
 
+.rank2-city-row .rank2-text-link {
+  margin-top: 0.7rem;
+}
+
 .rank2-featured-city__text p a,
 .rank2-city-row p a {
   color: var(--color-primary);
@@ -352,16 +363,7 @@
   border-color: var(--color-accent);
 }
 
-.rank2-city-row > a {
-  display: none;
-  visibility: hidden;
-  pointer-events: none;
-}
 
-.rank2-city-row > a::after {
-  content: "→";
-  color: var(--color-accent);
-}
 
 
 /* =========================================================
@@ -808,11 +810,6 @@
     grid-template-columns: 52px minmax(0, 1fr);
   }
 
-  .rank2-city-row > a {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
 }
 
 
@@ -877,11 +874,6 @@
     gap: 0.65rem;
   }
 
-  .rank2-city-row > a {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-  }
 
   .rank2-city-row:hover {
     padding-left: 0;

@@ -1,0 +1,797 @@
+/* =========================================================
+   PAGINE DI LOCALITÀ (Rank2/aree/)
+   Caricato dopo /css/style.css
+========================================================= */
+
+.aree-page {
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.aree-page .hero {
+  min-height: clamp(500px, 72vh, 650px);
+}
+
+/* =========================================================
+   1. HERO DI LOCALITÀ
+========================================================= */
+
+.aree-hero--bergamo {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/aiuola-realizzata-bergamo.jpg");
+}
+
+.aree-hero--seriate {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/prato-giardino.jpg");
+}
+
+.aree-hero--cavernago {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/aree/cavernago.jpg");
+}
+
+.aree-hero--dalmine {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/manutenzione.jpg");
+}
+
+.aree-hero--osio-sotto {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/prato-rotoli.jpg");
+}
+
+.aree-hero--stezzano {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/prato-sintetico.jpg");
+}
+
+.aree-hero--treviglio {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/semina-prato.jpg");
+}
+
+.aree-hero--caravaggio {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/impianto-irrigazione.jpg");
+}
+
+.aree-hero--romano-di-lombardia {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/prato-aiuola.jpg");
+}
+
+.aree-hero--albino {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/potatura-alberi.jpg");
+}
+
+.aree-hero--nembro {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/piantumazione.jpg");
+}
+
+.aree-hero--alzano-lombardo {
+  background-image:
+    linear-gradient(180deg, rgba(8, 14, 10, 0.3), rgba(8, 14, 10, 0.5)),
+    url("/img/rank2/aiuola-bella.jpg");
+}
+
+/* =========================================================
+   2. SEZIONI SERVIZI — sei varianti approvate
+   (da _reference/REFERENCE-SEZIONI-SERVIZI.html)
+========================================================= */
+
+.svz {
+  --svz-primary: var(--color-primary, #203f2f);
+  --svz-primary-hover: var(--color-button-hover, #284f3b);
+  --svz-secondary: var(--color-secondary, #6f7f4f);
+  --svz-accent: var(--color-accent, #c49a5a);
+  --svz-accent-soft: var(--color-accent-soft, #ead8b8);
+  --svz-text: var(--color-text, #1d241f);
+  --svz-muted: var(--color-text-muted, #687069);
+  --svz-light: var(--color-text-light, #f8f6ef);
+  --svz-bg: var(--color-bg, #fbfaf5);
+  --svz-bg-alt: var(--color-bg-alt, #f0efe6);
+  --svz-line: var(--color-border, rgba(32, 63, 47, 0.16));
+  --svz-h: var(--font-heading, "Playfair Display", Georgia, serif);
+  --svz-b: var(--font-body, "Inter", Arial, sans-serif);
+  --svz-pad: clamp(2rem, 4vw, 3.25rem);
+  font-family: var(--svz-b);
+  color: var(--svz-text);
+  padding-block: clamp(2.6rem, 5vw, 4rem);
+}
+.svz__inner { width: min(calc(100% - (var(--svz-pad) * 2)), var(--container, 1120px)); margin-inline: auto; }
+.svz a { color: inherit; text-decoration: none; }
+.svz h2, .svz h3 { margin: 0; font-family: var(--svz-h); font-weight: 600; text-wrap: pretty; }
+.svz p { margin: 0; text-wrap: pretty; }
+.svz img { display: block; width: 100%; height: auto; }
+.svz__eyebrow { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--svz-secondary); font-weight: 600; }
+.svz__title { font-size: clamp(1.55rem, 2.6vw, 1.95rem); line-height: 1.16; color: var(--svz-primary); }
+.svz__link { font-size: 0.85rem; font-weight: 600; color: var(--svz-primary); border-bottom: 1px solid var(--svz-accent); padding-bottom: 2px; }
+.svz__num { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; color: var(--svz-accent); }
+.svz__rule { flex: 1; height: 1px; background: var(--svz-line); }
+.svz__head-row { display: flex; align-items: baseline; gap: 1.25rem; }
+.svz__head-split { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+
+/* ===== 4a — QUATTRO COLONNE ARIEGGIATE, FOTO TONDA ===== */
+.svz--colonne { background: var(--svz-bg); }
+.svz--colonne .svz__head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.5rem; margin-bottom: 2.25rem; }
+.svz--colonne .svz__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem; }
+.svz--colonne .svz__card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.875rem; padding-top: 1.375rem; border-top: 1px solid var(--svz-line); transition: border-color 240ms ease; }
+.svz--colonne .svz__card:hover { border-color: var(--svz-accent); }
+.svz--colonne .svz__card img { width: 92px; height: 92px; border-radius: 999px; object-fit: cover; }
+.svz--colonne .svz__card h3 { font-size: 1.25rem; line-height: 1.22; color: var(--svz-primary); }
+.svz--colonne .svz__card p { font-size: 0.845rem; line-height: 1.6; color: var(--svz-muted); }
+.svz--colonne .svz__cta { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; color: var(--svz-accent); }
+
+/* ===== 4b — DUE PER DUE, FOTO VERTICALE ACCANTO AL TESTO ===== */
+.svz--duplice { background: #fff; }
+.svz--duplice .svz__head { margin-bottom: 2rem; }
+.svz--duplice .svz__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.125rem 3.5rem; }
+.svz--duplice .svz__card { display: grid; grid-template-columns: 148px 1fr; gap: 1.375rem; align-items: start; }
+.svz--duplice .svz__card img { aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; }
+.svz--duplice .svz__body { display: flex; flex-direction: column; gap: 0.5625rem; align-items: flex-start; }
+.svz--duplice .svz__card h3 { font-size: 1.375rem; line-height: 1.22; color: var(--svz-primary); }
+.svz--duplice .svz__card p { font-size: 0.875rem; line-height: 1.66; color: var(--svz-muted); }
+
+/* ===== 4c — PASSEPARTOUT, FOTO PICCOLA IN CORNICE ===== */
+.svz--stampe { background: var(--svz-bg-alt); }
+.svz--stampe .svz__head { margin-bottom: 2.125rem; }
+.svz--stampe .svz__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+.svz--stampe .svz__card { display: flex; flex-direction: column; gap: 1rem; background: var(--svz-bg); border: 1px solid rgba(32, 63, 47, 0.14); padding: 1rem 1rem 1.375rem; transition: border-color 240ms ease; }
+.svz--stampe .svz__card:hover { border-color: var(--svz-accent); }
+.svz--stampe .svz__card img { aspect-ratio: 4 / 3; object-fit: cover; }
+.svz--stampe .svz__body { display: flex; flex-direction: column; gap: 0.5rem; padding-inline: 0.25rem; }
+.svz--stampe .svz__card h3 { font-size: 1.185rem; line-height: 1.22; color: var(--svz-primary); }
+.svz--stampe .svz__card p { font-size: 0.815rem; line-height: 1.6; color: var(--svz-muted); }
+
+/* ===== 3c — LISTA A DESTRA, UNA FOTO SOLA CHE CAMBIA ===== */
+.svz--reveal { background: var(--svz-bg); }
+/* Nella 3c l'etichetta della lista è l'H2 di sezione: veste da eyebrow, non da titolo. */
+.svz--reveal .svz__list h2.svz__eyebrow { margin: 0; max-width: none; font-family: var(--svz-b); line-height: 1.6; }
+.svz--reveal .svz__split { display: grid; grid-template-columns: 400px 1fr; gap: 3rem; align-items: center; }
+.svz--reveal .svz__stage { position: relative; aspect-ratio: 4 / 3.4; border-radius: 18px; overflow: hidden; margin: 0; }
+.svz--reveal .svz__stage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 320ms ease; }
+.svz--reveal .svz__stage img.is-active { opacity: 1; }
+.svz--reveal .svz__list { display: flex; flex-direction: column; }
+.svz--reveal .svz__list .svz__eyebrow { padding-bottom: 0.875rem; }
+.svz--reveal .svz__row { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; padding-block: 1rem; border-top: 1px solid var(--svz-line); color: var(--svz-primary); transition: color 200ms ease; }
+.svz--reveal .svz__row:last-child { border-bottom: 1px solid var(--svz-line); }
+.svz--reveal .svz__row.is-active { color: var(--svz-accent); }
+.svz--reveal .svz__row h3 { font-size: 1.4rem; line-height: 1.18; color: inherit; }
+.svz--reveal .svz__row span { font-size: 0.875rem; font-weight: 600; flex: none; }
+
+/* ===== 2d — MOSAICO ASIMMETRICO ===== */
+.svz--mosaico { background: var(--svz-bg); }
+.svz--mosaico .svz__grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; grid-template-rows: 196px 196px; gap: 1.125rem; }
+.svz--mosaico .svz__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 2.5rem; margin-bottom: 1.75rem; flex-wrap: wrap; }
+.svz--mosaico .svz__head h2 { font-size: clamp(1.75rem, 3vw, 2.375rem); line-height: 1.1; color: var(--svz-primary); max-width: 18ch; }
+.svz--mosaico .svz__tile { position: relative; border-radius: 20px; overflow: hidden; transition: box-shadow 260ms ease; }
+.svz--mosaico .svz__tile:hover { box-shadow: 0 20px 44px rgba(20, 35, 26, 0.24); }
+.svz--mosaico .svz__tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.svz--mosaico .svz__tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 18, 13, 0.88) 0%, rgba(10, 18, 13, 0.22) 55%, rgba(10, 18, 13, 0) 82%); }
+.svz--mosaico .svz__caption { position: absolute; inset: auto 0 0 0; z-index: 1; display: flex; flex-direction: column; gap: 0.5rem; padding: 1.75rem; color: var(--svz-light); }
+.svz--mosaico .svz__caption h3 { font-size: 1.5rem; line-height: 1.16; color: var(--svz-light); }
+.svz--mosaico .svz__caption p { font-size: 0.875rem; line-height: 1.6; color: rgba(248, 246, 239, 0.76); }
+.svz--mosaico .svz__tile--lead { grid-column: 1; grid-row: 1 / 3; }
+.svz--mosaico .svz__tile--lead .svz__caption { padding: 2rem; }
+.svz--mosaico .svz__tile--lead .svz__caption h3 { font-size: 1.9rem; line-height: 1.15; max-width: 20ch; }
+.svz--mosaico .svz__tile--wide { grid-column: 2 / 4; grid-row: 1; }
+.svz--mosaico .svz__tile--wide::after { background: linear-gradient(100deg, rgba(10, 18, 13, 0.82) 0%, rgba(10, 18, 13, 0.24) 62%, rgba(10, 18, 13, 0) 100%); }
+.svz--mosaico .svz__tile--wide .svz__caption { inset: auto auto 0 0; max-width: 62%; }
+.svz--mosaico .svz__tile--flat { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; background: var(--svz-primary); color: var(--svz-light); padding: 1.75rem; border-radius: 20px; transition: background 260ms ease; }
+.svz--mosaico .svz__tile--flat:hover { background: var(--svz-primary-hover); }
+.svz--mosaico .svz__tile--flat::after { content: none; }
+.svz--mosaico .svz__tile--flat h3 { font-size: 1.5rem; line-height: 1.16; color: var(--svz-light); }
+.svz--mosaico .svz__tile--flat p { font-size: 0.875rem; line-height: 1.6; color: rgba(248, 246, 239, 0.68); }
+.svz--mosaico .svz__tile--last { grid-column: 3; grid-row: 2; }
+.svz--mosaico .svz__more { font-size: 0.85rem; font-weight: 600; color: var(--svz-accent-soft); }
+
+/* ===== 1e — QUATTRO COLONNE TUTTE-FOTO ===== */
+.svz--verticali { background: var(--svz-bg); }
+.svz--verticali .svz__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.25rem; flex-wrap: wrap; }
+.svz--verticali .svz__head h2 { font-size: clamp(1.7rem, 2.8vw, 2.2rem); line-height: 1.1; color: var(--svz-primary); }
+.svz--verticali .svz__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.125rem; }
+.svz--verticali .svz__tall { position: relative; display: block; border-radius: 20px; overflow: hidden; aspect-ratio: 3 / 3.5; transition: transform 300ms ease, box-shadow 300ms ease; }
+.svz--verticali .svz__tall:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(20, 35, 26, 0.24); }
+.svz--verticali .svz__tall img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.svz--verticali .svz__tall::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 18, 13, 0.86) 0%, rgba(10, 18, 13, 0.35) 42%, rgba(10, 18, 13, 0.05) 72%); }
+.svz--verticali .svz__caption { position: absolute; inset: auto 0 0 0; z-index: 1; display: flex; flex-direction: column; gap: 0.5625rem; padding: 1.625rem 1.5rem; color: var(--svz-light); }
+.svz--verticali .svz__caption h3 { font-size: 1.4rem; line-height: 1.18; color: var(--svz-light); }
+.svz--verticali .svz__caption p { font-size: 0.84rem; line-height: 1.6; color: rgba(248, 246, 239, 0.78); }
+.svz--verticali .svz__more { font-size: 0.8rem; font-weight: 600; color: var(--svz-accent-soft); }
+
+/* ===== RESPONSIVE SERVIZI ===== */
+@media (max-width: 1000px) {
+  .svz--colonne .svz__grid,
+  .svz--stampe .svz__grid,
+  .svz--verticali .svz__grid { grid-template-columns: repeat(2, 1fr); }
+  .svz--duplice .svz__grid { grid-template-columns: 1fr; }
+  .svz--reveal .svz__split { grid-template-columns: 1fr; gap: 2rem; }
+  .svz--reveal .svz__stage { aspect-ratio: 16 / 9; }
+  .svz--mosaico .svz__grid { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 196px 196px; }
+  .svz--mosaico .svz__tile--lead { grid-column: 1 / 3; grid-row: 1; }
+  .svz--mosaico .svz__tile--wide { grid-column: 1 / 3; grid-row: 2; }
+  .svz--mosaico .svz__tile--flat { grid-column: 1; grid-row: 3; }
+  .svz--mosaico .svz__tile--last { grid-column: 2; grid-row: 3; }
+}
+@media (max-width: 620px) {
+  .svz--colonne .svz__grid,
+  .svz--stampe .svz__grid,
+  .svz--verticali .svz__grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .svz--verticali .svz__tall { aspect-ratio: 3 / 2.4; }
+  .svz--duplice .svz__card { grid-template-columns: 116px 1fr; gap: 1rem; }
+  .svz--reveal .svz__row h3 { font-size: 1.2rem; }
+  .svz--mosaico .svz__grid { grid-template-columns: 1fr; grid-template-rows: repeat(4, 240px); }
+  .svz--mosaico .svz__tile--lead,
+  .svz--mosaico .svz__tile--wide,
+  .svz--mosaico .svz__tile--flat,
+  .svz--mosaico .svz__tile--last { grid-column: 1; grid-row: auto; }
+  .svz--mosaico .svz__tile--wide .svz__caption { max-width: 100%; }
+}
+
+/* =========================================================
+   3. CITTÀ VICINE CHE SERVIAMO — fascia con mappa
+========================================================= */
+
+.aree-vicine {
+  padding-block: var(--section-padding);
+  padding-inline: var(--page-gutter);
+  background: var(--color-bg);
+}
+
+.aree-vicine__head {
+  width: min(100%, var(--container));
+  margin: 0 auto clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+.aree-vicine__panel {
+  width: min(100%, var(--container));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+  gap: clamp(1.8rem, 3.4vw, 3rem);
+  align-items: center;
+}
+
+/* il verde vive solo qui dentro */
+.aree-vicine__map {
+  padding: clamp(1rem, 2vw, 1.4rem);
+  border-radius: var(--radius-image);
+  background: var(--color-bg-dark);
+}
+
+.aree-vicine__map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.aree-mappa__provincia {
+  fill: var(--color-map-ground);
+  stroke: rgba(248, 246, 239, 0.22);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.aree-mappa__comune {
+  fill: var(--color-map-ground);
+  stroke: rgba(248, 246, 239, 0.55);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: fill var(--transition);
+}
+
+.aree-mappa__comune--vicino { fill: var(--color-secondary); }
+.aree-mappa__comune--attivo { fill: var(--color-map-current); pointer-events: none; }
+.aree-mappa__comune[role="button"] { cursor: pointer; }
+.aree-mappa__comune.is-preview,
+.aree-mappa__comune.is-pinned { fill: var(--color-text-light); }
+.aree-mappa__comune:focus { outline: none; }
+.aree-mappa__comune:focus-visible {
+  stroke: var(--color-text-light);
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.aree-mappa__sede { pointer-events: none; }
+.aree-mappa__sede-asta {
+  stroke: var(--color-accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.aree-mappa__sede-punta {
+  fill: var(--color-accent);
+  stroke: rgba(29, 36, 31, 0.3);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+.aree-mappa__sede-base { fill: var(--color-accent); }
+
+.aree-vicine__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.aree-vicine__eyebrow::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: var(--color-border);
+}
+
+.aree-vicine h2 {
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.85rem, 3vw, 2.9rem);
+  line-height: 1.15;
+  color: var(--color-primary);
+}
+
+.aree-vicine__intro {
+  max-width: 670px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.aree-vicine__list {
+  max-height: calc(58px * 5);
+  overflow-y: auto;
+  padding-right: 0.8rem;
+  border-top: 1px solid var(--color-border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+.aree-vicine__list::-webkit-scrollbar { width: 4px; }
+.aree-vicine__list::-webkit-scrollbar-track { background: transparent; }
+.aree-vicine__list::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 999px;
+}
+
+.aree-vicine__current,
+.aree-vicine__list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 58px;
+  margin: 0;
+  padding: 0.4rem 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  border-bottom: 1px solid var(--color-border);
+  transition: color var(--transition), padding-left var(--transition);
+}
+
+/* il verde vivo fa 1,83:1 sul fondo chiaro: non regge come testo, resta marcatore */
+.aree-vicine__current {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.aree-vicine__current::after {
+  content: "";
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+  flex: 0 0 auto;
+  background: var(--color-map-current);
+}
+
+.aree-vicine__list a {
+  position: relative;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.aree-vicine__list a::after {
+  content: "→";
+  flex: 0 0 auto;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+/* sul chiaro il solo cambio di colore non si vede: il segnale è la barretta + il rientro */
+.aree-vicine__list a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  width: 3px;
+  height: 26px;
+  border-radius: 2px;
+  background: var(--color-accent);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.aree-vicine__list a:hover,
+.aree-vicine__list a.is-preview,
+.aree-vicine__list a.is-pinned {
+  color: var(--color-primary);
+  padding-left: 16px;
+}
+
+.aree-vicine__list a:hover::before,
+.aree-vicine__list a.is-preview::before,
+.aree-vicine__list a.is-pinned::before { opacity: 1; }
+
+.aree-vicine__list a:hover::after,
+.aree-vicine__list a.is-preview::after,
+.aree-vicine__list a.is-pinned::after { color: var(--color-primary); }
+
+.aree-vicine__list a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -3px;
+}
+
+/* =========================================================
+   4. FAQ DI LOCALITÀ — tre impaginazioni approvate
+   (da _reference/FAQ-LOCALITA.dc.html)
+========================================================= */
+
+.aree-faq {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--container));
+  margin-inline: auto;
+  padding-block: var(--section-padding);
+}
+
+.aree-faq__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.aree-faq__eyebrow::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: var(--color-accent);
+}
+
+.aree-faq h2 {
+  font-size: clamp(1.85rem, 3vw, 2.9rem);
+  line-height: 1.15;
+}
+
+.aree-faq h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.aree-faq__a {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== 01 — LA PRIMA RISPOSTA È PROTAGONISTA ===== */
+
+.aree-faq--protagonista h2 {
+  max-width: 640px;
+  margin-bottom: 1.8rem;
+}
+
+.aree-faq__lead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.2rem;
+  align-items: center;
+  padding: 1.8rem 2.2rem;
+  border-radius: 20px;
+  background: var(--color-bg-alt);
+}
+
+.aree-faq__lead-body {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.aree-faq__lead-body p {
+  color: var(--color-text);
+}
+
+.aree-faq__rows {
+  margin-top: 1.4rem;
+}
+
+.aree-faq__row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) minmax(0, 1fr) 32px;
+  gap: 1.4rem;
+  align-items: center;
+  min-height: 58px;
+  padding-block: 0.6rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.aree-faq__row:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.aree-faq__num {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.aree-faq__row .aree-faq__a {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.aree-faq__plus {
+  justify-self: end;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+/* ===== 03 — FOTO SUL FIANCO, ACCORDION ACCANTO ===== */
+
+.aree-faq--foto .aree-faq__split {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.aree-faq__photo {
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--color-bg-alt);
+}
+
+.aree-faq__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aree-faq--foto h2 {
+  margin-bottom: 1.4rem;
+}
+
+.aree-faq__item {
+  border-top: 1px solid var(--color-border);
+}
+
+.aree-faq__item:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.aree-faq__q {
+  margin: 0;
+}
+
+.aree-faq__toggle {
+  width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  padding: 0.9rem 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.aree-faq__icon {
+  flex: 0 0 auto;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.aree-faq__icon::before {
+  content: "+";
+}
+
+.aree-faq__item.is-open .aree-faq__icon::before {
+  content: "−";
+}
+
+.aree-faq--foto .aree-faq__a {
+  max-width: 560px;
+  margin: 0 0 1rem;
+  color: var(--color-text);
+}
+
+/* L'accordion nasconde le risposte solo a script attivo. */
+.aree-faq__acc.is-enhanced .aree-faq__item .aree-faq__a {
+  display: none;
+}
+
+.aree-faq__acc.is-enhanced .aree-faq__item.is-open .aree-faq__a {
+  display: block;
+}
+
+/* ===== 07 — TABELLA EDITORIALE ===== */
+
+.aree-faq--tabella .aree-faq__split {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.aree-faq--tabella h2 {
+  margin-bottom: 0;
+}
+
+.aree-faq__trow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2.2rem;
+  align-items: center;
+  min-height: 58px;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.aree-faq__trow .aree-faq__a {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.aree-faq__tfoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1.2rem;
+}
+
+.aree-faq__tfoot span {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.aree-faq__tfoot a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  transition: color var(--transition);
+}
+
+.aree-faq__tfoot a:hover {
+  color: var(--color-primary);
+}
+
+/* =========================================================
+   5. RESPONSIVE MAPPA E FAQ
+========================================================= */
+
+@media (max-width: 920px) {
+  .aree-vicine__panel {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    align-items: start;
+  }
+
+  /* la mappa sta sopra la lista, non sotto */
+  .aree-vicine__map {
+    grid-row: 1;
+  }
+
+  .aree-vicine__content {
+    grid-row: 2;
+  }
+
+  .aree-faq--foto .aree-faq__split,
+  .aree-faq--tabella .aree-faq__split {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .aree-faq--foto .aree-faq__photo {
+    height: clamp(150px, 40vw, 300px);
+  }
+}
+
+@media (max-width: 720px) {
+  .aree-page .hero {
+    min-height: 520px;
+  }
+
+  .aree-vicine__eyebrow::before,
+  .aree-faq__eyebrow::before {
+    width: 24px;
+  }
+
+  .aree-vicine__current,
+  .aree-vicine__list a {
+    min-height: 52px;
+    font-size: 1.15rem;
+  }
+
+  .aree-vicine__list {
+    max-height: calc(52px * 5);
+  }
+
+  .aree-faq__lead {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.4rem;
+  }
+
+  .aree-faq__lead-body {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.1rem;
+  }
+
+  .aree-faq__row {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.4rem 0.8rem;
+    min-height: 0;
+    padding-block: 1rem;
+  }
+
+  .aree-faq__row .aree-faq__a {
+    grid-column: 1 / -1;
+  }
+
+  .aree-faq__plus {
+    display: none;
+  }
+
+  .aree-faq__toggle {
+    min-height: 52px;
+    gap: 1rem;
+  }
+
+  .aree-faq__trow {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding: 1rem 0;
+  }
+}

@@ -153,14 +153,23 @@
   order: -1;
 }
 
+/* Regola 2 (BRIEF-TRASVERSALE §6, 25/08/2026) — qui vale soprattutto nel verso
+   INVERSO: su quattro rank 3 la foto era piu' alta del testo. Con height sulla
+   colonna i due lati si pareggiano da soli, in tutti e due i versi. */
 .rank3-split__image {
-  min-height: clamp(320px, 42vw, 520px);
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
+  min-height: 320px;
+  max-height: 720px;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);
 }
 
 .rank3-split__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -260,6 +269,13 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1rem, 2.4vw, 1.6rem);
+}
+
+@media (min-width: 921px) {
+  .rank3-related-grid--two {
+    grid-template-columns: repeat(2, calc((100% - 2 * clamp(1rem, 2.4vw, 1.6rem)) / 3));
+    justify-content: center;
+  }
 }
 
 .rank3-related-card {

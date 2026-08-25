@@ -82,11 +82,17 @@
   border-color: var(--color-accent);
 }
 
+/* Regola 2 (BRIEF-TRASVERSALE §6, 25/08/2026): niente aspect-ratio fisso,
+   la foto prende l'altezza del testo e sopra i 720px lo segue in sticky. */
 .service-intro__image,
 .service-detail:not(#treeclimbing) .service-detail__image {
-  position: relative;
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
+  min-height: 320px;
+  max-height: 720px;
   overflow: hidden;
   border-radius: var(--radius-image);
   box-shadow: var(--shadow-image);

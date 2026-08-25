@@ -10,6 +10,16 @@
   <title>Contatti | Bergamaschi Giardini. Giardiniere a Bergamo e provincia.</title>
   <meta name="description" content="Contatta Bergamaschi Giardini per sopralluoghi e interventi in provincia di Bergamo. Telefono, email, indirizzo e aree servite.">
 
+  <link rel="canonical" href="https://bergamaschi-giardini.com/Rank2/contatti.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Contatti | Bergamaschi Giardini. Giardiniere a Bergamo e provincia.">
+  <meta property="og:description" content="Contatta Bergamaschi Giardini per sopralluoghi e interventi in provincia di Bergamo. Telefono, email, indirizzo e aree servite.">
+  <meta property="og:url" content="https://bergamaschi-giardini.com/Rank2/contatti.html">
+  <meta property="og:image" content="https://bergamaschi-giardini.com/img/giardiniere-bergamo.jpg">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Bergamaschi Giardini">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/img/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
@@ -50,7 +60,7 @@
       }
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "HomeAndConstructionBusiness",
       "@id": "https://bergamaschi-giardini.com/#localbusiness",
       "name": "Bergamaschi Giardini",
       "url": "https://bergamaschi-giardini.com/",
@@ -69,8 +79,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 45.6225,
-        "longitude": 9.76417
+        "latitude": 45.6141247,
+        "longitude": 9.7766004
       },
       "openingHoursSpecification": [
         {
@@ -80,15 +90,23 @@
             "Tuesday",
             "Wednesday",
             "Thursday",
-            "Friday",
-            "Saturday"
+            "Friday"
           ],
           "opens": "09:00",
           "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "16:00"
         }
       ],
       "hasMap": "https://maps.app.goo.gl/jkF1tizYPGjqRLrq7",
       "sameAs": [
+        "https://maps.app.goo.gl/jkF1tizYPGjqRLrq7",
         "https://www.instagram.com/bergamaschi_giardini/",
         "https://www.facebook.com/bergamaschigabriele.creazionemanutenzionegiardini/?locale=it_IT"
       ],
@@ -119,7 +137,7 @@
         },
         {
           "@type": "City",
-          "name": "Alzate Lombardo"
+          "name": "Alzano Lombardo"
         },
         {
           "@type": "City",
@@ -193,16 +211,40 @@
         >
       </a>
 
-      <nav class="site-navbar__nav" aria-label="Navigazione principale">
+      <button
+        class="site-navbar__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        aria-label="Apri il menu principale"
+        hidden
+      >
+        <span class="site-navbar__toggle-label">Menu</span>
+        <span class="site-navbar__toggle-icon" aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-navbar__nav" id="primary-menu" aria-label="Navigazione principale">
 	<a class="site-navbar__link" href="/index.html">Home</a>
         <div class="site-navbar__item site-navbar__item--has-dropdown">
-    <a class="site-navbar__link" href="#servizi">Servizi</a>
+    <div class="site-navbar__services-row">
+      <a class="site-navbar__link" href="/index.html#servizi">Servizi</a>
+      <button
+        class="site-navbar__services-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="services-menu"
+        aria-label="Apri il menu Servizi"
+        hidden
+      >
+        <span aria-hidden="true">⌄</span>
+      </button>
+    </div>
 
-    <div class="site-navbar__dropdown" aria-label="Menu servizi">
-            <a href="/Rank2/realizzazione-manutenzione-giardino.html">Realizzazione e manutenzione giardino</a>
-            <a href="/Rank2/irrigazione.html">Impianti di irrigazione</a>
-            <a href="/Rank2/prato.html">Prato naturale e sintetico</a>
+    <div class="site-navbar__dropdown" id="services-menu" aria-label="Menu servizi">
+            <a href="/Rank2/realizzazione-manutenzione-giardino.html">Realizzazione e manutenzione del giardino</a>
             <a href="/Rank2/potature-treeclimbing.html">Potature e tree climbing</a>
+            <a href="/Rank2/irrigazione.html">Installazione e manutenzione di impianti di irrigazione</a>
+            <a href="/Rank2/prato.html">Prato naturale e sintetico</a>
           </div>
   </div>
         <a class="site-navbar__link" href="/Rank2/provincia-Bergamo.html">Aree che serviamo</a>
@@ -227,7 +269,7 @@
 
             <div>
               <p class="contact-page__label">Contatti diretti</p>
-              <h2>Bergamaschi Giardini</h2>
+              <h2>Chiamaci o scrivici</h2>
             </div>
           </div>
 
@@ -248,12 +290,17 @@
 
             <div class="contact-page__data-item">
               <span>Sede</span>
-              <p>Cascina Riccadonna, 1<br>24050 Cavernago BG</p>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Cascina%20Riccadonna%2C%201%2C%2024050%20Cavernago%20BG"
+                target="_blank"
+                rel="noopener"
+                aria-label="Indicazioni stradali per Bergamaschi Giardini a Cavernago"
+              >Cascina Riccadonna, 1<br>24050 Cavernago BG</a>
             </div>
 
             <div class="contact-page__data-item">
               <span>Orari</span>
-              <p>09:00-17:00</p>
+              <p>Lunedì-venerdì 09:00-17:00<br>Sabato 09:00-16:00<br>Domenica chiuso</p>
             </div>
           </div>
 
@@ -272,21 +319,25 @@
 
           <div class="contact-page__text">
             <p>
-              Puoi contattarci per richiedere un sopralluogo, valutare lo stato del tuo giardino o capire quale intervento è più adatto alle tue esigenze.
+              Al telefono ci basta sapere dove sei, che spazio è e cosa non va. Servono a capire se parliamo di manutenzione periodica, di un intervento sulle piante o di un impianto da controllare.
             </p>
 
             <p>
-              Lavoriamo in provincia di Bergamo per abitazioni private, condomini e attività che cercano un servizio ordinato e professionale.
+              Il sopralluogo è il passo successivo, e lo paghiamo noi: se poi il lavoro non si fa, non ci devi niente. Chi chiama oggi ci vede sul posto entro la settimana, e raramente ci vuole tutta. Le date escono da lì, davanti al giardino, non da una telefonata.
+            </p>
+
+            <p>
+              Se preferisci scrivere, su WhatsApp puoi mandarci una foto del punto che ti preoccupa: spesso basta quella per orientarci. L’email resta per le richieste senza fretta — un preventivo da girare all’amministratore, un condominio che deve decidere in assemblea. In entrambi i casi scrivi il comune: cambia da dove partiamo.
             </p>
           </div>
 
           <div class="contact-page__actions">
-            <a class="btn btn--primary" href="mailto:gabriele.bergamaschi@alice.it">
-              Richiedi un sopralluogo
+            <a class="btn btn--primary" href="tel:+393482765313">
+              Chiama 348 276 5313
             </a>
 
-            <a class="btn btn--phone" href="tel:+393482765313">
-              348 276 5313
+            <a class="btn btn--whatsapp" href="https://wa.me/393482765313?text=Ciao%2C%20vorrei%20un%20sopralluogo%20per%20il%20mio%20giardino." target="_blank" rel="noopener">
+              Scrivici su WhatsApp
             </a>
           </div>
 
@@ -304,18 +355,247 @@
             <div class="contact-page__links-block">
               <h2>Aree servite</h2>
         <ul>
-          <li><a href="/Rank2/provincia-Bergamo.html">Bergamo</a></li>
-          <li><a href="/Rank2/provincia-Bergamo.html">Cavernago</a></li>
-          <li><a href="/Rank2/provincia-Bergamo.html">Romano di Lombardia</a></li>
-          <li><a href="/Rank2/provincia-Bergamo.html">Stezzano</a></li>
-          <li><a href="/Rank2/provincia-Bergamo.html">Seriate</a></li>
-          <li><a href="/Rank2/provincia-Bergamo.html">Alzate Lombardo</a></li>
-			<li><a href="/Rank2/provincia-Bergamo.html">Caravaggio</a></li>
+          <li><a href="/Rank2/aree/bergamo.html">Bergamo</a></li>
+          <li><a href="/Rank2/aree/seriate.html">Seriate</a></li>
+          <li><a href="/Rank2/aree/dalmine.html">Dalmine</a></li>
+          <li><a href="/Rank2/aree/treviglio.html">Treviglio</a></li>
+          <li><a href="/Rank2/aree/caravaggio.html">Caravaggio</a></li>
+          <li><a href="/Rank2/aree/romano-di-lombardia.html">Romano di Lombardia</a></li>
+          <li><a href="/Rank2/aree/albino.html">Albino</a></li>
+          <li><a href="/Rank2/aree/alzano-lombardo.html">Alzano Lombardo</a></li>
+          <li><a href="/Rank2/aree/nembro.html">Nembro</a></li>
+          <li><a href="/Rank2/aree/stezzano.html">Stezzano</a></li>
+          <li><a href="/Rank2/aree/osio-sotto.html">Osio Sotto</a></li>
+          <li><a href="/Rank2/aree/cavernago.html">Cavernago</a></li>
         </ul>
             </div>
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- STRISCIA RECENSIONI -->
+    <section class="reviews" aria-label="Valutazione Google: 4,8 su 5">
+      <div class="reviews__head">
+        <p class="section-eyebrow">Recensioni</p>
+        <p class="reviews__line">
+          <strong class="reviews__score">4,8</strong>
+          <svg class="reviews__stars" viewBox="0 0 124 24" aria-hidden="true" focusable="false">
+            <defs>
+              <path id="reviews-star" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </defs>
+            <use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/>
+          </svg>
+          <span class="reviews__count">23 recensioni Google</span>
+          <a class="reviews__link" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggile su Google →</a>
+        </p>
+      </div>
+
+      <div class="reviews__viewport">
+        <div class="reviews__track">
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Simone B.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Contattato Gabriele via whatsapp post visione sui social dei suoi lavori, sopralluogo gratuito ed in pochi gg mi ha fissato l intervento per il prato. Organizzazione top anche post posa tappeto erboso. Consigliatissimo.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Gabriele</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Gabriele Bergamaschi è una persona con altissima preparazione, ti consiglia al meglio cosa fare senza farti buttar via soldi. Cordiale e disponibile nelle tue esigenze…»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">G. T.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Gabriele è ormai il nostro giardiniere di fiducia da molti anni. Una garanzia!»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Giuseppe F.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Serio, professionale e puntuale nei tagli erba, consiglio assolutamente.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Chiara S.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Competente, professionale, affidabile, sempre pronto a consigliare il trattamento giusto!»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Diego C.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Molto serio e professionale lavoro fatto bene, consigliato»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Alessandra C.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Affidabile e sempre attento a trovare soluzioni idonee»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Renato G.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Ottimo servizio veloce, preciso. Bergamaschi una certezza»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Eleonora B.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Perfezionisti, professionisti e puntuali.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Nico P.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Professionale e creativo»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Simone B.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Contattato Gabriele via whatsapp post visione sui social dei suoi lavori, sopralluogo gratuito ed in pochi gg mi ha fissato l intervento per il prato. Organizzazione top anche post posa tappeto erboso. Consigliatissimo.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Gabriele</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Gabriele Bergamaschi è una persona con altissima preparazione, ti consiglia al meglio cosa fare senza farti buttar via soldi. Cordiale e disponibile nelle tue esigenze…»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">G. T.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Gabriele è ormai il nostro giardiniere di fiducia da molti anni. Una garanzia!»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Giuseppe F.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Serio, professionale e puntuale nei tagli erba, consiglio assolutamente.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Chiara S.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Competente, professionale, affidabile, sempre pronto a consigliare il trattamento giusto!»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Diego C.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Molto serio e professionale lavoro fatto bene, consigliato»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Alessandra C.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Affidabile e sempre attento a trovare soluzioni idonee»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Renato G.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Ottimo servizio veloce, preciso. Bergamaschi una certezza»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Eleonora B.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Perfezionisti, professionisti e puntuali.»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+          <figure class="reviews__card" aria-hidden="true">
+            <figcaption class="reviews__meta">
+              <span class="reviews__badge" aria-hidden="true">G</span>
+              <span class="reviews__name">Nico P.</span>
+              <svg class="reviews__stars reviews__stars--card" viewBox="0 0 124 24" aria-hidden="true" focusable="false"><use href="#reviews-star"/><use href="#reviews-star" x="25"/><use href="#reviews-star" x="50"/><use href="#reviews-star" x="75"/><use href="#reviews-star" x="100"/></svg>
+            </figcaption>
+            <blockquote class="reviews__text">«Professionale e creativo»</blockquote>
+            <a class="reviews__cta" href="https://maps.app.goo.gl/jkF1tizYPGjqRLrq7" target="_blank" rel="noopener" tabindex="-1">Leggi su Google →</a>
+          </figure>
+
+        </div>
       </div>
     </section>
   </main>
@@ -331,7 +611,7 @@
         >
       </a>
 
-      <h2>Bergamaschi Giardini</h2>
+      <span class="footer__brand">Bergamaschi Giardini</span>
       <p>
         Giardiniere in provincia di Bergamo per realizzazione, manutenzione e cura di giardini, prati, aiuole,
         siepi e impianti di irrigazione.
@@ -339,7 +619,7 @@
     </div>
 
     <div class="footer__column">
-      <h3>Contatti</h3>
+      <span class="footer__label">Contatti</span>
       <p>
         <a
           class="footer__address-link"
@@ -350,12 +630,13 @@
           Cascina Riccadonna, 1, 24050 Cavernago BG
         </a>
       </p>
-      <p><a href="tel:+393482765313">3482765313</a></p>
+      <p><a href="tel:+393482765313">348 276 5313</a></p>
+      <p>Lun-Ven 9:00-17:00 · Sab 9:00-16:00</p>
       <p><a href="mailto:gabriele.bergamaschi@alice.it">gabriele.bergamaschi@alice.it</a></p>
     </div>
 
     <div class="footer__column">
-      <h3>Link utili</h3>
+      <span class="footer__label">Link utili</span>
       <ul>
         <li><a href="/index.html#chi-siamo">Chi siamo</a></li>
         <li><a href="/index.html#servizi">Servizi</a></li>
@@ -367,7 +648,7 @@
     </div>
 
     <div class="footer__column footer__column--maps">
-      <h3>Google Maps</h3>
+      <span class="footer__label">Google Maps</span>
 
       <div class="footer__map">
         <iframe
@@ -383,5 +664,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/navbar.js" defer></script>
 </body>
 </html>

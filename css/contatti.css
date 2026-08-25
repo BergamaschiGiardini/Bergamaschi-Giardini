@@ -13,9 +13,8 @@
 .contact-page__shell {
   display: grid;
   grid-template-columns: minmax(360px, 0.92fr) minmax(0, 1.08fr);
-  align-items: center;
+  align-items: start;
   gap: clamp(2.5rem, 6vw, 6.5rem);
-  min-height: clamp(560px, 68vh, 760px);
   padding-block: clamp(1.5rem, 3vw, 2.5rem);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -25,8 +24,12 @@
    COLONNA SINISTRA - CARD CONTATTI
 ========================================================= */
 
+/* Regola 3: la card sta in alto e segue il testo invece di restare centrata
+   in una colonna molto piu' alta. Il suo clamp resta: e' la sua misura. */
 .contact-page__card {
-  position: relative;
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: start;
   overflow: hidden;
   min-height: clamp(520px, 58vw, 680px);
   display: flex;
@@ -247,8 +250,22 @@
   color: var(--color-primary);
 }
 
+/* Regola 1: stessa finestra scorrevole di .aree-vicine__list, stessi valori.
+   I 16 link restano tutti nel DOM: si nasconde con lo scroll, non si toglie. */
 .contact-page__links-block ul {
+  max-height: calc(58px * 5);
+  overflow-y: auto;
+  padding-right: 0.8rem;
   border-top: 1px solid var(--color-border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+.contact-page__links-block ul::-webkit-scrollbar { width: 4px; }
+.contact-page__links-block ul::-webkit-scrollbar-track { background: transparent; }
+.contact-page__links-block ul::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 999px;
 }
 
 .contact-page__links-block li {
@@ -304,7 +321,9 @@
     align-items: start;
   }
 
+  /* Colonna singola: lo sticky non ha piu' senso, la colonna e' una sola. */
   .contact-page__card {
+    position: static;
     order: 1;
     min-height: 0;
   }

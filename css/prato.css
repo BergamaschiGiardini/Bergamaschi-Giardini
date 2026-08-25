@@ -202,9 +202,15 @@
   aspect-ratio: 4 / 3;
 }
 
+/* Regola 2 (BRIEF-TRASVERSALE §6, 25/08/2026). */
 .prato-service__image,
 .prato-maintenance__image {
-  aspect-ratio: 16 / 12;
+  position: sticky;
+  top: var(--sticky-top);
+  align-self: stretch;
+  aspect-ratio: auto;
+  min-height: 320px;
+  max-height: 720px;
 }
 
 .prato-irrigazione__image {
@@ -226,6 +232,8 @@
 .prato-service__image img,
 .prato-maintenance__image img,
 .prato-irrigazione__image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

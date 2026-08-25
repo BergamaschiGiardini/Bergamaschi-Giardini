@@ -1,114 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://bergamaschi-giardini.com/</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/contatti.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/irrigazione.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/potature-treeclimbing.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/prato.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/provincia-Bergamo.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank2/realizzazione-manutenzione-giardino.html</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/albino.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/alzano-lombardo.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/bergamo.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/caravaggio.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/cavernago.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/dalmine.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/nembro.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/osio-sotto.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/romano-di-lombardia.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/seriate.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/stezzano.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://bergamaschi-giardini.com/Rank2/aree/treviglio.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
     <loc>https://bergamaschi-giardini.com/Rank3/aiuole-siepi.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/piantumazione.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/scavi-preparazione-terreno.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/irrigatori-statici-dinamici-goccia.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/prato-a-rotoli.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/inerbimento.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/prato-sintetico.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/tree-climbing.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
     <loc>https://bergamaschi-giardini.com/Rank3/potatura-alberi.html</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>

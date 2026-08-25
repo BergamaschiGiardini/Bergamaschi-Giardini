@@ -5,7 +5,95 @@
    Sostituisce integralmente /css/style.css
 ========================================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap");
+/* =========================================================
+   0. FONT SERVITI IN LOCALE  —  rilievo M8, 24/08/2026
+   Prima erano un @import a fonts.googleapis.com: catena
+   CSS -> parse -> richiesta a Google -> font, e l'IP del
+   visitatore a un terzo dominio a ogni caricamento.
+
+   Inter e Playfair Display sono font VARIABILI: Google
+   serve un file solo per famiglia, e dichiara ogni peso
+   puntando allo stesso file. Qui si riproduce la stessa
+   cosa, peso per peso, perche' la resa resti IDENTICA a
+   prima — 900 compreso, che non e' dichiarato ne' ora ne'
+   prima e resta sintetizzato dal browser.
+
+   Subset: latin. Copre l'italiano per intero. La freccia
+   "->" usata in ::after e' fuori subset e ricade sul font
+   di sistema, esattamente come faceva prima.
+========================================================= */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/playfair-display-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/playfair-display-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/playfair-display-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /* =========================================================
    1. RESET, VARIABILI E PROTEZIONE RESPONSIVE
@@ -24,6 +112,9 @@
   --color-bg: #fbfaf5;
   --color-bg-alt: #f0efe6;
   --color-bg-dark: #284f3b;
+
+  --color-map-ground: #33604a;
+  --color-map-current: #a3c85a;
 
   --color-border: rgba(32, 63, 47, 0.16);
   --color-border-light: rgba(248, 246, 239, 0.22);
@@ -46,6 +137,8 @@
   --shadow-button: 0 9px 20px rgba(20, 35, 26, 0.18);
 
   --transition: 260ms ease;
+  /* Offset di sistema per position: sticky sotto la navbar (64px). */
+  --sticky-top: calc(64px + 1.5rem);
 }
 
 *,
@@ -383,6 +476,18 @@ p + p {
   transform: translateY(-3px);
 }
 
+/* Verde WhatsApp: deroga dichiarata, solo questo bottone. Testo scuro, mai bianco. */
+.btn--whatsapp {
+  color: var(--color-text);
+  background: #25D366;
+  box-shadow: var(--shadow-button);
+}
+
+.btn--whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(20, 35, 26, 0.25);
+}
+
 .btn--secondary {
   color: var(--color-text-light);
   background: transparent;
@@ -488,13 +593,13 @@ p + p {
   min-height: 38px;
 }
 
-.home-page .site-navbar__services-row {
+.site-navbar__services-row {
   display: inline-flex;
   align-items: center;
 }
 
-.home-page .site-navbar__toggle,
-.home-page .site-navbar__services-toggle {
+.site-navbar__toggle,
+.site-navbar__services-toggle {
   display: none;
   color: var(--color-text-light);
   background: transparent;
@@ -1278,6 +1383,11 @@ p + p {
   background: transparent;
 }
 
+/* Senza la scatola link: index e le 12 pagine comune. La colonna "data" non esiste piu. */
+.contact--no-links {
+  grid-template-areas: "text image";
+}
+
 .contact__content,
 .contatti-testo {
   grid-area: text;
@@ -1410,6 +1520,170 @@ p + p {
 }
 
 /* =========================================================
+   10b. STRISCIA RECENSIONI
+========================================================= */
+
+/* Seconda stesura, 25/08/2026: niente card, fila unica a tutta larghezza in
+   scorrimento continuo. Nessun JavaScript: una sola animazione CSS.
+   La fila contiene le recensioni DUE volte e trasla di -50%, cioe' esattamente
+   una copia: al termine il fotogramma coincide con l'inizio e il ciclo non salta. */
+
+.reviews {
+  width: 100%;
+  max-width: none;
+  padding-block: var(--section-padding);
+}
+
+.reviews__head {
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--container));
+  margin-inline: auto;
+  margin-bottom: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.reviews__line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.85rem;
+  margin-top: 0.55rem;
+}
+
+.reviews__score {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+}
+
+.reviews__stars {
+  display: block;
+  height: 1rem;
+  width: auto;
+  fill: var(--color-accent);
+}
+
+.reviews__count {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.reviews__link {
+  color: var(--color-primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-accent);
+  transition: color var(--transition);
+}
+
+.reviews__link:hover {
+  color: var(--color-accent);
+}
+
+/* Il contenitore esce dal --container e taglia: la fila parte dal bordo
+   sinistro dello schermo, come il footer va a tutta larghezza. */
+.reviews__viewport {
+  overflow: hidden;
+}
+
+.reviews__track {
+  display: flex;
+  width: max-content;
+  animation: reviews-marquee 70s linear infinite;
+}
+
+.reviews__viewport:hover .reviews__track,
+.reviews__viewport:focus-within .reviews__track {
+  animation-play-state: paused;
+}
+
+@keyframes reviews-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Niente fondo, bordo, raggio od ombra: la sola separazione e' il filetto
+   verticale a destra del blocco. */
+.reviews__card {
+  flex: 0 0 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding-inline: clamp(1.2rem, 2.4vw, 1.9rem);
+  border-right: 1px solid var(--color-border);
+}
+
+.reviews__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.reviews__badge {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  font-size: 0.94rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.reviews__name {
+  color: var(--color-text);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.reviews__stars--card {
+  height: 0.82rem;
+  margin-left: auto;
+}
+
+.reviews__text {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.62;
+}
+
+.reviews__cta {
+  margin-top: auto;
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: color var(--transition);
+}
+
+.reviews__cta:hover {
+  color: var(--color-accent);
+}
+
+/* Fermo e scorrevole a mano. Il blocco globale di §15 azzera la DURATA con
+   !important ma non il nome: senza questa riga l'animazione salterebbe alla
+   fine, cioe' alla copia, invece di restare all'inizio. */
+@media (prefers-reduced-motion: reduce) {
+  .reviews__track {
+    animation-name: none;
+  }
+
+  .reviews__viewport {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .reviews__card {
+    scroll-snap-align: start;
+  }
+}
+/* =========================================================
    11. FOOTER
 ========================================================= */
 
@@ -1444,24 +1718,31 @@ p + p {
   object-fit: contain;
 }
 
-.footer h2,
-.footer h3 {
+/* Etichette di navigazione, non titoli di contenuto: erano <h2>/<h3> e
+   inquinavano la struttura degli heading di tutte e 28 le pagine (M3).
+   Sono <span> e non <p> perche' `.footer p` imposta colore, corpo e interlinea
+   e vincerebbe per specificita' su queste classi. */
+.footer__brand {
+  display: block;
+  margin: 0 0 0.9rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.35rem, 1.7vw, 1.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   color: var(--color-text-light);
 }
 
-.footer h2 {
-  margin-bottom: 0.9rem;
-  font-size: clamp(1.35rem, 1.7vw, 1.8rem);
-}
-
-.footer h3 {
-  margin-bottom: 1rem;
+.footer__label {
+  display: block;
+  margin: 0 0 1rem;
   font-family: var(--font-body);
   font-size: 0.74rem;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: var(--color-text-light);
 }
 
 .footer p,
@@ -1648,6 +1929,12 @@ p + p {
       "data";
   }
 
+  .contact--no-links {
+    grid-template-areas:
+      "text"
+      "image";
+  }
+
   .contact__internal-links,
   .contatti-dati {
     padding-left: 0;
@@ -1733,6 +2020,14 @@ p + p {
   :root {
     --page-gutter: 0.85rem;
     --section-padding: clamp(3rem, 12vw, 4.4rem);
+  }
+
+  .reviews__track {
+    animation-duration: 45s;
+  }
+
+  .reviews__card {
+    flex-basis: 85vw;
   }
 
   body {
@@ -2060,21 +2355,21 @@ p + p {
   }
 }
 
-/* Menu mobile accessibile, limitato alla Home. */
+/* Menu mobile accessibile, su tutte le pagine. */
 @media (max-width: 720px) {
-  .home-page .site-navbar.is-enhanced .site-navbar__inner {
+  .site-navbar.is-enhanced .site-navbar__inner {
     min-height: 74px;
     grid-template-columns: auto auto;
     justify-content: space-between;
     gap: 1rem;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__logo {
+  .site-navbar.is-enhanced .site-navbar__logo {
     width: 58px;
     max-height: 48px;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__toggle {
+  .site-navbar.is-enhanced .site-navbar__toggle {
     display: inline-flex;
     min-width: 108px;
     min-height: 48px;
@@ -2091,13 +2386,13 @@ p + p {
     cursor: pointer;
   }
 
-  .home-page .site-navbar__toggle-icon {
+  .site-navbar__toggle-icon {
     font-size: 1.15rem;
     font-weight: 500;
     line-height: 1;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__nav {
+  .site-navbar.is-enhanced .site-navbar__nav {
     position: fixed;
     top: 74px;
     left: var(--page-gutter);
@@ -2127,15 +2422,15 @@ p + p {
       transform var(--transition);
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__toggle[aria-expanded="true"] + .site-navbar__nav {
+  .site-navbar.is-enhanced .site-navbar__toggle[aria-expanded="true"] + .site-navbar__nav {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0);
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__nav > .site-navbar__link,
-  .home-page .site-navbar.is-enhanced .site-navbar__services-row > .site-navbar__link {
+  .site-navbar.is-enhanced .site-navbar__nav > .site-navbar__link,
+  .site-navbar.is-enhanced .site-navbar__services-row > .site-navbar__link {
     width: 100%;
     min-height: 48px;
     justify-content: flex-start;
@@ -2145,25 +2440,25 @@ p + p {
     white-space: normal;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__item {
+  .site-navbar.is-enhanced .site-navbar__item {
     position: static;
     display: block;
     width: 100%;
     min-height: 0;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__services-row {
+  .site-navbar.is-enhanced .site-navbar__services-row {
     width: 100%;
     display: flex;
     align-items: center;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__services-row > .site-navbar__link {
+  .site-navbar.is-enhanced .site-navbar__services-row > .site-navbar__link {
     flex: 1 1 auto;
     width: auto;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__services-toggle {
+  .site-navbar.is-enhanced .site-navbar__services-toggle {
     display: inline-flex;
     width: 48px;
     min-width: 48px;
@@ -2177,15 +2472,15 @@ p + p {
     cursor: pointer;
   }
 
-  .home-page .site-navbar__services-toggle span {
+  .site-navbar__services-toggle span {
     transition: transform var(--transition);
   }
 
-  .home-page .site-navbar__services-toggle[aria-expanded="true"] span {
+  .site-navbar__services-toggle[aria-expanded="true"] span {
     transform: rotate(180deg);
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__dropdown {
+  .site-navbar.is-enhanced .site-navbar__dropdown {
     position: static;
     display: none;
     width: auto;
@@ -2202,12 +2497,12 @@ p + p {
     transform: none;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__item.is-open .site-navbar__dropdown {
+  .site-navbar.is-enhanced .site-navbar__item.is-open .site-navbar__dropdown {
     display: block;
     transform: none;
   }
 
-  .home-page .site-navbar.is-enhanced .site-navbar__dropdown a {
+  .site-navbar.is-enhanced .site-navbar__dropdown a {
     min-height: 48px;
     padding: 0.78rem;
     font-size: 0.72rem;
