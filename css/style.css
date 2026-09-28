@@ -891,6 +891,21 @@ p + p {
   background: linear-gradient(var(--color-accent), transparent);
 }
 
+/* Link testuali interni della home: stessi valori di style-rank2.css, che la home non carica */
+.about--home .about__text a {
+  color: var(--color-primary);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(196, 154, 90, 0.55);
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.about--home .about__text a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
 /* =========================================================
    8. SERVIZI
 ========================================================= */
